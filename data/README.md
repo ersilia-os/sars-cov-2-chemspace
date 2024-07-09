@@ -21,3 +21,8 @@ We have then generated files for the following Ersilia models:
 - [eos9ei3](https://github.com/ersilia-os/eos9ei3): `sa-score`
 
 Results as saved as `all_molecules_$MODEL_ID.csv`.
+
+# MOE data
+
+The files `np2_moe.csv` and `sd2_moe.csv` have been provided by Prof. Ntie-Kang on the 9th of July 2024.
+
