@@ -4,6 +4,9 @@ from dotenv import load_dotenv
 import time
 from rdkit import Chem
 import requests
+import urllib3
+
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 root = os.path.dirname(os.path.abspath(__file__))
 
@@ -61,6 +64,8 @@ def query_molecule_all_similarities(smiles, search_quality="very accurate", n_ne
 
 def query_and_write(smiles):
     inchikey = Chem.MolToInchiKey(Chem.MolFromSmiles(smiles))
+    if len(inchikey) != 27:
+        return
     file_name = os.path.join("..", "results", "cheese", f"{inchikey}.csv")
     if os.path.exists(file_name):
         print("Already done for", inchikey)
