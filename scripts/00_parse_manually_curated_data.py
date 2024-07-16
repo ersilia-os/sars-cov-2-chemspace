@@ -47,8 +47,8 @@ def molecule_loader(subfolder):
     print("Number of non-standardized molecules (skipped) {0}".format(c))
     return mols_
 
-np_mols = molecule_loader(sd_dir)
-sd_mols = molecule_loader(np_dir)
+np_mols = molecule_loader(np_dir)
+sd_mols = molecule_loader(sd_dir)
 
 def mols_to_table(mols, category):
     mols_ = []
