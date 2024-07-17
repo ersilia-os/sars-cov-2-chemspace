@@ -1,0 +1,195 @@
+3108
+     RDKit          2D
+
+ 36 39  0  0  0  0  0  0  0  0999 V2000
+   11.2536    3.5447    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+   12.9972    0.5514    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    2.5369   -0.4828    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    4.2690   -3.4828    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    8.6155   -2.0174    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    6.8671    2.0172    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    9.5331   -0.5036    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    6.0010    0.5172    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    8.6270    1.0519    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    6.8671   -0.9828    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+   10.3972    1.0414    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    5.1350   -0.9828    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    7.7437   -2.5073    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    9.4756   -2.5273    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    7.7331    2.5172    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    6.0010    2.5172    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    7.7322   -3.5072    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    9.4641   -3.5273    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    7.7331    3.5172    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    6.0010    3.5172    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    8.5923   -4.0172    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    6.8671    4.0172    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    8.6270   -1.0174    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    6.8671    1.0172    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    7.7331    0.5172    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    7.7331   -0.4828    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    9.5331    0.5380    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    6.0010   -0.4828    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   10.3933    2.0414    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   11.2651    0.5447    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.2690   -0.4828    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.1350   -1.9828    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   11.2574    2.5447    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   12.1292    1.0481    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.4030   -0.9828    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.2690   -2.4828    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  1 33  1  0
+  2 34  1  0
+  3 35  1  0
+  4 36  1  0
+  5 13  1  0
+  5 14  1  0
+  5 23  1  0
+  6 15  1  0
+  6 16  1  0
+  6 24  1  0
+  7 23  2  0
+  7 27  1  0
+  8 24  1  0
+  8 28  2  0
+  9 25  1  0
+  9 27  2  0
+ 10 26  2  0
+ 10 28  1  0
+ 11 27  1  0
+ 11 29  1  0
+ 11 30  1  0
+ 12 28  1  0
+ 12 31  1  0
+ 12 32  1  0
+ 13 17  1  0
+ 14 18  1  0
+ 15 19  1  0
+ 16 20  1  0
+ 17 21  1  0
+ 18 21  1  0
+ 19 22  1  0
+ 20 22  1  0
+ 23 26  1  0
+ 24 25  2  0
+ 25 26  1  0
+ 29 33  1  0
+ 30 34  1  0
+ 31 35  1  0
+ 32 36  1  0
+M  END
+>  <PUBCHEM_COMPOUND_CID>  (1) 
+3108
+
+>  <PUBCHEM_COMPOUND_CANONICALIZED>  (1) 
+1
+
+>  <PUBCHEM_CACTVS_COMPLEXITY>  (1) 
+561
+
+>  <PUBCHEM_CACTVS_HBOND_ACCEPTOR>  (1) 
+12
+
+>  <PUBCHEM_CACTVS_HBOND_DONOR>  (1) 
+4
+
+>  <PUBCHEM_CACTVS_ROTATABLE_BOND>  (1) 
+12
+
+>  <PUBCHEM_CACTVS_SUBSKEYS>  (1) 
+AAADcfB7+AAAAAAAAAAAAAAAAAAAAAAAAAAsWLFgAAAAAACx+AAAHgAACAAACAjhlgYB8LcIEgCgAQZgZACCgC0hEKABmCAoVJiKeAJAyMEUBAhIAALQQCAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+
+>  <PUBCHEM_IUPAC_OPENEYE_NAME>  (1) 
+2-[[2-[bis(2-hydroxyethyl)amino]-4,8-bis(1-piperidyl)pyrimido[5,4-d]pyrimidin-6-yl]-(2-hydroxyethyl)amino]ethanol
+
+>  <PUBCHEM_IUPAC_CAS_NAME>  (1) 
+2-[[2-[bis(2-hydroxyethyl)amino]-4,8-bis(1-piperidinyl)-6-pyrimido[5,4-d]pyrimidinyl]-(2-hydroxyethyl)amino]ethanol
+
+>  <PUBCHEM_IUPAC_NAME_MARKUP>  (1) 
+2-[[2-[bis(2-hydroxyethyl)amino]-4,8-di(piperidin-1-yl)pyrimido[5,4-d]pyrimidin-6-yl]-(2-hydroxyethyl)amino]ethanol
+
+>  <PUBCHEM_IUPAC_NAME>  (1) 
+2-[[2-[bis(2-hydroxyethyl)amino]-4,8-di(piperidin-1-yl)pyrimido[5,4-d]pyrimidin-6-yl]-(2-hydroxyethyl)amino]ethanol
+
+>  <PUBCHEM_IUPAC_SYSTEMATIC_NAME>  (1) 
+2-[[2-[bis(2-hydroxyethyl)amino]-4,8-di(piperidin-1-yl)pyrimido[5,4-d]pyrimidin-6-yl]-(2-hydroxyethyl)amino]ethanol
+
+>  <PUBCHEM_IUPAC_TRADITIONAL_NAME>  (1) 
+2-[[2-[bis(2-hydroxyethyl)amino]-4,8-dipiperidino-pyrimido[5,4-d]pyrimidin-6-yl]-(2-hydroxyethyl)amino]ethanol
+
+>  <PUBCHEM_IUPAC_INCHI>  (1) 
+InChI=1S/C24H40N8O4/c33-15-11-31(12-16-34)23-26-20-19(21(27-23)29-7-3-1-4-8-29)25-24(32(13-17-35)14-18-36)28-22(20)30-9-5-2-6-10-30/h33-36H,1-18H2
+
+>  <PUBCHEM_IUPAC_INCHIKEY>  (1) 
+IZEKFCXSFNUWAM-UHFFFAOYSA-N
+
+>  <PUBCHEM_XLOGP3_AA>  (1) 
+0.7
+
+>  <PUBCHEM_EXACT_MASS>  (1) 
+504.31725179
+
+>  <PUBCHEM_MOLECULAR_FORMULA>  (1) 
+C24H40N8O4
+
+>  <PUBCHEM_MOLECULAR_WEIGHT>  (1) 
+504.6
+
+>  <PUBCHEM_OPENEYE_CAN_SMILES>  (1) 
+C1CCN(CC1)C2=NC(=NC3=C2N=C(N=C3N4CCCCC4)N(CCO)CCO)N(CCO)CCO
+
+>  <PUBCHEM_OPENEYE_ISO_SMILES>  (1) 
+C1CCN(CC1)C2=NC(=NC3=C2N=C(N=C3N4CCCCC4)N(CCO)CCO)N(CCO)CCO
+
+>  <PUBCHEM_CACTVS_TPSA>  (1) 
+145
+
+>  <PUBCHEM_MONOISOTOPIC_WEIGHT>  (1) 
+504.31725179
+
+>  <PUBCHEM_TOTAL_CHARGE>  (1) 
+0
+
+>  <PUBCHEM_HEAVY_ATOM_COUNT>  (1) 
+36
+
+>  <PUBCHEM_ATOM_DEF_STEREO_COUNT>  (1) 
+0
+
+>  <PUBCHEM_ATOM_UDEF_STEREO_COUNT>  (1) 
+0
+
+>  <PUBCHEM_BOND_DEF_STEREO_COUNT>  (1) 
+0
+
+>  <PUBCHEM_BOND_UDEF_STEREO_COUNT>  (1) 
+0
+
+>  <PUBCHEM_ISOTOPIC_ATOM_COUNT>  (1) 
+0
+
+>  <PUBCHEM_COMPONENT_COUNT>  (1) 
+1
+
+>  <PUBCHEM_CACTVS_TAUTO_COUNT>  (1) 
+-1
+
+>  <PUBCHEM_COORDINATE_TYPE>  (1) 
+1
+5
+255
+
+>  <PUBCHEM_BONDANNOTATIONS>  (1) 
+10  26  8
+10  28  8
+23  26  8
+24  25  8
+25  26  8
+7  23  8
+7  27  8
+8  24  8
+8  28  8
+9  25  8
+9  27  8
+
+$$$$

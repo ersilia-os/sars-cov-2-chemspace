@@ -1,0 +1,214 @@
+23649154
+     RDKit          2D
+
+ 37 41  0  0  0  0  0  0  0  0999 V2000
+    5.5981   -1.3170    0.0000 F   0  0  0  0  0  0  0  0  0  0  0  0
+    4.5981   -2.3170    0.0000 F   0  0  0  0  0  0  0  0  0  0  0  0
+    3.5981   -1.3170    0.0000 F   0  0  0  0  0  0  0  0  0  0  0  0
+    2.0000    2.1830    0.0000 F   0  0  0  0  0  0  0  0  0  0  0  0
+    3.3660    2.5490    0.0000 F   0  0  0  0  0  0  0  0  0  0  0  0
+    2.3660    0.8170    0.0000 F   0  0  0  0  0  0  0  0  0  0  0  0
+   14.0561   -2.5490    0.0000 F   0  0  0  0  0  0  0  0  0  0  0  0
+    9.7942   -1.3170    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+   12.4725   -1.6217    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+   12.4725   -0.0123    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    8.0622   -0.3170    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    7.1962    0.1830    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    8.9282   -1.8170    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   11.5263   -1.3170    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.4641    0.1830    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   10.6603   -1.8170    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    8.0622   -1.3170    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   11.5263   -0.3170    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.5981   -0.3170    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    9.7942   -0.3170    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    6.3301   -0.3170    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   10.6603    0.1830    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    7.1962   -1.8170    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.7320    1.1830    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.7320    0.1830    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.4641    1.1830    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   13.0561   -0.8170    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    6.3301   -1.3170    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.5981    1.6830    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.5981   -1.3170    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   14.0561   -0.8170    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.8660    1.6830    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   14.5561   -1.6830    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   14.5561    0.0490    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   15.5561   -1.6830    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   15.5561    0.0490    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   16.0561   -0.8170    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  1 30  1  0
+  2 30  1  0
+  3 30  1  0
+  4 32  1  0
+  5 32  1  0
+  6 32  1  0
+  7 33  1  0
+  8 13  1  0
+  8 16  1  0
+  8 20  1  0
+  9 14  1  0
+  9 27  2  0
+ 10 18  2  0
+ 10 27  1  0
+ 11 12  2  0
+ 11 17  1  0
+ 12 21  1  0
+ 13 17  1  0
+ 14 16  2  0
+ 14 18  1  0
+ 15 19  2  0
+ 15 21  1  0
+ 15 26  1  0
+ 17 23  2  0
+ 18 22  1  0
+ 19 25  1  0
+ 19 30  1  0
+ 20 22  2  0
+ 21 28  2  0
+ 23 28  1  0
+ 24 25  2  0
+ 24 29  1  0
+ 24 32  1  0
+ 26 29  2  0
+ 27 31  1  0
+ 31 33  2  0
+ 31 34  1  0
+ 33 35  1  0
+ 34 36  2  0
+ 35 37  2  0
+ 36 37  1  0
+M  END
+>  <PUBCHEM_COMPOUND_CID>  (1) 
+23649154
+
+>  <PUBCHEM_COMPOUND_CANONICALIZED>  (1) 
+1
+
+>  <PUBCHEM_CACTVS_COMPLEXITY>  (1) 
+765
+
+>  <PUBCHEM_CACTVS_HBOND_ACCEPTOR>  (1) 
+11
+
+>  <PUBCHEM_CACTVS_HBOND_DONOR>  (1) 
+0
+
+>  <PUBCHEM_CACTVS_ROTATABLE_BOND>  (1) 
+4
+
+>  <PUBCHEM_CACTVS_SUBSKEYS>  (1) 
+AAADccB7gcAAAAAAAAAAAAAAAAAAAWAAAAA8eIEAAAAAAFgB9AAAHQAIAAAADAjBHxw90LcMEACiAzZnZACShC0xEqAZ2CA4dJiIaOLA2dGUpAhoiALIyCcQgMAOwAACAAAQAACAAAQAACAAAAAAAAAAAA==
+
+>  <PUBCHEM_IUPAC_OPENEYE_NAME>  (1) 
+5-[[6-[2,4-bis(trifluoromethyl)phenyl]pyridazin-3-yl]methyl]-2-(2-fluorophenyl)imidazo[4,5-c]pyridine
+
+>  <PUBCHEM_IUPAC_CAS_NAME>  (1) 
+5-[[6-[2,4-bis(trifluoromethyl)phenyl]-3-pyridazinyl]methyl]-2-(2-fluorophenyl)imidazo[4,5-c]pyridine
+
+>  <PUBCHEM_IUPAC_NAME_MARKUP>  (1) 
+5-[[6-[2,4-bis(trifluoromethyl)phenyl]pyridazin-3-yl]methyl]-2-(2-fluorophenyl)imidazo[4,5-c]pyridine
+
+>  <PUBCHEM_IUPAC_NAME>  (1) 
+5-[[6-[2,4-bis(trifluoromethyl)phenyl]pyridazin-3-yl]methyl]-2-(2-fluorophenyl)imidazo[4,5-c]pyridine
+
+>  <PUBCHEM_IUPAC_SYSTEMATIC_NAME>  (1) 
+5-[[6-[2,4-bis(trifluoromethyl)phenyl]pyridazin-3-yl]methyl]-2-(2-fluorophenyl)imidazo[4,5-c]pyridine
+
+>  <PUBCHEM_IUPAC_TRADITIONAL_NAME>  (1) 
+5-[[6-[2,4-bis(trifluoromethyl)phenyl]pyridazin-3-yl]methyl]-2-(2-fluorophenyl)imidazo[4,5-c]pyridine
+
+>  <PUBCHEM_IUPAC_INCHI>  (1) 
+InChI=1S/C25H14F7N5/c26-19-4-2-1-3-17(19)23-33-21-9-10-37(13-22(21)34-23)12-15-6-8-20(36-35-15)16-7-5-14(24(27,28)29)11-18(16)25(30,31)32/h1-11,13H,12H2
+
+>  <PUBCHEM_IUPAC_INCHIKEY>  (1) 
+XBEQSQDCBSKCHJ-UHFFFAOYSA-N
+
+>  <PUBCHEM_XLOGP3_AA>  (1) 
+4.7
+
+>  <PUBCHEM_EXACT_MASS>  (1) 
+517.11374260
+
+>  <PUBCHEM_MOLECULAR_FORMULA>  (1) 
+C25H14F7N5
+
+>  <PUBCHEM_MOLECULAR_WEIGHT>  (1) 
+517.4
+
+>  <PUBCHEM_OPENEYE_CAN_SMILES>  (1) 
+C1=CC=C(C(=C1)C2=NC3=CN(C=CC3=N2)CC4=NN=C(C=C4)C5=C(C=C(C=C5)C(F)(F)F)C(F)(F)F)F
+
+>  <PUBCHEM_OPENEYE_ISO_SMILES>  (1) 
+C1=CC=C(C(=C1)C2=NC3=CN(C=CC3=N2)CC4=NN=C(C=C4)C5=C(C=C(C=C5)C(F)(F)F)C(F)(F)F)F
+
+>  <PUBCHEM_CACTVS_TPSA>  (1) 
+56.5
+
+>  <PUBCHEM_MONOISOTOPIC_WEIGHT>  (1) 
+517.11374260
+
+>  <PUBCHEM_TOTAL_CHARGE>  (1) 
+0
+
+>  <PUBCHEM_HEAVY_ATOM_COUNT>  (1) 
+37
+
+>  <PUBCHEM_ATOM_DEF_STEREO_COUNT>  (1) 
+0
+
+>  <PUBCHEM_ATOM_UDEF_STEREO_COUNT>  (1) 
+0
+
+>  <PUBCHEM_BOND_DEF_STEREO_COUNT>  (1) 
+0
+
+>  <PUBCHEM_BOND_UDEF_STEREO_COUNT>  (1) 
+0
+
+>  <PUBCHEM_ISOTOPIC_ATOM_COUNT>  (1) 
+0
+
+>  <PUBCHEM_COMPONENT_COUNT>  (1) 
+1
+
+>  <PUBCHEM_CACTVS_TAUTO_COUNT>  (1) 
+-1
+
+>  <PUBCHEM_COORDINATE_TYPE>  (1) 
+1
+5
+255
+
+>  <PUBCHEM_BONDANNOTATIONS>  (1) 
+10  18  8
+10  27  8
+11  12  8
+11  17  8
+12  21  8
+14  16  8
+15  19  8
+15  26  8
+17  23  8
+18  22  8
+19  25  8
+20  22  8
+21  28  8
+23  28  8
+24  25  8
+24  29  8
+26  29  8
+31  33  8
+31  34  8
+33  35  8
+34  36  8
+35  37  8
+36  37  8
+8  16  8
+8  20  8
+9  14  8
+9  27  8
+
+$$$$

@@ -1,0 +1,136 @@
+2723716
+     RDKit          2D
+
+ 11 11  0  0  1  0  0  0  0  0999 V2000
+    5.3059    2.5530    0.0000 Cl  0  0  0  0  0  0  0  0  0  0  0  0
+    2.7690    4.9860    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    1.4030    3.6200    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.9030    4.4860    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.9030    4.4860    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.4030    2.6200    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.5369    2.1200    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.2690    2.1200    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.5369    1.1200    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.2690    1.1200    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.4030    0.6200    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  4  2  1  1
+  3  4  1  0
+  3  5  1  0
+  3  6  1  6
+  4  5  1  0
+  6  7  2  0
+  6  8  1  0
+  7  9  1  0
+  8 10  2  0
+  9 11  2  0
+ 10 11  1  0
+M  END
+>  <PUBCHEM_COMPOUND_CID>  (1) 
+2723716
+
+>  <PUBCHEM_COMPOUND_CANONICALIZED>  (1) 
+1
+
+>  <PUBCHEM_CACTVS_COMPLEXITY>  (1) 
+116
+
+>  <PUBCHEM_CACTVS_HBOND_ACCEPTOR>  (1) 
+1
+
+>  <PUBCHEM_CACTVS_HBOND_DONOR>  (1) 
+2
+
+>  <PUBCHEM_CACTVS_ROTATABLE_BOND>  (1) 
+1
+
+>  <PUBCHEM_CACTVS_SUBSKEYS>  (1) 
+AAADccByAAAEAAAAAAAAAAAAGAAAAAAAAAAwAAAAAAAAAAABAAAAHAAQAAAADSjBGAQwAIBAAACAAiBCAAACAAAgAAAIiIAAAIgIICKAkRGAIAAgkAAIiAcQgMAOgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+
+>  <PUBCHEM_IUPAC_OPENEYE_NAME>  (1) 
+(1R,2S)-2-phenylcyclopropanamine;hydrochloride
+
+>  <PUBCHEM_IUPAC_CAS_NAME>  (1) 
+(1R,2S)-2-phenyl-1-cyclopropanamine;hydrochloride
+
+>  <PUBCHEM_IUPAC_NAME_MARKUP>  (1) 
+(1<I>R</I>,2<I>S</I>)-2-phenylcyclopropan-1-amine;hydrochloride
+
+>  <PUBCHEM_IUPAC_NAME>  (1) 
+(1R,2S)-2-phenylcyclopropan-1-amine;hydrochloride
+
+>  <PUBCHEM_IUPAC_SYSTEMATIC_NAME>  (1) 
+(1R,2S)-2-phenylcyclopropan-1-amine;hydrochloride
+
+>  <PUBCHEM_IUPAC_TRADITIONAL_NAME>  (1) 
+[(1R,2S)-2-phenylcyclopropyl]amine;hydrochloride
+
+>  <PUBCHEM_IUPAC_INCHI>  (1) 
+InChI=1S/C9H11N.ClH/c10-9-6-8(9)7-4-2-1-3-5-7;/h1-5,8-9H,6,10H2;1H/t8-,9+;/m0./s1
+
+>  <PUBCHEM_IUPAC_INCHIKEY>  (1) 
+ZPEFMSTTZXJOTM-OULXEKPRSA-N
+
+>  <PUBCHEM_EXACT_MASS>  (1) 
+169.0658271
+
+>  <PUBCHEM_MOLECULAR_FORMULA>  (1) 
+C9H12ClN
+
+>  <PUBCHEM_MOLECULAR_WEIGHT>  (1) 
+169.65
+
+>  <PUBCHEM_OPENEYE_CAN_SMILES>  (1) 
+C1C(C1N)C2=CC=CC=C2.Cl
+
+>  <PUBCHEM_OPENEYE_ISO_SMILES>  (1) 
+C1[C@H]([C@@H]1N)C2=CC=CC=C2.Cl
+
+>  <PUBCHEM_CACTVS_TPSA>  (1) 
+26
+
+>  <PUBCHEM_MONOISOTOPIC_WEIGHT>  (1) 
+169.0658271
+
+>  <PUBCHEM_TOTAL_CHARGE>  (1) 
+0
+
+>  <PUBCHEM_HEAVY_ATOM_COUNT>  (1) 
+11
+
+>  <PUBCHEM_ATOM_DEF_STEREO_COUNT>  (1) 
+2
+
+>  <PUBCHEM_ATOM_UDEF_STEREO_COUNT>  (1) 
+0
+
+>  <PUBCHEM_BOND_DEF_STEREO_COUNT>  (1) 
+0
+
+>  <PUBCHEM_BOND_UDEF_STEREO_COUNT>  (1) 
+0
+
+>  <PUBCHEM_ISOTOPIC_ATOM_COUNT>  (1) 
+0
+
+>  <PUBCHEM_COMPONENT_COUNT>  (1) 
+2
+
+>  <PUBCHEM_CACTVS_TAUTO_COUNT>  (1) 
+-1
+
+>  <PUBCHEM_COORDINATE_TYPE>  (1) 
+1
+5
+255
+
+>  <PUBCHEM_BONDANNOTATIONS>  (1) 
+10  11  8
+4  2  5
+3  6  6
+6  7  8
+6  8  8
+7  9  8
+8  10  8
+9  11  8
+
+$$$$

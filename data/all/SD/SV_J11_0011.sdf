@@ -1,0 +1,189 @@
+3081361
+     RDKit          2D
+
+ 30 33  0  0  0  0  0  0  0  0999 V2000
+   12.3853   -4.0373    0.0000 Br  0  0  0  0  0  0  0  0  0  0  0  0
+    8.9214   -3.9972    0.0000 F   0  0  0  0  0  0  0  0  0  0  0  0
+    5.4641    1.0373    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    5.4641   -0.9627    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    2.8660    3.5373    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    8.9561    1.0719    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    8.9446   -1.9973    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    9.8622   -0.4836    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    4.5981    2.5373    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.5981    3.5373    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.7320    2.0373    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.7320    4.0373    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.8660    2.5373    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.4641    2.0373    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.0000    4.0373    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    6.3301    0.5373    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    6.3301   -0.4627    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    7.1962    1.0373    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    8.0622    0.5373    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    8.0622   -0.4627    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    7.1962   -0.9627    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    8.9561   -0.9974    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    9.8622    0.5581    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.4641   -1.9627    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    9.8047   -2.5073    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    9.7932   -3.5072    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   10.6765   -2.0174    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   10.6534   -4.0172    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   11.5367   -2.5273    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   11.5251   -3.5273    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  1 30  1  0
+  2 26  1  0
+  3 14  1  0
+  3 16  1  0
+  4 17  1  0
+  4 24  1  0
+  5 12  1  0
+  5 13  1  0
+  5 15  1  0
+  6 19  2  0
+  6 23  1  0
+  7 22  1  0
+  7 25  1  0
+  8 22  1  0
+  8 23  2  0
+  9 10  1  0
+  9 11  1  0
+  9 14  1  0
+ 10 12  1  0
+ 11 13  1  0
+ 16 17  1  0
+ 16 18  2  0
+ 17 21  2  0
+ 18 19  1  0
+ 19 20  1  0
+ 20 21  1  0
+ 20 22  2  0
+ 25 26  2  0
+ 25 27  1  0
+ 26 28  1  0
+ 27 29  2  0
+ 28 30  2  0
+ 29 30  1  0
+M  END
+>  <PUBCHEM_COMPOUND_CID>  (1) 
+3081361
+
+>  <PUBCHEM_COMPOUND_CANONICALIZED>  (1) 
+1
+
+>  <PUBCHEM_CACTVS_COMPLEXITY>  (1) 
+539
+
+>  <PUBCHEM_CACTVS_HBOND_ACCEPTOR>  (1) 
+7
+
+>  <PUBCHEM_CACTVS_HBOND_DONOR>  (1) 
+1
+
+>  <PUBCHEM_CACTVS_ROTATABLE_BOND>  (1) 
+6
+
+>  <PUBCHEM_CACTVS_SUBSKEYS>  (1) 
+AAADceB7sQAAEAAAAAAAAAAAAAAAAAAAAAA8eIEAAAAAAACx9AAAHwBQAAABrQzhng439vfIFACgAyZjZACCiCkxIqQJ2CA+7LiNLuLE+duGPCru0BvK6jew0BMOIEAhAgACQABAgEIEAASAAAAAAAAAAA==
+
+>  <PUBCHEM_IUPAC_OPENEYE_NAME>  (1) 
+N-(4-bromo-2-fluoro-phenyl)-6-methoxy-7-[(1-methyl-4-piperidyl)methoxy]quinazolin-4-amine
+
+>  <PUBCHEM_IUPAC_CAS_NAME>  (1) 
+N-(4-bromo-2-fluorophenyl)-6-methoxy-7-[(1-methyl-4-piperidinyl)methoxy]-4-quinazolinamine
+
+>  <PUBCHEM_IUPAC_NAME_MARKUP>  (1) 
+<I>N</I>-(4-bromo-2-fluorophenyl)-6-methoxy-7-[(1-methylpiperidin-4-yl)methoxy]quinazolin-4-amine
+
+>  <PUBCHEM_IUPAC_NAME>  (1) 
+N-(4-bromo-2-fluorophenyl)-6-methoxy-7-[(1-methylpiperidin-4-yl)methoxy]quinazolin-4-amine
+
+>  <PUBCHEM_IUPAC_SYSTEMATIC_NAME>  (1) 
+N-(4-bromanyl-2-fluoranyl-phenyl)-6-methoxy-7-[(1-methylpiperidin-4-yl)methoxy]quinazolin-4-amine
+
+>  <PUBCHEM_IUPAC_TRADITIONAL_NAME>  (1) 
+(4-bromo-2-fluoro-phenyl)-[6-methoxy-7-[(1-methyl-4-piperidyl)methoxy]quinazolin-4-yl]amine
+
+>  <PUBCHEM_IUPAC_INCHI>  (1) 
+InChI=1S/C22H24BrFN4O2/c1-28-7-5-14(6-8-28)12-30-21-11-19-16(10-20(21)29-2)22(26-13-25-19)27-18-4-3-15(23)9-17(18)24/h3-4,9-11,13-14H,5-8,12H2,1-2H3,(H,25,26,27)
+
+>  <PUBCHEM_IUPAC_INCHIKEY>  (1) 
+UHTHHESEBZOYNR-UHFFFAOYSA-N
+
+>  <PUBCHEM_XLOGP3_AA>  (1) 
+4.9
+
+>  <PUBCHEM_EXACT_MASS>  (1) 
+474.10667
+
+>  <PUBCHEM_MOLECULAR_FORMULA>  (1) 
+C22H24BrFN4O2
+
+>  <PUBCHEM_MOLECULAR_WEIGHT>  (1) 
+475.4
+
+>  <PUBCHEM_OPENEYE_CAN_SMILES>  (1) 
+CN1CCC(CC1)COC2=C(C=C3C(=C2)N=CN=C3NC4=C(C=C(C=C4)Br)F)OC
+
+>  <PUBCHEM_OPENEYE_ISO_SMILES>  (1) 
+CN1CCC(CC1)COC2=C(C=C3C(=C2)N=CN=C3NC4=C(C=C(C=C4)Br)F)OC
+
+>  <PUBCHEM_CACTVS_TPSA>  (1) 
+59.5
+
+>  <PUBCHEM_MONOISOTOPIC_WEIGHT>  (1) 
+474.10667
+
+>  <PUBCHEM_TOTAL_CHARGE>  (1) 
+0
+
+>  <PUBCHEM_HEAVY_ATOM_COUNT>  (1) 
+30
+
+>  <PUBCHEM_ATOM_DEF_STEREO_COUNT>  (1) 
+0
+
+>  <PUBCHEM_ATOM_UDEF_STEREO_COUNT>  (1) 
+0
+
+>  <PUBCHEM_BOND_DEF_STEREO_COUNT>  (1) 
+0
+
+>  <PUBCHEM_BOND_UDEF_STEREO_COUNT>  (1) 
+0
+
+>  <PUBCHEM_ISOTOPIC_ATOM_COUNT>  (1) 
+0
+
+>  <PUBCHEM_COMPONENT_COUNT>  (1) 
+1
+
+>  <PUBCHEM_CACTVS_TAUTO_COUNT>  (1) 
+-1
+
+>  <PUBCHEM_COORDINATE_TYPE>  (1) 
+1
+5
+255
+
+>  <PUBCHEM_BONDANNOTATIONS>  (1) 
+16  17  8
+16  18  8
+17  21  8
+18  19  8
+19  20  8
+20  21  8
+20  22  8
+25  26  8
+25  27  8
+26  28  8
+27  29  8
+28  30  8
+29  30  8
+6  19  8
+6  23  8
+8  22  8
+8  23  8
+
+$$$$

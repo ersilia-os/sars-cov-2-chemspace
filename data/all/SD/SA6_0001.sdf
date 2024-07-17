@@ -1,0 +1,153 @@
+3278
+     RDKit          2D
+
+ 19 19  0  0  0  0  0  0  0  0999 V2000
+    2.0000    1.3100    0.0000 Cl  0  0  0  0  0  0  0  0  0  0  0  0
+    2.0000   -0.6900    0.0000 Cl  0  0  0  0  0  0  0  0  0  0  0  0
+    3.7320   -1.6900    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    2.8660    2.8100    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    5.4641   -3.6900    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    3.7320   -3.6900    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    3.7320    1.3100    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.5981    2.8100    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.7320    2.3100    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.5981    3.8100    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.8660    0.8100    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.5981    0.8100    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.7320   -0.6900    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.8660   -0.1900    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.5981   -0.1900    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.4641    4.3100    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.4641    2.3100    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.5981   -2.1900    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.5981   -3.1900    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  1 11  1  0
+  2 14  1  0
+  3 13  1  0
+  3 18  1  0
+  4  9  2  0
+  5 19  1  0
+  6 19  2  0
+  7  9  1  0
+  7 11  2  0
+  7 12  1  0
+  8  9  1  0
+  8 10  1  0
+  8 17  2  0
+ 10 16  1  0
+ 11 14  1  0
+ 12 15  2  0
+ 13 14  2  0
+ 13 15  1  0
+ 18 19  1  0
+M  END
+>  <PUBCHEM_COMPOUND_CID>  (1) 
+3278
+
+>  <PUBCHEM_COMPOUND_CANONICALIZED>  (1) 
+1
+
+>  <PUBCHEM_CACTVS_COMPLEXITY>  (1) 
+370
+
+>  <PUBCHEM_CACTVS_HBOND_ACCEPTOR>  (1) 
+4
+
+>  <PUBCHEM_CACTVS_HBOND_DONOR>  (1) 
+1
+
+>  <PUBCHEM_CACTVS_ROTATABLE_BOND>  (1) 
+6
+
+>  <PUBCHEM_CACTVS_SUBSKEYS>  (1) 
+AAADccBwOAAGAAAAAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAABAAAAGgIACAAADAagmCIyDoAABgCIAqDSCAICCAAkJEAIikFGC8gNJjOFNx6COSCkwBELrYeIzKDOIAAAIQABCARAAABCAAIQCAAAAAAAAA==
+
+>  <PUBCHEM_IUPAC_OPENEYE_NAME>  (1) 
+2-[2,3-dichloro-4-(2-methylenebutanoyl)phenoxy]acetic acid
+
+>  <PUBCHEM_IUPAC_CAS_NAME>  (1) 
+2-[2,3-dichloro-4-(2-methylene-1-oxobutyl)phenoxy]acetic acid
+
+>  <PUBCHEM_IUPAC_NAME_MARKUP>  (1) 
+2-[2,3-dichloro-4-(2-methylidenebutanoyl)phenoxy]acetic acid
+
+>  <PUBCHEM_IUPAC_NAME>  (1) 
+2-[2,3-dichloro-4-(2-methylidenebutanoyl)phenoxy]acetic acid
+
+>  <PUBCHEM_IUPAC_SYSTEMATIC_NAME>  (1) 
+2-[2,3-bis(chloranyl)-4-(2-methylidenebutanoyl)phenoxy]ethanoic acid
+
+>  <PUBCHEM_IUPAC_TRADITIONAL_NAME>  (1) 
+2-[2,3-dichloro-4-(2-ethylacryloyl)phenoxy]acetic acid
+
+>  <PUBCHEM_IUPAC_INCHI>  (1) 
+InChI=1S/C13H12Cl2O4/c1-3-7(2)13(18)8-4-5-9(12(15)11(8)14)19-6-10(16)17/h4-5H,2-3,6H2,1H3,(H,16,17)
+
+>  <PUBCHEM_IUPAC_INCHIKEY>  (1) 
+AVOLMBLBETYQHX-UHFFFAOYSA-N
+
+>  <PUBCHEM_XLOGP3_AA>  (1) 
+3.8
+
+>  <PUBCHEM_EXACT_MASS>  (1) 
+302.0112642
+
+>  <PUBCHEM_MOLECULAR_FORMULA>  (1) 
+C13H12Cl2O4
+
+>  <PUBCHEM_MOLECULAR_WEIGHT>  (1) 
+303.13
+
+>  <PUBCHEM_OPENEYE_CAN_SMILES>  (1) 
+CCC(=C)C(=O)C1=C(C(=C(C=C1)OCC(=O)O)Cl)Cl
+
+>  <PUBCHEM_OPENEYE_ISO_SMILES>  (1) 
+CCC(=C)C(=O)C1=C(C(=C(C=C1)OCC(=O)O)Cl)Cl
+
+>  <PUBCHEM_CACTVS_TPSA>  (1) 
+63.6
+
+>  <PUBCHEM_MONOISOTOPIC_WEIGHT>  (1) 
+302.0112642
+
+>  <PUBCHEM_TOTAL_CHARGE>  (1) 
+0
+
+>  <PUBCHEM_HEAVY_ATOM_COUNT>  (1) 
+19
+
+>  <PUBCHEM_ATOM_DEF_STEREO_COUNT>  (1) 
+0
+
+>  <PUBCHEM_ATOM_UDEF_STEREO_COUNT>  (1) 
+0
+
+>  <PUBCHEM_BOND_DEF_STEREO_COUNT>  (1) 
+0
+
+>  <PUBCHEM_BOND_UDEF_STEREO_COUNT>  (1) 
+0
+
+>  <PUBCHEM_ISOTOPIC_ATOM_COUNT>  (1) 
+0
+
+>  <PUBCHEM_COMPONENT_COUNT>  (1) 
+1
+
+>  <PUBCHEM_CACTVS_TAUTO_COUNT>  (1) 
+1
+
+>  <PUBCHEM_COORDINATE_TYPE>  (1) 
+1
+5
+255
+
+>  <PUBCHEM_BONDANNOTATIONS>  (1) 
+11  14  8
+12  15  8
+13  14  8
+13  15  8
+7  11  8
+7  12  8
+
+$$$$

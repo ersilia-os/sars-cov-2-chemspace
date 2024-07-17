@@ -1,0 +1,200 @@
+10280735
+     RDKit          2D
+
+ 37 40  0  0  1  0  0  0  0  0999 V2000
+    7.1279    5.1962    0.0000 Cl  0  0  0  0  0  0  0  0  0  0  0  0
+    5.5443   -4.2688    0.0000 S   0  0  0  0  0  0  0  0  0  0  0  0
+   10.1279   -5.1962    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    7.6279   -4.3301    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+   10.1279    0.0000    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    7.6279    0.8660    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    7.6279   -2.5981    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    8.6279   -0.8660    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+   11.6279   -4.3301    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    2.8660   -3.9641    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    5.5443   -2.6594    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    9.1279    1.7320    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    9.1279    3.4641    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    8.6279   -2.5981    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    9.1279   -1.7320    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   10.1279   -3.4641    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    9.1279   -3.4641    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   10.1279   -1.7320    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   10.6279   -2.5981    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   10.6279   -4.3301    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    7.1279   -3.4641    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    9.1279    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    6.1279   -3.4641    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   12.1279   -5.1962    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   12.1279   -3.4641    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.5981   -2.9641    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.5981   -3.9641    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.7320   -2.4641    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.7320   -4.4641    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.8660   -2.9641    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    8.6279    0.8660    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.0000   -4.4641    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    8.6279    2.5981    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    7.6279    2.5981    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    7.1279    3.4641    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    8.6279    4.3301    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    7.6279    4.3301    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  1 37  1  0
+  2 23  1  0
+  2 27  1  0
+  3 20  2  0
+  4 21  2  0
+  5 22  2  0
+  6 31  2  0
+ 14  7  1  1
+  7 21  1  0
+ 15  8  1  1
+  8 22  1  0
+  9 20  1  0
+  9 24  1  0
+  9 25  1  0
+ 10 29  1  0
+ 10 30  1  0
+ 10 32  1  0
+ 11 23  2  0
+ 11 26  1  0
+ 12 31  1  0
+ 12 33  1  0
+ 13 33  2  0
+ 13 36  1  0
+ 14 15  1  0
+ 14 17  1  0
+ 15 18  1  0
+ 16 17  1  0
+ 16 19  1  0
+ 16 20  1  6
+ 18 19  1  0
+ 21 23  1  0
+ 22 31  1  0
+ 26 27  2  0
+ 26 28  1  0
+ 27 29  1  0
+ 28 30  1  0
+ 33 34  1  0
+ 34 35  2  0
+ 35 37  1  0
+ 36 37  2  0
+M  END
+>  <PUBCHEM_COMPOUND_CID>  (1) 
+10280735
+
+>  <PUBCHEM_COMPOUND_CANONICALIZED>  (1) 
+1
+
+>  <PUBCHEM_CACTVS_COMPLEXITY>  (1) 
+880
+
+>  <PUBCHEM_CACTVS_HBOND_ACCEPTOR>  (1) 
+8
+
+>  <PUBCHEM_CACTVS_HBOND_DONOR>  (1) 
+3
+
+>  <PUBCHEM_CACTVS_ROTATABLE_BOND>  (1) 
+5
+
+>  <PUBCHEM_CACTVS_SUBSKEYS>  (1) 
+AAADceB7uABEAAAAAAAAAAAAAAAAAWAAAAA8WIAAAAAAAFgB4AAAHgYQAAAADSrB1iQ/sZPIEAisATd3dACC8KlzDzgJ2LW4ZpiIYPLh27HUIAholwLoyCcciQCeAAAAAAAAAAAQAACAAAAAQAAAAAAAAA==
+
+>  <PUBCHEM_IUPAC_OPENEYE_NAME>  (1) 
+N'-(5-chloro-2-pyridyl)-N-[(1S,2R,4S)-4-(dimethylcarbamoyl)-2-[(5-methyl-6,7-dihydro-4H-thiazolo[5,4-c]pyridine-2-carbonyl)amino]cyclohexyl]oxamide
+
+>  <PUBCHEM_IUPAC_CAS_NAME>  (1) 
+N'-(5-chloro-2-pyridinyl)-N-[(1S,2R,4S)-4-[dimethylamino(oxo)methyl]-2-[[(5-methyl-6,7-dihydro-4H-thiazolo[5,4-c]pyridin-2-yl)-oxomethyl]amino]cyclohexyl]oxamide
+
+>  <PUBCHEM_IUPAC_NAME_MARKUP>  (1) 
+<I>N</I>&apos;-(5-chloropyridin-2-yl)-<I>N</I>-[(1<I>S</I>,2<I>R</I>,4<I>S</I>)-4-(dimethylcarbamoyl)-2-[(5-methyl-6,7-dihydro-4<I>H</I>-[1,3]thiazolo[5,4-c]pyridine-2-carbonyl)amino]cyclohexyl]oxamide
+
+>  <PUBCHEM_IUPAC_NAME>  (1) 
+N'-(5-chloropyridin-2-yl)-N-[(1S,2R,4S)-4-(dimethylcarbamoyl)-2-[(5-methyl-6,7-dihydro-4H-[1,3]thiazolo[5,4-c]pyridine-2-carbonyl)amino]cyclohexyl]oxamide
+
+>  <PUBCHEM_IUPAC_SYSTEMATIC_NAME>  (1) 
+N'-(5-chloranylpyridin-2-yl)-N-[(1S,2R,4S)-4-(dimethylcarbamoyl)-2-[(5-methyl-6,7-dihydro-4H-[1,3]thiazolo[5,4-c]pyridin-2-yl)carbonylamino]cyclohexyl]ethanediamide
+
+>  <PUBCHEM_IUPAC_TRADITIONAL_NAME>  (1) 
+N'-(5-chloro-2-pyridyl)-N-[(1S,2R,4S)-4-(dimethylcarbamoyl)-2-[(5-methyl-6,7-dihydro-4H-thiazolo[5,4-c]pyridine-2-carbonyl)amino]cyclohexyl]oxamide
+
+>  <PUBCHEM_IUPAC_INCHI>  (1) 
+InChI=1S/C24H30ClN7O4S/c1-31(2)24(36)13-4-6-15(27-20(33)21(34)30-19-7-5-14(25)11-26-19)17(10-13)28-22(35)23-29-16-8-9-32(3)12-18(16)37-23/h5,7,11,13,15,17H,4,6,8-10,12H2,1-3H3,(H,27,33)(H,28,35)(H,26,30,34)/t13-,15-,17+/m0/s1
+
+>  <PUBCHEM_IUPAC_INCHIKEY>  (1) 
+HGVDHZBSSITLCT-JLJPHGGASA-N
+
+>  <PUBCHEM_XLOGP3_AA>  (1) 
+1.4
+
+>  <PUBCHEM_EXACT_MASS>  (1) 
+547.1768513
+
+>  <PUBCHEM_MOLECULAR_FORMULA>  (1) 
+C24H30ClN7O4S
+
+>  <PUBCHEM_MOLECULAR_WEIGHT>  (1) 
+548.1
+
+>  <PUBCHEM_OPENEYE_CAN_SMILES>  (1) 
+CN1CCC2=C(C1)SC(=N2)C(=O)NC3CC(CCC3NC(=O)C(=O)NC4=NC=C(C=C4)Cl)C(=O)N(C)C
+
+>  <PUBCHEM_OPENEYE_ISO_SMILES>  (1) 
+CN1CCC2=C(C1)SC(=N2)C(=O)N[C@@H]3C[C@H](CC[C@@H]3NC(=O)C(=O)NC4=NC=C(C=C4)Cl)C(=O)N(C)C
+
+>  <PUBCHEM_CACTVS_TPSA>  (1) 
+165
+
+>  <PUBCHEM_MONOISOTOPIC_WEIGHT>  (1) 
+547.1768513
+
+>  <PUBCHEM_TOTAL_CHARGE>  (1) 
+0
+
+>  <PUBCHEM_HEAVY_ATOM_COUNT>  (1) 
+37
+
+>  <PUBCHEM_ATOM_DEF_STEREO_COUNT>  (1) 
+3
+
+>  <PUBCHEM_ATOM_UDEF_STEREO_COUNT>  (1) 
+0
+
+>  <PUBCHEM_BOND_DEF_STEREO_COUNT>  (1) 
+0
+
+>  <PUBCHEM_BOND_UDEF_STEREO_COUNT>  (1) 
+0
+
+>  <PUBCHEM_ISOTOPIC_ATOM_COUNT>  (1) 
+0
+
+>  <PUBCHEM_COMPONENT_COUNT>  (1) 
+1
+
+>  <PUBCHEM_CACTVS_TAUTO_COUNT>  (1) 
+-1
+
+>  <PUBCHEM_COORDINATE_TYPE>  (1) 
+1
+5
+255
+
+>  <PUBCHEM_BONDANNOTATIONS>  (1) 
+11  23  8
+11  26  8
+13  33  8
+13  36  8
+16  20  6
+2  23  8
+2  27  8
+26  27  8
+33  34  8
+34  35  8
+35  37  8
+36  37  8
+14  7  5
+15  8  5
+
+$$$$

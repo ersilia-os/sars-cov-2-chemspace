@@ -1,0 +1,190 @@
+44578234
+     RDKit          2D
+
+ 32 34  0  0  1  0  0  0  0  0999 V2000
+    2.0000    3.0086    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    5.4921    2.7298    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    6.3582    0.2298    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    8.0902   -1.7702    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    7.2242   -0.2702    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    3.2601    4.2686    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    4.6261    0.2298    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    6.3582   -1.7702    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    3.7601    2.7298    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.5691    3.3176    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.7601    1.7298    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.2601    4.2686    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.6261    1.2298    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.9511    3.3176    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.4921   -1.2702    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.4921    1.7298    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.4921   -0.2702    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.6261   -1.7702    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.6261   -2.7702    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.7601   -3.2702    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.4921   -3.2702    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    7.2242   -1.2702    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.7601   -4.2702    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.4921   -4.2702    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.6261   -4.7702    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    8.9562   -1.2702    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    9.8222   -1.7702    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   10.6883   -1.2702    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    9.8222   -2.7702    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   11.5543   -1.7702    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   10.6883   -3.2702    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   11.5543   -2.7702    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  1 14  2  0
+  2 16  2  0
+  3 17  2  0
+  4 22  1  0
+  4 26  1  0
+  5 22  2  0
+  6 12  1  0
+  6 14  1  0
+ 13  7  1  0
+  7 17  1  0
+ 15  8  1  0
+  8 22  1  0
+  9 10  1  0
+  9 11  1  1
+  9 14  1  0
+ 10 12  1  0
+ 13 11  1  1
+ 13 16  1  0
+ 15 17  1  0
+ 15 18  1  1
+ 18 19  1  0
+ 19 20  2  0
+ 19 21  1  0
+ 20 23  1  0
+ 21 24  2  0
+ 23 25  2  0
+ 24 25  1  0
+ 26 27  1  0
+ 27 28  2  0
+ 27 29  1  0
+ 28 30  1  0
+ 29 31  2  0
+ 30 32  2  0
+ 31 32  1  0
+M  END
+>  <PUBCHEM_COMPOUND_CID>  (1) 
+44578234
+
+>  <PUBCHEM_COMPOUND_CANONICALIZED>  (1) 
+1
+
+>  <PUBCHEM_CACTVS_COMPLEXITY>  (1) 
+644
+
+>  <PUBCHEM_CACTVS_HBOND_ACCEPTOR>  (1) 
+5
+
+>  <PUBCHEM_CACTVS_HBOND_DONOR>  (1) 
+3
+
+>  <PUBCHEM_CACTVS_ROTATABLE_BOND>  (1) 
+11
+
+>  <PUBCHEM_CACTVS_SUBSKEYS>  (1) 
+AAADceB7OAAAAAAAAAAAAAAAAAAAAWAAAAAwYAAAAAAAAAABQAAAHgAQAAAADSjhmAYwCILABACIAilSmAACAAAgAAAIiIGICIkIZjKAsTmcMAAk1gGIqAecy6COAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+
+>  <PUBCHEM_IUPAC_OPENEYE_NAME>  (1) 
+benzyl N-[(1S)-1-benzyl-2-[[(1S)-1-formyl-2-[(3S)-2-oxopyrrolidin-3-yl]ethyl]amino]-2-oxo-ethyl]carbamate
+
+>  <PUBCHEM_IUPAC_CAS_NAME>  (1) 
+N-[(2S)-1-oxo-1-[[(2S)-1-oxo-3-[(3S)-2-oxo-3-pyrrolidinyl]propan-2-yl]amino]-3-phenylpropan-2-yl]carbamic acid (phenylmethyl) ester
+
+>  <PUBCHEM_IUPAC_NAME_MARKUP>  (1) 
+benzyl <I>N</I>-[(2<I>S</I>)-1-oxo-1-[[(2<I>S</I>)-1-oxo-3-[(3<I>S</I>)-2-oxopyrrolidin-3-yl]propan-2-yl]amino]-3-phenylpropan-2-yl]carbamate
+
+>  <PUBCHEM_IUPAC_NAME>  (1) 
+benzyl N-[(2S)-1-oxo-1-[[(2S)-1-oxo-3-[(3S)-2-oxopyrrolidin-3-yl]propan-2-yl]amino]-3-phenylpropan-2-yl]carbamate
+
+>  <PUBCHEM_IUPAC_SYSTEMATIC_NAME>  (1) 
+(phenylmethyl) N-[(2S)-1-oxidanylidene-1-[[(2S)-1-oxidanylidene-3-[(3S)-2-oxidanylidenepyrrolidin-3-yl]propan-2-yl]amino]-3-phenyl-propan-2-yl]carbamate
+
+>  <PUBCHEM_IUPAC_TRADITIONAL_NAME>  (1) 
+N-[(1S)-1-benzyl-2-[[(1S)-1-formyl-2-[(3S)-2-ketopyrrolidin-3-yl]ethyl]amino]-2-keto-ethyl]carbamic acid benzyl ester
+
+>  <PUBCHEM_IUPAC_INCHI>  (1) 
+InChI=1S/C24H27N3O5/c28-15-20(14-19-11-12-25-22(19)29)26-23(30)21(13-17-7-3-1-4-8-17)27-24(31)32-16-18-9-5-2-6-10-18/h1-10,15,19-21H,11-14,16H2,(H,25,29)(H,26,30)(H,27,31)/t19-,20-,21-/m0/s1
+
+>  <PUBCHEM_IUPAC_INCHIKEY>  (1) 
+JKMYXNKXJWIHOA-ACRUOGEOSA-N
+
+>  <PUBCHEM_XLOGP3_AA>  (1) 
+2.1
+
+>  <PUBCHEM_EXACT_MASS>  (1) 
+437.19507097
+
+>  <PUBCHEM_MOLECULAR_FORMULA>  (1) 
+C24H27N3O5
+
+>  <PUBCHEM_MOLECULAR_WEIGHT>  (1) 
+437.5
+
+>  <PUBCHEM_OPENEYE_CAN_SMILES>  (1) 
+C1CNC(=O)C1CC(C=O)NC(=O)C(CC2=CC=CC=C2)NC(=O)OCC3=CC=CC=C3
+
+>  <PUBCHEM_OPENEYE_ISO_SMILES>  (1) 
+C1CNC(=O)[C@@H]1C[C@@H](C=O)NC(=O)[C@H](CC2=CC=CC=C2)NC(=O)OCC3=CC=CC=C3
+
+>  <PUBCHEM_CACTVS_TPSA>  (1) 
+114
+
+>  <PUBCHEM_MONOISOTOPIC_WEIGHT>  (1) 
+437.19507097
+
+>  <PUBCHEM_TOTAL_CHARGE>  (1) 
+0
+
+>  <PUBCHEM_HEAVY_ATOM_COUNT>  (1) 
+32
+
+>  <PUBCHEM_ATOM_DEF_STEREO_COUNT>  (1) 
+3
+
+>  <PUBCHEM_ATOM_UDEF_STEREO_COUNT>  (1) 
+0
+
+>  <PUBCHEM_BOND_DEF_STEREO_COUNT>  (1) 
+0
+
+>  <PUBCHEM_BOND_UDEF_STEREO_COUNT>  (1) 
+0
+
+>  <PUBCHEM_ISOTOPIC_ATOM_COUNT>  (1) 
+0
+
+>  <PUBCHEM_COMPONENT_COUNT>  (1) 
+1
+
+>  <PUBCHEM_CACTVS_TAUTO_COUNT>  (1) 
+-1
+
+>  <PUBCHEM_COORDINATE_TYPE>  (1) 
+1
+5
+255
+
+>  <PUBCHEM_BONDANNOTATIONS>  (1) 
+19  20  8
+19  21  8
+20  23  8
+21  24  8
+23  25  8
+24  25  8
+27  28  8
+27  29  8
+28  30  8
+29  31  8
+30  32  8
+31  32  8
+13  7  5
+15  8  5
+9  11  5
+
+$$$$

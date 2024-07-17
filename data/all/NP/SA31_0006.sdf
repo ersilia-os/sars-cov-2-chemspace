@@ -1,0 +1,192 @@
+70689406
+     RDKit          2D
+
+ 34 36  0  0  1  0  0  0  0  0999 V2000
+   11.5542   -0.1776    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    9.7942    2.8571    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+   11.5426    2.8917    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    8.0622   -0.1429    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+   15.9243    0.3229    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+   14.1807   -2.6704    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+   15.9166   -1.6771    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+   12.4603    0.3362    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   12.4603    1.3779    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   10.6603    1.3571    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   10.6603    0.3571    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   11.5542    1.8917    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   13.3244   -0.1671    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    8.9282    1.3571    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    9.7942    1.8571    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    9.7942   -0.1429    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    8.0622    1.8571    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    8.9282    0.3571    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   13.3205   -1.1671    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   14.1923    0.3296    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    7.1962    1.3571    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    6.3301    1.8571    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   15.0564   -0.1738    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   14.1846   -1.6704    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.4641    1.3571    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   15.0525   -1.1738    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.5981    1.8571    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    6.3301    2.8571    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.7320    1.3571    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.8660    1.8571    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   15.9282    1.3229    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   13.3128   -3.1671    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.0000    1.3571    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.8660    2.8571    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  1  8  1  0
+  1 11  1  0
+  2 15  1  0
+  3 12  2  0
+  4 18  1  0
+  5 23  1  0
+  5 31  1  0
+  6 24  1  0
+  6 32  1  0
+  7 26  1  0
+  8  9  1  0
+  8 13  1  0
+  9 12  1  0
+ 10 11  2  0
+ 10 12  1  0
+ 10 15  1  0
+ 11 16  1  0
+ 13 19  2  0
+ 13 20  1  0
+ 14 15  2  0
+ 14 17  1  0
+ 14 18  1  0
+ 16 18  2  0
+ 17 21  1  0
+ 19 24  1  0
+ 20 23  2  0
+ 21 22  2  0
+ 22 25  1  0
+ 22 28  1  0
+ 23 26  1  0
+ 24 26  2  0
+ 25 27  1  0
+ 27 29  1  0
+ 29 30  2  0
+ 30 33  1  0
+ 30 34  1  0
+M  END
+>  <PUBCHEM_COMPOUND_CID>  (1) 
+70689406
+
+>  <PUBCHEM_COMPOUND_CANONICALIZED>  (1) 
+1
+
+>  <PUBCHEM_CACTVS_COMPLEXITY>  (1) 
+729
+
+>  <PUBCHEM_CACTVS_HBOND_ACCEPTOR>  (1) 
+7
+
+>  <PUBCHEM_CACTVS_HBOND_DONOR>  (1) 
+3
+
+>  <PUBCHEM_CACTVS_ROTATABLE_BOND>  (1) 
+8
+
+>  <PUBCHEM_CACTVS_SUBSKEYS>  (1) 
+AAADcfB4OAAAAAAAAAAAAAAAAAAAAAAAAAA0YIAAAAAAAACRQAAAGgAACAAADBSgmAIyBoAABgCIAqBSAAACCAAkIAAAiAEGiMgNJzaGNRqCeWOl4BULuQfI7PzOIAADCAAIQABAAAYQABCAAAAAAAAAAA==
+
+>  <PUBCHEM_IUPAC_OPENEYE_NAME>  (1) 
+6-[(2E)-3,7-dimethylocta-2,6-dienyl]-5,7-dihydroxy-2-(4-hydroxy-3,5-dimethoxy-phenyl)chroman-4-one
+
+>  <PUBCHEM_IUPAC_CAS_NAME>  (1) 
+6-[(2E)-3,7-dimethylocta-2,6-dienyl]-5,7-dihydroxy-2-(4-hydroxy-3,5-dimethoxyphenyl)-3,4-dihydro-2H-1-benzopyran-4-one
+
+>  <PUBCHEM_IUPAC_NAME_MARKUP>  (1) 
+6-[(2<I>E</I>)-3,7-dimethylocta-2,6-dienyl]-5,7-dihydroxy-2-(4-hydroxy-3,5-dimethoxyphenyl)-2,3-dihydrochromen-4-one
+
+>  <PUBCHEM_IUPAC_NAME>  (1) 
+6-[(2E)-3,7-dimethylocta-2,6-dienyl]-5,7-dihydroxy-2-(4-hydroxy-3,5-dimethoxyphenyl)-2,3-dihydrochromen-4-one
+
+>  <PUBCHEM_IUPAC_SYSTEMATIC_NAME>  (1) 
+2-(3,5-dimethoxy-4-oxidanyl-phenyl)-6-[(2E)-3,7-dimethylocta-2,6-dienyl]-5,7-bis(oxidanyl)-2,3-dihydrochromen-4-one
+
+>  <PUBCHEM_IUPAC_TRADITIONAL_NAME>  (1) 
+6-[(2E)-3,7-dimethylocta-2,6-dienyl]-5,7-dihydroxy-2-(4-hydroxy-3,5-dimethoxy-phenyl)chroman-4-one
+
+>  <PUBCHEM_IUPAC_INCHI>  (1) 
+InChI=1S/C27H32O7/c1-15(2)7-6-8-16(3)9-10-18-19(28)13-22-25(26(18)30)20(29)14-21(34-22)17-11-23(32-4)27(31)24(12-17)33-5/h7,9,11-13,21,28,30-31H,6,8,10,14H2,1-5H3/b16-9+
+
+>  <PUBCHEM_IUPAC_INCHIKEY>  (1) 
+UPBJEHBYZUPVDF-CXUHLZMHSA-N
+
+>  <PUBCHEM_XLOGP3_AA>  (1) 
+6.1
+
+>  <PUBCHEM_EXACT_MASS>  (1) 
+468.21480336
+
+>  <PUBCHEM_MOLECULAR_FORMULA>  (1) 
+C27H32O7
+
+>  <PUBCHEM_MOLECULAR_WEIGHT>  (1) 
+468.5
+
+>  <PUBCHEM_OPENEYE_CAN_SMILES>  (1) 
+CC(=CCCC(=CCC1=C(C2=C(C=C1O)OC(CC2=O)C3=CC(=C(C(=C3)OC)O)OC)O)C)C
+
+>  <PUBCHEM_OPENEYE_ISO_SMILES>  (1) 
+CC(=CCC/C(=C/CC1=C(C2=C(C=C1O)OC(CC2=O)C3=CC(=C(C(=C3)OC)O)OC)O)/C)C
+
+>  <PUBCHEM_CACTVS_TPSA>  (1) 
+105
+
+>  <PUBCHEM_MONOISOTOPIC_WEIGHT>  (1) 
+468.21480336
+
+>  <PUBCHEM_TOTAL_CHARGE>  (1) 
+0
+
+>  <PUBCHEM_HEAVY_ATOM_COUNT>  (1) 
+34
+
+>  <PUBCHEM_ATOM_DEF_STEREO_COUNT>  (1) 
+0
+
+>  <PUBCHEM_ATOM_UDEF_STEREO_COUNT>  (1) 
+1
+
+>  <PUBCHEM_BOND_DEF_STEREO_COUNT>  (1) 
+1
+
+>  <PUBCHEM_BOND_UDEF_STEREO_COUNT>  (1) 
+0
+
+>  <PUBCHEM_ISOTOPIC_ATOM_COUNT>  (1) 
+0
+
+>  <PUBCHEM_COMPONENT_COUNT>  (1) 
+1
+
+>  <PUBCHEM_CACTVS_TAUTO_COUNT>  (1) 
+-1
+
+>  <PUBCHEM_COORDINATE_TYPE>  (1) 
+1
+5
+255
+
+>  <PUBCHEM_BONDANNOTATIONS>  (1) 
+10  11  8
+10  15  8
+11  16  8
+13  19  8
+13  20  8
+14  15  8
+14  18  8
+16  18  8
+19  24  8
+20  23  8
+23  26  8
+24  26  8
+8  13  3
+
+$$$$

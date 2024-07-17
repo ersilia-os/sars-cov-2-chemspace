@@ -1,0 +1,158 @@
+54683265
+     RDKit          2D
+
+ 19 20  0  0  1  0  0  0  0  0999 V2000
+    2.5369   -0.6900    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    6.0010   -0.6900    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    6.0010   -2.6900    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    5.1350   -2.1900    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    4.2690    0.3100    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.4030    0.8100    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.1350    0.8100    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.2690    2.3100    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.4030    1.8100    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.1350    1.8100    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.2690   -0.6900    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.5369    0.3100    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.2690    3.3100    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    6.0010    0.3100    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.4030   -1.1900    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.1350   -1.1900    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    6.8671    0.8100    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.4030   -2.1900    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.2690   -2.6900    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  1 15  1  0
+  2 16  2  0
+  3  4  1  0
+  4 16  1  0
+  4 19  1  0
+  5  6  1  0
+  5  7  1  0
+  5 11  1  1
+  6  9  1  0
+  6 12  1  6
+  7 10  1  0
+  7 14  1  6
+  8  9  1  0
+  8 10  1  0
+  8 13  1  6
+ 11 15  2  0
+ 11 16  1  0
+ 14 17  2  0
+ 15 18  1  0
+ 18 19  2  0
+M  END
+>  <PUBCHEM_COMPOUND_CID>  (1) 
+54683265
+
+>  <PUBCHEM_COMPOUND_CANONICALIZED>  (1) 
+1
+
+>  <PUBCHEM_CACTVS_COMPLEXITY>  (1) 
+452
+
+>  <PUBCHEM_CACTVS_HBOND_ACCEPTOR>  (1) 
+3
+
+>  <PUBCHEM_CACTVS_HBOND_DONOR>  (1) 
+2
+
+>  <PUBCHEM_CACTVS_ROTATABLE_BOND>  (1) 
+2
+
+>  <PUBCHEM_CACTVS_SUBSKEYS>  (1) 
+AAADceByMAAAAAAAAAAAAAAAAAAAAAAAAAAwQAAAAAAAAAAAAAAAHgAECAAADQTBgAQCAAIQAgCIAiFWUACAAAAgIgAoCAEIAEgIBBIAgQAEAAAAggAIkQMYiMCOgAAAAAAAAACAAAQAACAAAAAAAAAAAA==
+
+>  <PUBCHEM_IUPAC_OPENEYE_NAME>  (1) 
+3-[(1S,2R,4S,6R)-2,4-dimethyl-6-vinyl-cyclohexyl]-1,4-dihydroxy-pyridin-2-one
+
+>  <PUBCHEM_IUPAC_CAS_NAME>  (1) 
+3-[(1S,2R,4S,6R)-2-ethenyl-4,6-dimethylcyclohexyl]-1,4-dihydroxy-2-pyridinone
+
+>  <PUBCHEM_IUPAC_NAME_MARKUP>  (1) 
+3-[(1<I>S</I>,2<I>R</I>,4<I>S</I>,6<I>R</I>)-2-ethenyl-4,6-dimethylcyclohexyl]-1,4-dihydroxypyridin-2-one
+
+>  <PUBCHEM_IUPAC_NAME>  (1) 
+3-[(1S,2R,4S,6R)-2-ethenyl-4,6-dimethylcyclohexyl]-1,4-dihydroxypyridin-2-one
+
+>  <PUBCHEM_IUPAC_SYSTEMATIC_NAME>  (1) 
+3-[(1S,2R,4S,6R)-2-ethenyl-4,6-dimethyl-cyclohexyl]-1,4-bis(oxidanyl)pyridin-2-one
+
+>  <PUBCHEM_IUPAC_TRADITIONAL_NAME>  (1) 
+3-[(1S,2R,4S,6R)-2,4-dimethyl-6-vinyl-cyclohexyl]-1,4-dihydroxy-2-pyridone
+
+>  <PUBCHEM_IUPAC_INCHI>  (1) 
+InChI=1S/C15H21NO3/c1-4-11-8-9(2)7-10(3)13(11)14-12(17)5-6-16(19)15(14)18/h4-6,9-11,13,17,19H,1,7-8H2,2-3H3/t9-,10+,11-,13-/m0/s1
+
+>  <PUBCHEM_IUPAC_INCHIKEY>  (1) 
+OQJADHLOEAOIGC-NOHGZBONSA-N
+
+>  <PUBCHEM_XLOGP3_AA>  (1) 
+2.7
+
+>  <PUBCHEM_EXACT_MASS>  (1) 
+263.15214353
+
+>  <PUBCHEM_MOLECULAR_FORMULA>  (1) 
+C15H21NO3
+
+>  <PUBCHEM_MOLECULAR_WEIGHT>  (1) 
+263.33
+
+>  <PUBCHEM_OPENEYE_CAN_SMILES>  (1) 
+CC1CC(C(C(C1)C=C)C2=C(C=CN(C2=O)O)O)C
+
+>  <PUBCHEM_OPENEYE_ISO_SMILES>  (1) 
+C[C@H]1C[C@H]([C@@H]([C@H](C1)C=C)C2=C(C=CN(C2=O)O)O)C
+
+>  <PUBCHEM_CACTVS_TPSA>  (1) 
+60.8
+
+>  <PUBCHEM_MONOISOTOPIC_WEIGHT>  (1) 
+263.15214353
+
+>  <PUBCHEM_TOTAL_CHARGE>  (1) 
+0
+
+>  <PUBCHEM_HEAVY_ATOM_COUNT>  (1) 
+19
+
+>  <PUBCHEM_ATOM_DEF_STEREO_COUNT>  (1) 
+4
+
+>  <PUBCHEM_ATOM_UDEF_STEREO_COUNT>  (1) 
+0
+
+>  <PUBCHEM_BOND_DEF_STEREO_COUNT>  (1) 
+0
+
+>  <PUBCHEM_BOND_UDEF_STEREO_COUNT>  (1) 
+0
+
+>  <PUBCHEM_ISOTOPIC_ATOM_COUNT>  (1) 
+0
+
+>  <PUBCHEM_COMPONENT_COUNT>  (1) 
+1
+
+>  <PUBCHEM_CACTVS_TAUTO_COUNT>  (1) 
+-1
+
+>  <PUBCHEM_COORDINATE_TYPE>  (1) 
+1
+5
+255
+
+>  <PUBCHEM_BONDANNOTATIONS>  (1) 
+11  15  8
+11  16  8
+15  18  8
+18  19  8
+4  16  8
+4  19  8
+5  20  6
+6  12  6
+7  14  6
+8  13  6
+
+$$$$

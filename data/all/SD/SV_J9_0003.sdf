@@ -1,0 +1,132 @@
+10057848
+     RDKit          2D
+
+  9  9  0  0  0  0  0  0  0  0999 V2000
+    3.7601    0.7694    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    4.2601   -0.7694    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    7.2144    0.1305    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    3.2601   -0.7694    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    5.5202    0.4907    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    6.2633   -0.1785    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.5691    0.1816    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.9511    0.1816    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.0000    0.4907    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  1  7  1  0
+  1  8  1  0
+  2  4  1  0
+  2  7  2  0
+  3  6  1  0
+  4  8  2  0
+  5  6  1  0
+  5  7  1  0
+  8  9  1  0
+M  END
+>  <PUBCHEM_COMPOUND_CID>  (1) 
+10057848
+
+>  <PUBCHEM_COMPOUND_CANONICALIZED>  (1) 
+1
+
+>  <PUBCHEM_CACTVS_COMPLEXITY>  (1) 
+88.3
+
+>  <PUBCHEM_CACTVS_HBOND_ACCEPTOR>  (1) 
+4
+
+>  <PUBCHEM_CACTVS_HBOND_DONOR>  (1) 
+1
+
+>  <PUBCHEM_CACTVS_ROTATABLE_BOND>  (1) 
+2
+
+>  <PUBCHEM_CACTVS_SUBSKEYS>  (1) 
+AAADccBjIAAAAAAAAAAAAAAAAAAAAWAAAAAAAAAAAAAAAAABgAAAHgAYAAAACADBggQCAABABEAqAAEwEAAQAAAIAAASAIEwAAAAAAgAQAAKAAACGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+
+>  <PUBCHEM_IUPAC_OPENEYE_NAME>  (1) 
+2-(5-methyl-1,3,4-oxadiazol-2-yl)ethanamine
+
+>  <PUBCHEM_IUPAC_CAS_NAME>  (1) 
+2-(5-methyl-1,3,4-oxadiazol-2-yl)ethanamine
+
+>  <PUBCHEM_IUPAC_NAME_MARKUP>  (1) 
+2-(5-methyl-1,3,4-oxadiazol-2-yl)ethanamine
+
+>  <PUBCHEM_IUPAC_NAME>  (1) 
+2-(5-methyl-1,3,4-oxadiazol-2-yl)ethanamine
+
+>  <PUBCHEM_IUPAC_SYSTEMATIC_NAME>  (1) 
+2-(5-methyl-1,3,4-oxadiazol-2-yl)ethanamine
+
+>  <PUBCHEM_IUPAC_TRADITIONAL_NAME>  (1) 
+2-(5-methyl-1,3,4-oxadiazol-2-yl)ethylamine
+
+>  <PUBCHEM_IUPAC_INCHI>  (1) 
+InChI=1S/C5H9N3O/c1-4-7-8-5(9-4)2-3-6/h2-3,6H2,1H3
+
+>  <PUBCHEM_IUPAC_INCHIKEY>  (1) 
+VKJDDBJDNJOXOP-UHFFFAOYSA-N
+
+>  <PUBCHEM_XLOGP3_AA>  (1) 
+-0.5
+
+>  <PUBCHEM_EXACT_MASS>  (1) 
+127.074561919
+
+>  <PUBCHEM_MOLECULAR_FORMULA>  (1) 
+C5H9N3O
+
+>  <PUBCHEM_MOLECULAR_WEIGHT>  (1) 
+127.14
+
+>  <PUBCHEM_OPENEYE_CAN_SMILES>  (1) 
+CC1=NN=C(O1)CCN
+
+>  <PUBCHEM_OPENEYE_ISO_SMILES>  (1) 
+CC1=NN=C(O1)CCN
+
+>  <PUBCHEM_CACTVS_TPSA>  (1) 
+64.9
+
+>  <PUBCHEM_MONOISOTOPIC_WEIGHT>  (1) 
+127.074561919
+
+>  <PUBCHEM_TOTAL_CHARGE>  (1) 
+0
+
+>  <PUBCHEM_HEAVY_ATOM_COUNT>  (1) 
+9
+
+>  <PUBCHEM_ATOM_DEF_STEREO_COUNT>  (1) 
+0
+
+>  <PUBCHEM_ATOM_UDEF_STEREO_COUNT>  (1) 
+0
+
+>  <PUBCHEM_BOND_DEF_STEREO_COUNT>  (1) 
+0
+
+>  <PUBCHEM_BOND_UDEF_STEREO_COUNT>  (1) 
+0
+
+>  <PUBCHEM_ISOTOPIC_ATOM_COUNT>  (1) 
+0
+
+>  <PUBCHEM_COMPONENT_COUNT>  (1) 
+1
+
+>  <PUBCHEM_CACTVS_TAUTO_COUNT>  (1) 
+-1
+
+>  <PUBCHEM_COORDINATE_TYPE>  (1) 
+1
+5
+255
+
+>  <PUBCHEM_BONDANNOTATIONS>  (1) 
+1  7  8
+1  8  8
+2  4  8
+2  7  8
+4  8  8
+
+$$$$

@@ -1,0 +1,194 @@
+65947
+     RDKit          2D
+
+ 32 36  0  0  1  0  0  0  0  0999 V2000
+   12.9422   -0.9508    0.0000 S   0  0  0  0  0  0  0  0  0  0  0  0
+    8.0383    1.4445    0.0000 F   0  0  0  0  0  0  0  0  0  0  0  0
+    3.6661   -2.0274    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+   11.5684    2.4203    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    3.4908   -0.4189    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+   14.1665    0.9203    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+   13.3005    2.4203    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    2.0000   -1.3952    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    8.0383   -0.6038    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    6.3101   -1.6105    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+   11.5684   -0.5797    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    8.0422   -1.6038    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    7.1704   -0.1072    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    7.1781   -2.1072    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    6.3063   -0.6105    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    8.9024   -0.1005    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   10.7024   -0.0797    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   12.0690   -1.4549    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   12.4344   -0.0797    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.4460   -2.1138    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    9.8084   -0.6143    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   10.7024    0.9203    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    8.9024    0.9411    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   12.4344    0.9203    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    9.8084    1.4550    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   11.5684    1.4203    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   11.8082   -2.4203    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.5781   -1.6172    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.4697   -0.6231    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   13.3005    1.4203    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.2103    0.0489    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.9941   -1.2869    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  1 18  1  0
+  1 19  1  0
+  2 23  1  0
+  3 28  1  0
+  3 32  1  0
+  4 26  2  0
+  5 29  1  0
+  5 32  1  0
+  6 30  1  0
+  7 30  2  0
+  8 32  2  0
+  9 12  1  0
+  9 13  1  0
+  9 16  1  0
+ 10 14  1  0
+ 10 15  1  0
+ 10 20  1  0
+ 11 17  1  0
+ 11 18  1  0
+ 11 19  1  0
+ 12 14  1  0
+ 13 15  1  0
+ 16 21  1  0
+ 16 23  2  0
+ 17 21  2  0
+ 17 22  1  0
+ 18 27  1  0
+ 19 24  2  0
+ 20 28  1  0
+ 22 25  2  0
+ 22 26  1  0
+ 23 25  1  0
+ 24 26  1  0
+ 24 30  1  0
+ 28 29  2  0
+ 29 31  1  0
+M  END
+>  <PUBCHEM_COMPOUND_CID>  (1) 
+65947
+
+>  <PUBCHEM_COMPOUND_CANONICALIZED>  (1) 
+1
+
+>  <PUBCHEM_CACTVS_COMPLEXITY>  (1) 
+931
+
+>  <PUBCHEM_CACTVS_HBOND_ACCEPTOR>  (1) 
+11
+
+>  <PUBCHEM_CACTVS_HBOND_DONOR>  (1) 
+1
+
+>  <PUBCHEM_CACTVS_ROTATABLE_BOND>  (1) 
+4
+
+>  <PUBCHEM_CACTVS_SUBSKEYS>  (1) 
+AAADceB7OQBAAAAAAAAAAAAAAABYAQAAAAA8QIAAAAAQAACBAAAAHwQACAAADAzF2AyyyIMABgiIAqTSSACCCABlIhAAiAEIZMgaZD7I1NG1YYhkoADc2ceY2aOeCAAAAAQCAAAQAAAACAQAAAAAAAAAAA==
+
+>  <PUBCHEM_IUPAC_OPENEYE_NAME>  (1) 
+6-fluoro-1-methyl-7-[4-[(5-methyl-2-oxo-1,3-dioxol-4-yl)methyl]piperazin-1-yl]-4-oxo-1H-[1,3]thiazeto[3,2-a]quinoline-3-carboxylic acid
+
+>  <PUBCHEM_IUPAC_CAS_NAME>  (1) 
+6-fluoro-1-methyl-7-[4-[(5-methyl-2-oxo-1,3-dioxol-4-yl)methyl]-1-piperazinyl]-4-oxo-1H-[1,3]thiazeto[3,2-a]quinoline-3-carboxylic acid
+
+>  <PUBCHEM_IUPAC_NAME_MARKUP>  (1) 
+6-fluoro-1-methyl-7-[4-[(5-methyl-2-oxo-1,3-dioxol-4-yl)methyl]piperazin-1-yl]-4-oxo-1<I>H</I>-[1,3]thiazeto[3,2-a]quinoline-3-carboxylic acid
+
+>  <PUBCHEM_IUPAC_NAME>  (1) 
+6-fluoro-1-methyl-7-[4-[(5-methyl-2-oxo-1,3-dioxol-4-yl)methyl]piperazin-1-yl]-4-oxo-1H-[1,3]thiazeto[3,2-a]quinoline-3-carboxylic acid
+
+>  <PUBCHEM_IUPAC_SYSTEMATIC_NAME>  (1) 
+6-fluoranyl-1-methyl-7-[4-[(5-methyl-2-oxidanylidene-1,3-dioxol-4-yl)methyl]piperazin-1-yl]-4-oxidanylidene-1H-[1,3]thiazeto[3,2-a]quinoline-3-carboxylic acid
+
+>  <PUBCHEM_IUPAC_TRADITIONAL_NAME>  (1) 
+6-fluoro-4-keto-7-[4-[(2-keto-5-methyl-1,3-dioxol-4-yl)methyl]piperazino]-1-methyl-1H-[1,3]thiazeto[3,2-a]quinoline-3-carboxylic acid
+
+>  <PUBCHEM_IUPAC_INCHI>  (1) 
+InChI=1S/C21H20FN3O6S/c1-10-16(31-21(29)30-10)9-23-3-5-24(6-4-23)15-8-14-12(7-13(15)22)18(26)17(20(27)28)19-25(14)11(2)32-19/h7-8,11H,3-6,9H2,1-2H3,(H,27,28)
+
+>  <PUBCHEM_IUPAC_INCHIKEY>  (1) 
+PWNMXPDKBYZCOO-UHFFFAOYSA-N
+
+>  <PUBCHEM_XLOGP3_AA>  (1) 
+1
+
+>  <PUBCHEM_EXACT_MASS>  (1) 
+461.10568470
+
+>  <PUBCHEM_MOLECULAR_FORMULA>  (1) 
+C21H20FN3O6S
+
+>  <PUBCHEM_MOLECULAR_WEIGHT>  (1) 
+461.5
+
+>  <PUBCHEM_OPENEYE_CAN_SMILES>  (1) 
+CC1N2C3=CC(=C(C=C3C(=O)C(=C2S1)C(=O)O)F)N4CCN(CC4)CC5=C(OC(=O)O5)C
+
+>  <PUBCHEM_OPENEYE_ISO_SMILES>  (1) 
+CC1N2C3=CC(=C(C=C3C(=O)C(=C2S1)C(=O)O)F)N4CCN(CC4)CC5=C(OC(=O)O5)C
+
+>  <PUBCHEM_CACTVS_TPSA>  (1) 
+125
+
+>  <PUBCHEM_MONOISOTOPIC_WEIGHT>  (1) 
+461.10568470
+
+>  <PUBCHEM_TOTAL_CHARGE>  (1) 
+0
+
+>  <PUBCHEM_HEAVY_ATOM_COUNT>  (1) 
+32
+
+>  <PUBCHEM_ATOM_DEF_STEREO_COUNT>  (1) 
+0
+
+>  <PUBCHEM_ATOM_UDEF_STEREO_COUNT>  (1) 
+1
+
+>  <PUBCHEM_BOND_DEF_STEREO_COUNT>  (1) 
+0
+
+>  <PUBCHEM_BOND_UDEF_STEREO_COUNT>  (1) 
+0
+
+>  <PUBCHEM_ISOTOPIC_ATOM_COUNT>  (1) 
+0
+
+>  <PUBCHEM_COMPONENT_COUNT>  (1) 
+1
+
+>  <PUBCHEM_CACTVS_TAUTO_COUNT>  (1) 
+-1
+
+>  <PUBCHEM_COORDINATE_TYPE>  (1) 
+1
+5
+255
+
+>  <PUBCHEM_BONDANNOTATIONS>  (1) 
+11  17  8
+11  19  8
+16  21  8
+16  23  8
+17  21  8
+17  22  8
+18  27  3
+19  24  8
+22  25  8
+22  26  8
+23  25  8
+24  26  8
+28  29  8
+3  28  8
+3  32  8
+5  29  8
+5  32  8
+
+$$$$

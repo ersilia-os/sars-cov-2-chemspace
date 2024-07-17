@@ -1,0 +1,178 @@
+2351
+     RDKit          2D
+
+ 27 29  0  0  1  0  0  0  0  0999 V2000
+    6.3301   -1.2500    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    6.3301    0.7500    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    3.7320    0.2500    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    5.4641    0.2500    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    7.2437    0.3433    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    6.4347    1.7445    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    7.9128    1.0864    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    7.4128    1.9524    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.5981    0.7500    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.4641   -0.7500    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.8660    0.7500    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.7320   -0.7500    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    6.3301   -2.2500    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    7.1962   -2.7500    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.8660    1.7500    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.5981   -1.2500    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.8660   -1.2500    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    7.1962   -3.7500    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    8.0622   -2.2500    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.0000    2.2500    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.7320    2.2500    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.5981   -2.2500    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.8660   -2.2500    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.7320   -2.7500    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.0000    3.2500    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.7320    3.2500    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.8660    3.7500    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  1 10  1  0
+  1 13  1  0
+  2  4  1  0
+  2  5  1  0
+  2  6  1  0
+  3  9  1  0
+  3 11  1  0
+  3 12  1  0
+  4  9  1  0
+  4 10  1  0
+  5  7  1  0
+  6  8  1  0
+  7  8  1  0
+ 11 15  1  0
+ 12 16  2  0
+ 12 17  1  0
+ 13 14  1  0
+ 14 18  1  0
+ 14 19  1  0
+ 15 20  2  0
+ 15 21  1  0
+ 16 22  1  0
+ 17 23  2  0
+ 20 25  1  0
+ 21 26  2  0
+ 22 24  2  0
+ 23 24  1  0
+ 25 27  2  0
+ 26 27  1  0
+M  END
+>  <PUBCHEM_COMPOUND_CID>  (1) 
+2351
+
+>  <PUBCHEM_COMPOUND_CANONICALIZED>  (1) 
+1
+
+>  <PUBCHEM_CACTVS_COMPLEXITY>  (1) 
+382
+
+>  <PUBCHEM_CACTVS_HBOND_ACCEPTOR>  (1) 
+3
+
+>  <PUBCHEM_CACTVS_HBOND_DONOR>  (1) 
+0
+
+>  <PUBCHEM_CACTVS_ROTATABLE_BOND>  (1) 
+10
+
+>  <PUBCHEM_CACTVS_SUBSKEYS>  (1) 
+AAADcfB7IAAAAAAAAAAAAAAAAAAAAWAAAAAwYAAAAAAAAAABQAAAHgAAAAAADSjhmAYywIMABACAAiRCQACCAAAhAgAIiAAIZIgKYCLAkZGXIAhigADYyAcQgAAOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+
+>  <PUBCHEM_IUPAC_OPENEYE_NAME>  (1) 
+N-benzyl-N-(3-isobutoxy-2-pyrrolidin-1-yl-propyl)aniline
+
+>  <PUBCHEM_IUPAC_CAS_NAME>  (1) 
+N-[3-(2-methylpropoxy)-2-(1-pyrrolidinyl)propyl]-N-(phenylmethyl)aniline
+
+>  <PUBCHEM_IUPAC_NAME_MARKUP>  (1) 
+<I>N</I>-benzyl-<I>N</I>-[3-(2-methylpropoxy)-2-pyrrolidin-1-ylpropyl]aniline
+
+>  <PUBCHEM_IUPAC_NAME>  (1) 
+N-benzyl-N-[3-(2-methylpropoxy)-2-pyrrolidin-1-ylpropyl]aniline
+
+>  <PUBCHEM_IUPAC_SYSTEMATIC_NAME>  (1) 
+N-[3-(2-methylpropoxy)-2-pyrrolidin-1-yl-propyl]-N-(phenylmethyl)aniline
+
+>  <PUBCHEM_IUPAC_TRADITIONAL_NAME>  (1) 
+benzyl-(3-isobutoxy-2-pyrrolidino-propyl)-phenyl-amine
+
+>  <PUBCHEM_IUPAC_INCHI>  (1) 
+InChI=1S/C24H34N2O/c1-21(2)19-27-20-24(25-15-9-10-16-25)18-26(23-13-7-4-8-14-23)17-22-11-5-3-6-12-22/h3-8,11-14,21,24H,9-10,15-20H2,1-2H3
+
+>  <PUBCHEM_IUPAC_INCHIKEY>  (1) 
+UIEATEWHFDRYRU-UHFFFAOYSA-N
+
+>  <PUBCHEM_XLOGP3_AA>  (1) 
+5.3
+
+>  <PUBCHEM_EXACT_MASS>  (1) 
+366.267113712
+
+>  <PUBCHEM_MOLECULAR_FORMULA>  (1) 
+C24H34N2O
+
+>  <PUBCHEM_MOLECULAR_WEIGHT>  (1) 
+366.5
+
+>  <PUBCHEM_OPENEYE_CAN_SMILES>  (1) 
+CC(C)COCC(CN(CC1=CC=CC=C1)C2=CC=CC=C2)N3CCCC3
+
+>  <PUBCHEM_OPENEYE_ISO_SMILES>  (1) 
+CC(C)COCC(CN(CC1=CC=CC=C1)C2=CC=CC=C2)N3CCCC3
+
+>  <PUBCHEM_CACTVS_TPSA>  (1) 
+15.7
+
+>  <PUBCHEM_MONOISOTOPIC_WEIGHT>  (1) 
+366.267113712
+
+>  <PUBCHEM_TOTAL_CHARGE>  (1) 
+0
+
+>  <PUBCHEM_HEAVY_ATOM_COUNT>  (1) 
+27
+
+>  <PUBCHEM_ATOM_DEF_STEREO_COUNT>  (1) 
+0
+
+>  <PUBCHEM_ATOM_UDEF_STEREO_COUNT>  (1) 
+1
+
+>  <PUBCHEM_BOND_DEF_STEREO_COUNT>  (1) 
+0
+
+>  <PUBCHEM_BOND_UDEF_STEREO_COUNT>  (1) 
+0
+
+>  <PUBCHEM_ISOTOPIC_ATOM_COUNT>  (1) 
+0
+
+>  <PUBCHEM_COMPONENT_COUNT>  (1) 
+1
+
+>  <PUBCHEM_CACTVS_TAUTO_COUNT>  (1) 
+1
+
+>  <PUBCHEM_COORDINATE_TYPE>  (1) 
+1
+5
+255
+
+>  <PUBCHEM_BONDANNOTATIONS>  (1) 
+12  16  8
+12  17  8
+15  20  8
+15  21  8
+16  22  8
+17  23  8
+20  25  8
+21  26  8
+22  24  8
+23  24  8
+25  27  8
+26  27  8
+4  28  3
+
+$$$$

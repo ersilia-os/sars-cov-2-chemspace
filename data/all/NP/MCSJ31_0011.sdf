@@ -1,0 +1,185 @@
+54677878
+     RDKit          2D
+
+ 31 32  0  0  1  0  0  0  0  0999 V2000
+    4.5981   -2.4400    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    8.0622   -4.4400    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    8.0622   -2.4400    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    2.0000   -5.9400    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    5.4641   -0.9400    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    7.1962   -3.9400    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+   10.6603    5.0600    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   10.6603    6.0600    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    9.7942    4.5600    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   11.5263    4.5600    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   11.5263    6.5600    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    9.7942    3.5600    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.4641   -3.9400    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.5981   -4.4400    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   10.6603    3.0600    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.4641   -2.9400    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    6.3301   -2.4400    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    8.9282    3.0600    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    6.3301   -4.4400    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    7.1962   -2.9400    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.5981   -5.4400    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.7320   -3.9400    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    6.3301   -1.4400    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    8.9282    2.0600    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.7320   -5.9400    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.8660   -4.4400    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.8660   -5.4400    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    7.1962   -0.9400    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    8.0622    1.5600    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    7.1962    0.0600    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    8.0622    0.5600    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  1 16  1  0
+  2  6  1  0
+  3 20  2  0
+  4 27  1  0
+  5 23  2  0
+  6 19  1  0
+  6 20  1  0
+  7  8  1  0
+  7  9  1  0
+  7 10  1  0
+  8 11  1  0
+  9 12  2  0
+ 12 15  1  0
+ 12 18  1  0
+ 13 14  1  0
+ 13 16  1  0
+ 13 19  2  0
+ 14 21  2  0
+ 14 22  1  0
+ 16 17  2  0
+ 17 20  1  0
+ 17 23  1  0
+ 18 24  2  0
+ 21 25  1  0
+ 22 26  2  0
+ 23 28  1  0
+ 24 29  1  0
+ 25 27  2  0
+ 26 27  1  0
+ 28 30  2  0
+ 29 31  2  0
+ 30 31  1  0
+M  END
+>  <PUBCHEM_COMPOUND_CID>  (1) 
+54677878
+
+>  <PUBCHEM_COMPOUND_CANONICALIZED>  (1) 
+1
+
+>  <PUBCHEM_CACTVS_COMPLEXITY>  (1) 
+851
+
+>  <PUBCHEM_CACTVS_HBOND_ACCEPTOR>  (1) 
+5
+
+>  <PUBCHEM_CACTVS_HBOND_DONOR>  (1) 
+3
+
+>  <PUBCHEM_CACTVS_ROTATABLE_BOND>  (1) 
+8
+
+>  <PUBCHEM_CACTVS_SUBSKEYS>  (1) 
+AAADceB6OAAAAAAAAAAAAAAAAAAAAAAAAAAwQAAAAAAAAAABAAAAHgAECAAADQTBmAQyBoIQAgCIAqFWUACCAAAgIAAoiAEOCMgIJjqKkRKEcAAkwhEImYeAwKAOIAAAAAAAAABAAAAAAAAAAAAAAAAAAA==
+
+>  <PUBCHEM_IUPAC_OPENEYE_NAME>  (1) 
+3-[(2E,4E,6E,8E)-8,10-dimethyldodeca-2,4,6,8-tetraenoyl]-1,4-dihydroxy-5-(4-hydroxyphenyl)pyridin-2-one
+
+>  <PUBCHEM_IUPAC_CAS_NAME>  (1) 
+3-[(2E,4E,6E,8E)-8,10-dimethyl-1-oxododeca-2,4,6,8-tetraenyl]-1,4-dihydroxy-5-(4-hydroxyphenyl)-2-pyridinone
+
+>  <PUBCHEM_IUPAC_NAME_MARKUP>  (1) 
+3-[(2<I>E</I>,4<I>E</I>,6<I>E</I>,8<I>E</I>)-8,10-dimethyldodeca-2,4,6,8-tetraenoyl]-1,4-dihydroxy-5-(4-hydroxyphenyl)pyridin-2-one
+
+>  <PUBCHEM_IUPAC_NAME>  (1) 
+3-[(2E,4E,6E,8E)-8,10-dimethyldodeca-2,4,6,8-tetraenoyl]-1,4-dihydroxy-5-(4-hydroxyphenyl)pyridin-2-one
+
+>  <PUBCHEM_IUPAC_SYSTEMATIC_NAME>  (1) 
+3-[(2E,4E,6E,8E)-8,10-dimethyldodeca-2,4,6,8-tetraenoyl]-5-(4-hydroxyphenyl)-1,4-bis(oxidanyl)pyridin-2-one
+
+>  <PUBCHEM_IUPAC_TRADITIONAL_NAME>  (1) 
+3-[(2E,4E,6E,8E)-8,10-dimethyldodeca-2,4,6,8-tetraenoyl]-1,4-dihydroxy-5-(4-hydroxyphenyl)-2-pyridone
+
+>  <PUBCHEM_IUPAC_INCHI>  (1) 
+InChI=1S/C25H27NO5/c1-4-17(2)15-18(3)9-7-5-6-8-10-22(28)23-24(29)21(16-26(31)25(23)30)19-11-13-20(27)14-12-19/h5-17,27,29,31H,4H2,1-3H3/b6-5+,9-7+,10-8+,18-15+
+
+>  <PUBCHEM_IUPAC_INCHIKEY>  (1) 
+MBPKWWNMUUTTPP-PDOAJKQXSA-N
+
+>  <PUBCHEM_XLOGP3_AA>  (1) 
+5.2
+
+>  <PUBCHEM_EXACT_MASS>  (1) 
+421.18892296
+
+>  <PUBCHEM_MOLECULAR_FORMULA>  (1) 
+C25H27NO5
+
+>  <PUBCHEM_MOLECULAR_WEIGHT>  (1) 
+421.5
+
+>  <PUBCHEM_OPENEYE_CAN_SMILES>  (1) 
+CCC(C)C=C(C)C=CC=CC=CC(=O)C1=C(C(=CN(C1=O)O)C2=CC=C(C=C2)O)O
+
+>  <PUBCHEM_OPENEYE_ISO_SMILES>  (1) 
+CCC(C)/C=C(\C)/C=C/C=C/C=C/C(=O)C1=C(C(=CN(C1=O)O)C2=CC=C(C=C2)O)O
+
+>  <PUBCHEM_CACTVS_TPSA>  (1) 
+98.1
+
+>  <PUBCHEM_MONOISOTOPIC_WEIGHT>  (1) 
+421.18892296
+
+>  <PUBCHEM_TOTAL_CHARGE>  (1) 
+0
+
+>  <PUBCHEM_HEAVY_ATOM_COUNT>  (1) 
+31
+
+>  <PUBCHEM_ATOM_DEF_STEREO_COUNT>  (1) 
+0
+
+>  <PUBCHEM_ATOM_UDEF_STEREO_COUNT>  (1) 
+1
+
+>  <PUBCHEM_BOND_DEF_STEREO_COUNT>  (1) 
+4
+
+>  <PUBCHEM_BOND_UDEF_STEREO_COUNT>  (1) 
+0
+
+>  <PUBCHEM_ISOTOPIC_ATOM_COUNT>  (1) 
+0
+
+>  <PUBCHEM_COMPONENT_COUNT>  (1) 
+1
+
+>  <PUBCHEM_CACTVS_TAUTO_COUNT>  (1) 
+-1
+
+>  <PUBCHEM_COORDINATE_TYPE>  (1) 
+1
+5
+255
+
+>  <PUBCHEM_BONDANNOTATIONS>  (1) 
+13  16  8
+13  19  8
+14  21  8
+14  22  8
+16  17  8
+17  20  8
+21  25  8
+22  26  8
+25  27  8
+26  27  8
+6  19  8
+6  20  8
+7  10  3
+
+$$$$

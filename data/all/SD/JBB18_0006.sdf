@@ -1,0 +1,140 @@
+7016057
+     RDKit          2D
+
+ 15 14  0  0  1  0  0  0  0  0999 V2000
+    6.0010   -0.9050    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    7.7331    2.0950    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    2.5369    0.0950    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    3.4030    1.5950    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    3.4030   -2.4050    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    2.5369   -0.9050    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    5.1350    0.5950    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    7.7331    0.0950    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    4.2690    0.0950    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    6.8671    0.5950    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.2690   -0.9050    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    6.0010    0.0950    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    6.8671    1.5950    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.4030    0.5950    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.4030   -1.4050    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  1 12  2  0
+  2 13  1  0
+  3 14  1  0
+  4 14  2  0
+  5 15  1  0
+  6 15  2  0
+  9  7  1  0
+  7 12  1  0
+ 10  8  1  6
+  9 11  1  1
+  9 14  1  0
+ 10 12  1  0
+ 10 13  1  0
+ 11 15  1  0
+M  END
+>  <PUBCHEM_COMPOUND_CID>  (1) 
+7016057
+
+>  <PUBCHEM_COMPOUND_CANONICALIZED>  (1) 
+1
+
+>  <PUBCHEM_CACTVS_COMPLEXITY>  (1) 
+266
+
+>  <PUBCHEM_CACTVS_HBOND_ACCEPTOR>  (1) 
+7
+
+>  <PUBCHEM_CACTVS_HBOND_DONOR>  (1) 
+5
+
+>  <PUBCHEM_CACTVS_ROTATABLE_BOND>  (1) 
+6
+
+>  <PUBCHEM_CACTVS_SUBSKEYS>  (1) 
+AAADccBjOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHgAQCAAACCjhgAYACALAAgAIAAGQGAAAAAAAAAAAAIGIAAACUBwAACAUQAAGNgCQAABDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+
+>  <PUBCHEM_IUPAC_OPENEYE_NAME>  (1) 
+(2S)-2-[[(2S)-2-amino-3-hydroxy-propanoyl]amino]butanedioic acid
+
+>  <PUBCHEM_IUPAC_CAS_NAME>  (1) 
+(2S)-2-[[(2S)-2-amino-3-hydroxy-1-oxopropyl]amino]butanedioic acid
+
+>  <PUBCHEM_IUPAC_NAME_MARKUP>  (1) 
+(2<I>S</I>)-2-[[(2<I>S</I>)-2-amino-3-hydroxypropanoyl]amino]butanedioic acid
+
+>  <PUBCHEM_IUPAC_NAME>  (1) 
+(2S)-2-[[(2S)-2-amino-3-hydroxypropanoyl]amino]butanedioic acid
+
+>  <PUBCHEM_IUPAC_SYSTEMATIC_NAME>  (1) 
+(2S)-2-[[(2S)-2-azanyl-3-oxidanyl-propanoyl]amino]butanedioic acid
+
+>  <PUBCHEM_IUPAC_TRADITIONAL_NAME>  (1) 
+(2S)-2-[[(2S)-2-amino-3-hydroxy-propanoyl]amino]succinic acid
+
+>  <PUBCHEM_IUPAC_INCHI>  (1) 
+InChI=1S/C7H12N2O6/c8-3(2-10)6(13)9-4(7(14)15)1-5(11)12/h3-4,10H,1-2,8H2,(H,9,13)(H,11,12)(H,14,15)/t3-,4-/m0/s1
+
+>  <PUBCHEM_IUPAC_INCHIKEY>  (1) 
+VBKBDLMWICBSCY-IMJSIDKUSA-N
+
+>  <PUBCHEM_XLOGP3_AA>  (1) 
+-5.2
+
+>  <PUBCHEM_EXACT_MASS>  (1) 
+220.06953611
+
+>  <PUBCHEM_MOLECULAR_FORMULA>  (1) 
+C7H12N2O6
+
+>  <PUBCHEM_MOLECULAR_WEIGHT>  (1) 
+220.18
+
+>  <PUBCHEM_OPENEYE_CAN_SMILES>  (1) 
+C(C(C(=O)O)NC(=O)C(CO)N)C(=O)O
+
+>  <PUBCHEM_OPENEYE_ISO_SMILES>  (1) 
+C([C@@H](C(=O)O)NC(=O)[C@H](CO)N)C(=O)O
+
+>  <PUBCHEM_CACTVS_TPSA>  (1) 
+150
+
+>  <PUBCHEM_MONOISOTOPIC_WEIGHT>  (1) 
+220.06953611
+
+>  <PUBCHEM_TOTAL_CHARGE>  (1) 
+0
+
+>  <PUBCHEM_HEAVY_ATOM_COUNT>  (1) 
+15
+
+>  <PUBCHEM_ATOM_DEF_STEREO_COUNT>  (1) 
+2
+
+>  <PUBCHEM_ATOM_UDEF_STEREO_COUNT>  (1) 
+0
+
+>  <PUBCHEM_BOND_DEF_STEREO_COUNT>  (1) 
+0
+
+>  <PUBCHEM_BOND_UDEF_STEREO_COUNT>  (1) 
+0
+
+>  <PUBCHEM_ISOTOPIC_ATOM_COUNT>  (1) 
+0
+
+>  <PUBCHEM_COMPONENT_COUNT>  (1) 
+1
+
+>  <PUBCHEM_CACTVS_TAUTO_COUNT>  (1) 
+-1
+
+>  <PUBCHEM_COORDINATE_TYPE>  (1) 
+1
+5
+255
+
+>  <PUBCHEM_BONDANNOTATIONS>  (1) 
+9  7  5
+10  8  6
+
+$$$$
