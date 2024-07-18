@@ -3,14 +3,15 @@ import pandas as pd
 import rdkit
 from standardiser import standardise
 from rdkit import RDLogger
+from rdkit import Chem
 
 root = os.path.dirname(os.path.abspath(__file__))
 
 RDLogger.DisableLog('rdApp.*')                                                                                                                                                           
 
 data_dir = os.path.join(root, '..', 'data')
-np_dir = os.path.join(data_dir, 'all', 'NP2')
-sd_dir = os.path.join(data_dir, 'all', 'SD2')
+np_dir = os.path.join(data_dir, 'all', 'NP')
+sd_dir = os.path.join(data_dir, 'all', 'SD')
 
 def molecule_loader(subfolder):
     sdf_paths = []
@@ -27,13 +28,41 @@ def molecule_loader(subfolder):
         if fn.endswith(".mol2"):
             mol2_paths.append(os.path.join(subfolder, fn))
             names += [fn[:-5]]
+    
+    
     mols = []
-    for sdf_path in sdf_paths:
-        mols.append(rdkit.Chem.SDMolSupplier(sdf_path))
+    paths = []
+    names_ = []
+    for i, sdf_path in enumerate(sdf_paths):
+        suppl = rdkit.Chem.SDMolSupplier(sdf_path)
+        mols_ = [mol for mol in suppl if mol is not None]
+        if len(mols_) == 0:
+            continue
+        if len(mols_) > 1:
+            print("HERE")
+            print(sdf_path)
+            mols_ = [mols_[0]]
+        mols += mols_
+        paths += [sdf_path]
+        names_ += [names[i]]
     for mol_path in mol_paths:
-        mols.append(rdkit.Chem.MolFromMolFile(mol_path))
+        mol = rdkit.Chem.MolFromMolFile(mol_path)
+        if mol is None:
+            continue
+        mols += [mol]
+        paths += [mol_path]
+        names_ += [names[i]]
     for mol2_path in mol2_paths:
-        mols.append(rdkit.Chem.MolFromMol2File(mol2_path))
+        mol = rdkit.Chem.MolFromMol2File(mol2_path)
+        if mol is None:
+            continue
+        mols += [mol]
+        paths += [mol2_path]
+        names_ += [names[i]]
+
+    names = names_[:]
+    assert len(mols) == len(names)
+
     mols_ = []
     c = 0
     for i, mol in enumerate(mols):
@@ -44,7 +73,7 @@ def molecule_loader(subfolder):
         except:
             c += 1
             continue
-    print("Number of non-standardized molecules (skipped) {0}".format(c))
+    print("Number of non-standardized molecules (skipped) {0}. File: {1}".format(c, subfolder))
     return mols_
 
 np_mols = molecule_loader(np_dir)
@@ -61,5 +90,7 @@ np_df = mols_to_table(np_mols, "natural")
 sd_df = mols_to_table(sd_mols, "synthetic")
 
 df = pd.concat([np_df, sd_df]).drop_duplicates().reset_index(drop=True)
+
+print(len(np_df), len(sd_df), len(df))
 
 df.to_csv(os.path.join(data_dir, 'all_molecules.csv'), index=False)
