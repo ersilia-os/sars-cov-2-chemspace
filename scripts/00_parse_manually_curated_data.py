@@ -4,6 +4,8 @@ import rdkit
 from standardiser import standardise
 from rdkit import RDLogger
 from rdkit import Chem
+import csv
+from tqdm import tqdm
 
 root = os.path.dirname(os.path.abspath(__file__))
 
@@ -96,3 +98,21 @@ df = pd.concat([np_df, sd_df]).drop_duplicates().reset_index(drop=True)
 print(len(np_df), len(sd_df), len(df))
 
 df.to_csv(os.path.join(data_dir, 'all_molecules.csv'), index=False)
+
+# parse chemdiv
+
+chemdiv_sdf = os.path.join(data_dir, 'ChemDiv_SDF_CORONAVIRUS_Library_20750.sdf')
+
+suppl = Chem.SDMolSupplier(chemdiv_sdf)
+mols = [mol for mol in suppl if mol is not None]
+
+
+with open(os.path.join(data_dir, 'chemdiv_molecules.csv'), 'w') as f:
+    writer = csv.writer(f)
+    writer.writerow(['name', 'inchikey', 'smiles'])
+    for mol in tqdm(mols):
+        name = mol.GetProp("IDNUMBER")
+        inchikey = rdkit.Chem.MolToInchiKey(mol)
+        smiles = rdkit.Chem.MolToSmiles(mol)
+        writer.writerow([name, inchikey, smiles])
+
