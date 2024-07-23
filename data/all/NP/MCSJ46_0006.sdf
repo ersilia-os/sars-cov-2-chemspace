@@ -1,7 +1,7 @@
-134815743
-     RDKit          2D
+MCSJ46_0006
+  -OEChem-07172407462D
 
- 25 27  0  0  0  0  0  0  0  0999 V2000
+ 39 41  0     0  0  0  0  0  0999 V2000
     6.0486   -0.4624    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
     4.4964    1.6079    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
     6.0010   -3.5557    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
@@ -27,136 +27,164 @@
     8.0257    3.0783    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
     7.4379    3.8874    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
     6.8671   -3.0557    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
-  1  9  1  0
-  1 14  1  0
-  2 10  1  0
-  3 19  1  0
-  3 25  1  0
-  4 14  2  0
-  5 20  1  0
-  6 21  1  0
-  7 24  1  0
-  8 10  2  0
-  8 11  1  0
-  8 14  1  0
-  9 10  1  0
-  9 13  2  0
- 11 17  2  0
- 11 18  1  0
- 12 13  1  0
- 12 15  2  0
- 12 16  1  0
- 15 19  1  0
- 16 20  2  0
- 17 22  1  0
- 18 23  2  0
- 19 21  2  0
- 20 21  1  0
- 22 24  2  0
- 23 24  1  0
+    3.7320   -0.2457    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    5.6720   -1.7457    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.8660   -1.7457    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    5.4200    2.8045    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    7.9834    1.6632    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    6.0790    4.2844    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    8.6423    3.1432    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    3.9067    1.4164    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.0000   -3.2457    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    3.7320   -4.8657    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    7.1771   -3.5926    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    7.4040   -2.7457    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    6.5571   -2.5188    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    8.4612    4.8657    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+  1  9  1  0  0  0  0
+  1 14  1  0  0  0  0
+  2 10  1  0  0  0  0
+  2 33  1  0  0  0  0
+  3 19  1  0  0  0  0
+  3 25  1  0  0  0  0
+  4 14  2  0  0  0  0
+  5 20  1  0  0  0  0
+  5 34  1  0  0  0  0
+  6 21  1  0  0  0  0
+  6 35  1  0  0  0  0
+  7 24  1  0  0  0  0
+  7 39  1  0  0  0  0
+  8 10  2  0  0  0  0
+  8 11  1  0  0  0  0
+  8 14  1  0  0  0  0
+  9 10  1  0  0  0  0
+  9 13  2  0  0  0  0
+ 11 17  2  0  0  0  0
+ 11 18  1  0  0  0  0
+ 12 13  1  0  0  0  0
+ 12 15  1  0  0  0  0
+ 12 16  2  0  0  0  0
+ 13 26  1  0  0  0  0
+ 15 19  2  0  0  0  0
+ 15 27  1  0  0  0  0
+ 16 20  1  0  0  0  0
+ 16 28  1  0  0  0  0
+ 17 22  1  0  0  0  0
+ 17 29  1  0  0  0  0
+ 18 23  2  0  0  0  0
+ 18 30  1  0  0  0  0
+ 19 21  1  0  0  0  0
+ 20 21  2  0  0  0  0
+ 22 24  2  0  0  0  0
+ 22 31  1  0  0  0  0
+ 23 24  1  0  0  0  0
+ 23 32  1  0  0  0  0
+ 25 36  1  0  0  0  0
+ 25 37  1  0  0  0  0
+ 25 38  1  0  0  0  0
 M  END
->  <PUBCHEM_COMPOUND_CID>  (1) 
+> <PUBCHEM_COMPOUND_CID>
 134815743
 
->  <PUBCHEM_COMPOUND_CANONICALIZED>  (1) 
+> <PUBCHEM_COMPOUND_CANONICALIZED>
 1
 
->  <PUBCHEM_CACTVS_COMPLEXITY>  (1) 
+> <PUBCHEM_CACTVS_COMPLEXITY>
 574
 
->  <PUBCHEM_CACTVS_HBOND_ACCEPTOR>  (1) 
+> <PUBCHEM_CACTVS_HBOND_ACCEPTOR>
 7
 
->  <PUBCHEM_CACTVS_HBOND_DONOR>  (1) 
+> <PUBCHEM_CACTVS_HBOND_DONOR>
 4
 
->  <PUBCHEM_CACTVS_ROTATABLE_BOND>  (1) 
+> <PUBCHEM_CACTVS_ROTATABLE_BOND>
 3
 
->  <PUBCHEM_CACTVS_SUBSKEYS>  (1) 
+> <PUBCHEM_CACTVS_SUBSKEYS>
 AAADccB4OAAAAAAAAAAAAAAAAAAAAQAAAAAwYAAAAAAAAAABQAAAGgAACAAADASAmAIyDoAABgCIAiDSCAACCAAgIAAIiAEGiMgNJzKGNRqCcCMlwBULuQeI6LyOIAABCAAAQABAAAIQAACAAAAAAAAAAA==
 
->  <PUBCHEM_IUPAC_OPENEYE_NAME>  (1) 
+> <PUBCHEM_IUPAC_OPENEYE_NAME>
 (5Z)-5-[(3,4-dihydroxy-5-methoxy-phenyl)methylene]-4-hydroxy-3-(4-hydroxyphenyl)furan-2-one
 
->  <PUBCHEM_IUPAC_CAS_NAME>  (1) 
+> <PUBCHEM_IUPAC_CAS_NAME>
 (5Z)-5-[(3,4-dihydroxy-5-methoxyphenyl)methylidene]-4-hydroxy-3-(4-hydroxyphenyl)-2-furanone
 
->  <PUBCHEM_IUPAC_NAME_MARKUP>  (1) 
+> <PUBCHEM_IUPAC_NAME_MARKUP>
 (5<I>Z</I>)-5-[(3,4-dihydroxy-5-methoxyphenyl)methylidene]-4-hydroxy-3-(4-hydroxyphenyl)furan-2-one
 
->  <PUBCHEM_IUPAC_NAME>  (1) 
+> <PUBCHEM_IUPAC_NAME>
 (5Z)-5-[(3,4-dihydroxy-5-methoxyphenyl)methylidene]-4-hydroxy-3-(4-hydroxyphenyl)furan-2-one
 
->  <PUBCHEM_IUPAC_SYSTEMATIC_NAME>  (1) 
+> <PUBCHEM_IUPAC_SYSTEMATIC_NAME>
 (5Z)-3-(4-hydroxyphenyl)-5-[[3-methoxy-4,5-bis(oxidanyl)phenyl]methylidene]-4-oxidanyl-furan-2-one
 
->  <PUBCHEM_IUPAC_TRADITIONAL_NAME>  (1) 
+> <PUBCHEM_IUPAC_TRADITIONAL_NAME>
 (5Z)-5-(3,4-dihydroxy-5-methoxy-benzylidene)-4-hydroxy-3-(4-hydroxyphenyl)furan-2-one
 
->  <PUBCHEM_IUPAC_INCHI>  (1) 
+> <PUBCHEM_IUPAC_INCHI>
 InChI=1S/C18H14O7/c1-24-13-7-9(6-12(20)16(13)21)8-14-17(22)15(18(23)25-14)10-2-4-11(19)5-3-10/h2-8,19-22H,1H3/b14-8-
 
->  <PUBCHEM_IUPAC_INCHIKEY>  (1) 
+> <PUBCHEM_IUPAC_INCHIKEY>
 MYJVNAXQWDAVRD-ZSOIEALJSA-N
 
->  <PUBCHEM_XLOGP3_AA>  (1) 
+> <PUBCHEM_XLOGP3_AA>
 2.2
 
->  <PUBCHEM_EXACT_MASS>  (1) 
+> <PUBCHEM_EXACT_MASS>
 342.07395278
 
->  <PUBCHEM_MOLECULAR_FORMULA>  (1) 
+> <PUBCHEM_MOLECULAR_FORMULA>
 C18H14O7
 
->  <PUBCHEM_MOLECULAR_WEIGHT>  (1) 
+> <PUBCHEM_MOLECULAR_WEIGHT>
 342.3
 
->  <PUBCHEM_OPENEYE_CAN_SMILES>  (1) 
+> <PUBCHEM_OPENEYE_CAN_SMILES>
 COC1=CC(=CC(=C1O)O)C=C2C(=C(C(=O)O2)C3=CC=C(C=C3)O)O
 
->  <PUBCHEM_OPENEYE_ISO_SMILES>  (1) 
+> <PUBCHEM_OPENEYE_ISO_SMILES>
 COC1=CC(=CC(=C1O)O)/C=C\2/C(=C(C(=O)O2)C3=CC=C(C=C3)O)O
 
->  <PUBCHEM_CACTVS_TPSA>  (1) 
+> <PUBCHEM_CACTVS_TPSA>
 116
 
->  <PUBCHEM_MONOISOTOPIC_WEIGHT>  (1) 
+> <PUBCHEM_MONOISOTOPIC_WEIGHT>
 342.07395278
 
->  <PUBCHEM_TOTAL_CHARGE>  (1) 
+> <PUBCHEM_TOTAL_CHARGE>
 0
 
->  <PUBCHEM_HEAVY_ATOM_COUNT>  (1) 
+> <PUBCHEM_HEAVY_ATOM_COUNT>
 25
 
->  <PUBCHEM_ATOM_DEF_STEREO_COUNT>  (1) 
+> <PUBCHEM_ATOM_DEF_STEREO_COUNT>
 0
 
->  <PUBCHEM_ATOM_UDEF_STEREO_COUNT>  (1) 
+> <PUBCHEM_ATOM_UDEF_STEREO_COUNT>
 0
 
->  <PUBCHEM_BOND_DEF_STEREO_COUNT>  (1) 
+> <PUBCHEM_BOND_DEF_STEREO_COUNT>
 1
 
->  <PUBCHEM_BOND_UDEF_STEREO_COUNT>  (1) 
+> <PUBCHEM_BOND_UDEF_STEREO_COUNT>
 0
 
->  <PUBCHEM_ISOTOPIC_ATOM_COUNT>  (1) 
+> <PUBCHEM_ISOTOPIC_ATOM_COUNT>
 0
 
->  <PUBCHEM_COMPONENT_COUNT>  (1) 
+> <PUBCHEM_COMPONENT_COUNT>
 1
 
->  <PUBCHEM_CACTVS_TAUTO_COUNT>  (1) 
+> <PUBCHEM_CACTVS_TAUTO_COUNT>
 -1
 
->  <PUBCHEM_COORDINATE_TYPE>  (1) 
+> <PUBCHEM_COORDINATE_TYPE>
 1
 5
 255
 
->  <PUBCHEM_BONDANNOTATIONS>  (1) 
+> <PUBCHEM_BONDANNOTATIONS>
 11  17  8
 11  18  8
 12  15  8

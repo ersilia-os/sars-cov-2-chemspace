@@ -1,7 +1,7 @@
-16362
-     RDKit          2D
+SV_J23_0006
+  -OEChem-07172407052D
 
- 34 38  0  0  0  0  0  0  0  0999 V2000
+ 63 67  0     0  0  0  0  0  0999 V2000
     9.4312    5.5830    0.0000 F   0  0  0  0  0  0  0  0  0  0  0  0
    10.8600   -1.1963    0.0000 F   0  0  0  0  0  0  0  0  0  0  0  0
     6.2619   -4.1889    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
@@ -36,147 +36,205 @@
     9.2136   -0.6583    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
     9.1206    4.6324    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
    10.1921   -0.4520    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
-  1 33  1  0
-  2 34  1  0
-  3 16  2  0
-  4 10  1  0
-  4 11  1  0
-  4 12  1  0
-  5  7  1  0
-  5 14  1  0
-  5 16  1  0
-  6 16  1  0
-  6 18  1  0
-  7  8  1  0
-  7  9  1  0
-  8 10  1  0
-  9 11  1  0
- 12 13  1  0
- 13 15  1  0
- 14 18  2  0
- 14 19  1  0
- 15 17  1  0
- 17 20  1  0
- 17 21  1  0
- 18 22  1  0
- 19 23  2  0
- 20 25  2  0
- 20 27  1  0
- 21 26  2  0
- 21 28  1  0
- 22 24  2  0
- 23 24  1  0
- 25 29  1  0
- 26 30  1  0
- 27 31  2  0
- 28 32  2  0
- 29 33  2  0
- 30 34  2  0
- 31 33  1  0
- 32 34  1  0
+    5.4030   -2.8951    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    3.7742   -1.3973    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    3.9385   -2.1772    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    5.9880   -2.8471    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    6.5812   -2.3148    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.6112   -0.1192    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.0179   -0.6515    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    6.8250   -1.5689    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    6.6607   -0.7890    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    5.9004    1.0376    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    5.3071    0.5053    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    6.9200    0.0045    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    7.5132    0.5368    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    7.1895    2.1943    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    6.5963    1.6620    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    7.9960    1.1916    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.8709   -5.5830    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.8660   -2.5689    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.8660   -5.8089    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.4631   -3.3789    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.4631   -4.9989    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    7.2247    3.3478    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+   10.0276    1.8321    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    9.8918    2.4761    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    7.9391   -0.0418    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    7.7280    4.8877    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+   11.1095    0.6263    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+   10.3951    4.0160    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    9.0210   -1.2476    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+  1 33  1  0  0  0  0
+  2 34  1  0  0  0  0
+  3 16  2  0  0  0  0
+  4 10  1  0  0  0  0
+  4 11  1  0  0  0  0
+  4 12  1  0  0  0  0
+  5  7  1  0  0  0  0
+  5 14  1  0  0  0  0
+  5 16  1  0  0  0  0
+  6 16  1  0  0  0  0
+  6 18  1  0  0  0  0
+  6 51  1  0  0  0  0
+  7  8  1  0  0  0  0
+  7  9  1  0  0  0  0
+  7 35  1  0  0  0  0
+  8 10  1  0  0  0  0
+  8 36  1  0  0  0  0
+  8 37  1  0  0  0  0
+  9 11  1  0  0  0  0
+  9 38  1  0  0  0  0
+  9 39  1  0  0  0  0
+ 10 40  1  0  0  0  0
+ 10 41  1  0  0  0  0
+ 11 42  1  0  0  0  0
+ 11 43  1  0  0  0  0
+ 12 13  1  0  0  0  0
+ 12 44  1  0  0  0  0
+ 12 45  1  0  0  0  0
+ 13 15  1  0  0  0  0
+ 13 46  1  0  0  0  0
+ 13 47  1  0  0  0  0
+ 14 18  1  0  0  0  0
+ 14 19  2  0  0  0  0
+ 15 17  1  0  0  0  0
+ 15 48  1  0  0  0  0
+ 15 49  1  0  0  0  0
+ 17 20  1  0  0  0  0
+ 17 21  1  0  0  0  0
+ 17 50  1  0  0  0  0
+ 18 22  2  0  0  0  0
+ 19 23  1  0  0  0  0
+ 19 52  1  0  0  0  0
+ 20 25  2  0  0  0  0
+ 20 27  1  0  0  0  0
+ 21 26  2  0  0  0  0
+ 21 28  1  0  0  0  0
+ 22 24  1  0  0  0  0
+ 22 53  1  0  0  0  0
+ 23 24  2  0  0  0  0
+ 23 54  1  0  0  0  0
+ 24 55  1  0  0  0  0
+ 25 29  1  0  0  0  0
+ 25 56  1  0  0  0  0
+ 26 30  1  0  0  0  0
+ 26 57  1  0  0  0  0
+ 27 31  2  0  0  0  0
+ 27 58  1  0  0  0  0
+ 28 32  2  0  0  0  0
+ 28 59  1  0  0  0  0
+ 29 33  2  0  0  0  0
+ 29 60  1  0  0  0  0
+ 30 34  2  0  0  0  0
+ 30 61  1  0  0  0  0
+ 31 33  1  0  0  0  0
+ 31 62  1  0  0  0  0
+ 32 34  1  0  0  0  0
+ 32 63  1  0  0  0  0
 M  END
->  <PUBCHEM_COMPOUND_CID>  (1) 
+> <PUBCHEM_COMPOUND_CID>
 16362
 
->  <PUBCHEM_COMPOUND_CANONICALIZED>  (1) 
+> <PUBCHEM_COMPOUND_CANONICALIZED>
 1
 
->  <PUBCHEM_CACTVS_COMPLEXITY>  (1) 
+> <PUBCHEM_CACTVS_COMPLEXITY>
 632
 
->  <PUBCHEM_CACTVS_HBOND_ACCEPTOR>  (1) 
+> <PUBCHEM_CACTVS_HBOND_ACCEPTOR>
 4
 
->  <PUBCHEM_CACTVS_HBOND_DONOR>  (1) 
+> <PUBCHEM_CACTVS_HBOND_DONOR>
 1
 
->  <PUBCHEM_CACTVS_ROTATABLE_BOND>  (1) 
+> <PUBCHEM_CACTVS_ROTATABLE_BOND>
 7
 
->  <PUBCHEM_CACTVS_SUBSKEYS>  (1) 
+> <PUBCHEM_CACTVS_SUBSKEYS>
 AAADceB7IYAAAAAAAAAAAAAAAAAAAWAAAAA8YMEAAAAAAFgBUAAAHwAQAAAADSjBGAwxwIPAAACIAiRCUACCAAAhAgAIiAAIdIiIYCLA0ZGUIAholgLIyCcQgMAOgAAAAAAAACAAAAAAAAAAQAAAAAAAAA==
 
->  <PUBCHEM_IUPAC_OPENEYE_NAME>  (1) 
+> <PUBCHEM_IUPAC_OPENEYE_NAME>
 3-[1-[4,4-bis(4-fluorophenyl)butyl]-4-piperidyl]-1H-benzimidazol-2-one
 
->  <PUBCHEM_IUPAC_CAS_NAME>  (1) 
+> <PUBCHEM_IUPAC_CAS_NAME>
 3-[1-[4,4-bis(4-fluorophenyl)butyl]-4-piperidinyl]-1H-benzimidazol-2-one
 
->  <PUBCHEM_IUPAC_NAME_MARKUP>  (1) 
+> <PUBCHEM_IUPAC_NAME_MARKUP>
 3-[1-[4,4-bis(4-fluorophenyl)butyl]piperidin-4-yl]-1<I>H</I>-benzimidazol-2-one
 
->  <PUBCHEM_IUPAC_NAME>  (1) 
+> <PUBCHEM_IUPAC_NAME>
 3-[1-[4,4-bis(4-fluorophenyl)butyl]piperidin-4-yl]-1H-benzimidazol-2-one
 
->  <PUBCHEM_IUPAC_SYSTEMATIC_NAME>  (1) 
+> <PUBCHEM_IUPAC_SYSTEMATIC_NAME>
 3-[1-[4,4-bis(4-fluorophenyl)butyl]piperidin-4-yl]-1H-benzimidazol-2-one
 
->  <PUBCHEM_IUPAC_TRADITIONAL_NAME>  (1) 
+> <PUBCHEM_IUPAC_TRADITIONAL_NAME>
 3-[1-[4,4-bis(4-fluorophenyl)butyl]-4-piperidyl]-1H-benzimidazol-2-one
 
->  <PUBCHEM_IUPAC_INCHI>  (1) 
+> <PUBCHEM_IUPAC_INCHI>
 InChI=1S/C28H29F2N3O/c29-22-11-7-20(8-12-22)25(21-9-13-23(30)14-10-21)4-3-17-32-18-15-24(16-19-32)33-27-6-2-1-5-26(27)31-28(33)34/h1-2,5-14,24-25H,3-4,15-19H2,(H,31,34)
 
->  <PUBCHEM_IUPAC_INCHIKEY>  (1) 
+> <PUBCHEM_IUPAC_INCHIKEY>
 YVUQSNJEYSNKRX-UHFFFAOYSA-N
 
->  <PUBCHEM_XLOGP3>  (1) 
+> <PUBCHEM_XLOGP3>
 6.3
 
->  <PUBCHEM_EXACT_MASS>  (1) 
+> <PUBCHEM_EXACT_MASS>
 461.22786888
 
->  <PUBCHEM_MOLECULAR_FORMULA>  (1) 
+> <PUBCHEM_MOLECULAR_FORMULA>
 C28H29F2N3O
 
->  <PUBCHEM_MOLECULAR_WEIGHT>  (1) 
+> <PUBCHEM_MOLECULAR_WEIGHT>
 461.5
 
->  <PUBCHEM_OPENEYE_CAN_SMILES>  (1) 
+> <PUBCHEM_OPENEYE_CAN_SMILES>
 C1CN(CCC1N2C3=CC=CC=C3NC2=O)CCCC(C4=CC=C(C=C4)F)C5=CC=C(C=C5)F
 
->  <PUBCHEM_OPENEYE_ISO_SMILES>  (1) 
+> <PUBCHEM_OPENEYE_ISO_SMILES>
 C1CN(CCC1N2C3=CC=CC=C3NC2=O)CCCC(C4=CC=C(C=C4)F)C5=CC=C(C=C5)F
 
->  <PUBCHEM_CACTVS_TPSA>  (1) 
+> <PUBCHEM_CACTVS_TPSA>
 35.6
 
->  <PUBCHEM_MONOISOTOPIC_WEIGHT>  (1) 
+> <PUBCHEM_MONOISOTOPIC_WEIGHT>
 461.22786888
 
->  <PUBCHEM_TOTAL_CHARGE>  (1) 
+> <PUBCHEM_TOTAL_CHARGE>
 0
 
->  <PUBCHEM_HEAVY_ATOM_COUNT>  (1) 
+> <PUBCHEM_HEAVY_ATOM_COUNT>
 34
 
->  <PUBCHEM_ATOM_DEF_STEREO_COUNT>  (1) 
+> <PUBCHEM_ATOM_DEF_STEREO_COUNT>
 0
 
->  <PUBCHEM_ATOM_UDEF_STEREO_COUNT>  (1) 
+> <PUBCHEM_ATOM_UDEF_STEREO_COUNT>
 0
 
->  <PUBCHEM_BOND_DEF_STEREO_COUNT>  (1) 
+> <PUBCHEM_BOND_DEF_STEREO_COUNT>
 0
 
->  <PUBCHEM_BOND_UDEF_STEREO_COUNT>  (1) 
+> <PUBCHEM_BOND_UDEF_STEREO_COUNT>
 0
 
->  <PUBCHEM_ISOTOPIC_ATOM_COUNT>  (1) 
+> <PUBCHEM_ISOTOPIC_ATOM_COUNT>
 0
 
->  <PUBCHEM_COMPONENT_COUNT>  (1) 
+> <PUBCHEM_COMPONENT_COUNT>
 1
 
->  <PUBCHEM_CACTVS_TAUTO_COUNT>  (1) 
+> <PUBCHEM_CACTVS_TAUTO_COUNT>
 -1
 
->  <PUBCHEM_COORDINATE_TYPE>  (1) 
+> <PUBCHEM_COORDINATE_TYPE>
 1
 5
 255
 
->  <PUBCHEM_BONDANNOTATIONS>  (1) 
+> <PUBCHEM_BONDANNOTATIONS>
 14  18  8
 14  19  8
 18  22  8

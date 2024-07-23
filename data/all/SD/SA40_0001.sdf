@@ -1,11 +1,11 @@
-595964
-     RDKit          2D
+SA40_0001
+  -OEChem-07172407082D
 
- 14 15  0  0  1  0  0  0  0  0999 V2000
+ 30 31  0     1  0  0  0  0  0999 V2000
     3.7690   -1.1819    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
     2.5369   -0.3158    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
-    4.2690   -0.3158    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
-    3.4030    0.1842    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.2690   -0.3158    0.0000 C   0  0  3  0  0  0  0  0  0  0  0  0
+    3.4030    0.1842    0.0000 C   0  0  3  0  0  0  0  0  0  0  0  0
     3.4030    1.1842    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
     5.1350    0.1842    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
     4.2690    1.6842    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
@@ -16,124 +16,156 @@
     6.0290    1.7188    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
     6.9350    0.1633    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
     6.9350    1.2050    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
-  1  3  1  0
-  2  4  1  0
-  3  4  1  0
-  3  6  1  0
-  3  8  1  0
-  4  5  1  0
-  5  7  1  0
-  6  9  2  0
-  6 10  1  0
-  7  9  1  0
-  8 11  1  0
-  9 12  1  0
- 10 13  2  0
- 12 14  2  0
- 13 14  1  0
+    3.4030   -0.4358    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    3.1909    1.7668    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.7924    1.0765    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.6675    2.1591    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    3.8705    2.1591    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.1864   -1.3939    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.8766   -1.7925    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    6.0218   -0.9705    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.0790   -1.7188    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    5.7690   -1.8019    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    6.3890   -1.1819    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    5.7690   -0.5619    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    6.0218    2.3388    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.0000   -0.0059    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    7.4708   -0.1487    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    7.4708    1.5170    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+  1  3  1  0  0  0  0
+  1 23  1  0  0  0  0
+  2  4  1  0  0  0  0
+  2 28  1  0  0  0  0
+  3  4  1  0  0  0  0
+  3  6  1  0  0  0  0
+  3  8  1  0  0  0  0
+  4  5  1  0  0  0  0
+  4 15  1  0  0  0  0
+  5  7  1  0  0  0  0
+  5 16  1  0  0  0  0
+  5 17  1  0  0  0  0
+  6  9  1  0  0  0  0
+  6 10  2  0  0  0  0
+  7  9  1  0  0  0  0
+  7 18  1  0  0  0  0
+  7 19  1  0  0  0  0
+  8 11  1  0  0  0  0
+  8 20  1  0  0  0  0
+  8 21  1  0  0  0  0
+  9 12  2  0  0  0  0
+ 10 13  1  0  0  0  0
+ 10 22  1  0  0  0  0
+ 11 24  1  0  0  0  0
+ 11 25  1  0  0  0  0
+ 11 26  1  0  0  0  0
+ 12 14  1  0  0  0  0
+ 12 27  1  0  0  0  0
+ 13 14  2  0  0  0  0
+ 13 29  1  0  0  0  0
+ 14 30  1  0  0  0  0
 M  END
->  <PUBCHEM_COMPOUND_CID>  (1) 
+> <PUBCHEM_COMPOUND_CID>
 595964
 
->  <PUBCHEM_COMPOUND_CANONICALIZED>  (1) 
+> <PUBCHEM_COMPOUND_CANONICALIZED>
 1
 
->  <PUBCHEM_CACTVS_COMPLEXITY>  (1) 
+> <PUBCHEM_CACTVS_COMPLEXITY>
 205
 
->  <PUBCHEM_CACTVS_HBOND_ACCEPTOR>  (1) 
+> <PUBCHEM_CACTVS_HBOND_ACCEPTOR>
 2
 
->  <PUBCHEM_CACTVS_HBOND_DONOR>  (1) 
+> <PUBCHEM_CACTVS_HBOND_DONOR>
 2
 
->  <PUBCHEM_CACTVS_ROTATABLE_BOND>  (1) 
+> <PUBCHEM_CACTVS_ROTATABLE_BOND>
 1
 
->  <PUBCHEM_CACTVS_SUBSKEYS>  (1) 
+> <PUBCHEM_CACTVS_SUBSKEYS>
 AAADceBwMAAAAAAAAAAAAAAAAAAAAAAAAAAwYAAAAAAAAADBAAAAGgAACAAADFSgmAIyAIAAAgCAAiBCAAACAAAgAAAIiAAACIgJNiKAERCAcAAkwAEJmAeAwPAOgAAAAAAQAABAAAYAADCAAAAAAAAAAA==
 
->  <PUBCHEM_IUPAC_OPENEYE_NAME>  (1) 
+> <PUBCHEM_IUPAC_OPENEYE_NAME>
 1-ethyltetralin-1,2-diol
 
->  <PUBCHEM_IUPAC_CAS_NAME>  (1) 
+> <PUBCHEM_IUPAC_CAS_NAME>
 1-ethyl-3,4-dihydro-2H-naphthalene-1,2-diol
 
->  <PUBCHEM_IUPAC_NAME_MARKUP>  (1) 
+> <PUBCHEM_IUPAC_NAME_MARKUP>
 1-ethyl-3,4-dihydro-2<I>H</I>-naphthalene-1,2-diol
 
->  <PUBCHEM_IUPAC_NAME>  (1) 
+> <PUBCHEM_IUPAC_NAME>
 1-ethyl-3,4-dihydro-2H-naphthalene-1,2-diol
 
->  <PUBCHEM_IUPAC_SYSTEMATIC_NAME>  (1) 
+> <PUBCHEM_IUPAC_SYSTEMATIC_NAME>
 1-ethyl-3,4-dihydro-2H-naphthalene-1,2-diol
 
->  <PUBCHEM_IUPAC_TRADITIONAL_NAME>  (1) 
+> <PUBCHEM_IUPAC_TRADITIONAL_NAME>
 1-ethyltetralin-1,2-diol
 
->  <PUBCHEM_IUPAC_INCHI>  (1) 
+> <PUBCHEM_IUPAC_INCHI>
 InChI=1S/C12H16O2/c1-2-12(14)10-6-4-3-5-9(10)7-8-11(12)13/h3-6,11,13-14H,2,7-8H2,1H3
 
->  <PUBCHEM_IUPAC_INCHIKEY>  (1) 
+> <PUBCHEM_IUPAC_INCHIKEY>
 GXIZAHWBXNNHBL-UHFFFAOYSA-N
 
->  <PUBCHEM_XLOGP3_AA>  (1) 
+> <PUBCHEM_XLOGP3_AA>
 1.6
 
->  <PUBCHEM_EXACT_MASS>  (1) 
+> <PUBCHEM_EXACT_MASS>
 192.115029749
 
->  <PUBCHEM_MOLECULAR_FORMULA>  (1) 
+> <PUBCHEM_MOLECULAR_FORMULA>
 C12H16O2
 
->  <PUBCHEM_MOLECULAR_WEIGHT>  (1) 
+> <PUBCHEM_MOLECULAR_WEIGHT>
 192.25
 
->  <PUBCHEM_OPENEYE_CAN_SMILES>  (1) 
+> <PUBCHEM_OPENEYE_CAN_SMILES>
 CCC1(C(CCC2=CC=CC=C21)O)O
 
->  <PUBCHEM_OPENEYE_ISO_SMILES>  (1) 
+> <PUBCHEM_OPENEYE_ISO_SMILES>
 CCC1(C(CCC2=CC=CC=C21)O)O
 
->  <PUBCHEM_CACTVS_TPSA>  (1) 
+> <PUBCHEM_CACTVS_TPSA>
 40.5
 
->  <PUBCHEM_MONOISOTOPIC_WEIGHT>  (1) 
+> <PUBCHEM_MONOISOTOPIC_WEIGHT>
 192.115029749
 
->  <PUBCHEM_TOTAL_CHARGE>  (1) 
+> <PUBCHEM_TOTAL_CHARGE>
 0
 
->  <PUBCHEM_HEAVY_ATOM_COUNT>  (1) 
+> <PUBCHEM_HEAVY_ATOM_COUNT>
 14
 
->  <PUBCHEM_ATOM_DEF_STEREO_COUNT>  (1) 
+> <PUBCHEM_ATOM_DEF_STEREO_COUNT>
 0
 
->  <PUBCHEM_ATOM_UDEF_STEREO_COUNT>  (1) 
+> <PUBCHEM_ATOM_UDEF_STEREO_COUNT>
 2
 
->  <PUBCHEM_BOND_DEF_STEREO_COUNT>  (1) 
+> <PUBCHEM_BOND_DEF_STEREO_COUNT>
 0
 
->  <PUBCHEM_BOND_UDEF_STEREO_COUNT>  (1) 
+> <PUBCHEM_BOND_UDEF_STEREO_COUNT>
 0
 
->  <PUBCHEM_ISOTOPIC_ATOM_COUNT>  (1) 
+> <PUBCHEM_ISOTOPIC_ATOM_COUNT>
 0
 
->  <PUBCHEM_COMPONENT_COUNT>  (1) 
+> <PUBCHEM_COMPONENT_COUNT>
 1
 
->  <PUBCHEM_CACTVS_TAUTO_COUNT>  (1) 
+> <PUBCHEM_CACTVS_TAUTO_COUNT>
 -1
 
->  <PUBCHEM_COORDINATE_TYPE>  (1) 
+> <PUBCHEM_COORDINATE_TYPE>
 1
 5
 255
 
->  <PUBCHEM_BONDANNOTATIONS>  (1) 
+> <PUBCHEM_BONDANNOTATIONS>
 3  1  3
 10  13  8
 12  14  8

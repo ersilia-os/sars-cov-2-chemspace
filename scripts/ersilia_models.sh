@@ -44,3 +44,18 @@ ersilia close
 ersilia serve eos24ur
 ersilia -v run -i ../data/all_molecules.csv -o ../data/all_molecules_eos24ur.csv
 ersilia close
+
+# REDIAL
+ersilia serve eos8fth
+ersilia -v run -i ../data/all_molecules.csv -o ../data/all_molecules_eos8fth.csv
+ersilia close
+
+#ImageMol
+ersilia serve eos4cxk
+ersilia -v run -i ../data/all_molecules.csv -o ../data/all_molecules_eos4cxk.csv
+ersilia close
+
+#SarsCov1 Chemprop
+ersilia serve eos9f6t
+ersilia -v run -i ../data/all_molecules.csv -o ../data/all_molecules_eos9f6t.csv
+ersilia close
