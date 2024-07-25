@@ -1,16 +1,21 @@
-#from eosce import ErsiliaCompoundEmbeddings
 import pandas as pd
 import os
 
+#prepare files for Ersilia Models
+
 root = os.path.dirname(os.path.abspath(__file__))
 
-query_smiles_list = pd.read_csv(os.path.join(root, "../data/all_molecules.csv"))["smiles"].tolist()
 
-#emb = ErsiliaCompoundEmbeddings()
+cheese_smiles = pd.read_csv(os.path.join(root, "../results/cheese_search.csv"))["smiles"].tolist()
+chemdiv_smiles = pd.read_csv(os.path.join(root, "../data/chemdiv_molecules.csv"))["smiles"].tolist()
 
-smiles_list = pd.read_csv(os.path.join(root, "../results/cheese_search.csv"))["smiles"].tolist()
+print(len(cheese_smiles), len(set(cheese_smiles)))
+print(len(chemdiv_smiles), len(set(chemdiv_smiles)))
+print(len(set(cheese_smiles) & set(chemdiv_smiles)))
 
-chemdiv_smiles_list = pd.read_csv(os.path.join(root, "../data/chemdiv_molecules.csv"))["smiles"].tolist()
-
-print(len(set(smiles_list) & set(chemdiv_smiles_list)))
-print(len(set(query_smiles_list) & set(chemdiv_smiles_list)))
+cheese = pd.DataFrame({"smiles": list(set(cheese_smiles))})
+print(cheese.shape)
+cheese.to_csv(os.path.join(root, "../results/cheese_search_smiles.csv"), index=False)
+chemdiv = pd.DataFrame({"smiles": list(set(chemdiv_smiles))})
+chemdiv.to_csv(os.path.join(root, "../data/chemdiv_smiles.csv"), index=False)
+print(chemdiv.shape)
