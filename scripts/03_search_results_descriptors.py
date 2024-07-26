@@ -1,13 +1,17 @@
 import pandas as pd
 import os
 
-#prepare files for Ersilia Models
+# prepare files for Ersilia Models
 
 root = os.path.dirname(os.path.abspath(__file__))
 
 
-cheese_smiles = pd.read_csv(os.path.join(root, "../results/cheese_search.csv"))["smiles"].tolist()
-chemdiv_smiles = pd.read_csv(os.path.join(root, "../data/chemdiv_molecules.csv"))["smiles"].tolist()
+cheese_smiles = pd.read_csv(os.path.join(root, "../results/cheese_search.csv"))[
+    "smiles"
+].tolist()
+chemdiv_smiles = pd.read_csv(os.path.join(root, "../data/chemdiv_molecules.csv"))[
+    "smiles"
+].tolist()
 
 print(len(cheese_smiles), len(set(cheese_smiles)))
 print(len(chemdiv_smiles), len(set(chemdiv_smiles)))

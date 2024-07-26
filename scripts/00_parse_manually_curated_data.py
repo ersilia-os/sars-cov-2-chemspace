@@ -9,11 +9,12 @@ from tqdm import tqdm
 
 root = os.path.dirname(os.path.abspath(__file__))
 
-RDLogger.DisableLog('rdApp.*')                                                                                                                                                           
+RDLogger.DisableLog("rdApp.*")
 
-data_dir = os.path.join(root, '..', 'data')
-np_dir = os.path.join(data_dir, 'all', 'NP')
-sd_dir = os.path.join(data_dir, 'all', 'SD')
+data_dir = os.path.join(root, "..", "data")
+np_dir = os.path.join(data_dir, "all", "NP")
+sd_dir = os.path.join(data_dir, "all", "SD")
+
 
 def molecule_loader(subfolder):
     sdf_paths = []
@@ -27,7 +28,7 @@ def molecule_loader(subfolder):
             mol_paths.append(os.path.join(subfolder, fn))
         if fn.endswith(".mol2"):
             mol2_paths.append(os.path.join(subfolder, fn))
-    
+
     mols = []
     paths = []
     names = []
@@ -42,7 +43,7 @@ def molecule_loader(subfolder):
         mols += mols_
         paths += [sdf_path]
         names += [name]
-    
+
     for mol_path in mol_paths:
         name = mol_path.split("/")[-1][:-4]
         mol = rdkit.Chem.MolFromMolFile(mol_path)
@@ -51,7 +52,7 @@ def molecule_loader(subfolder):
         mols += [mol]
         paths += [mol_path]
         names += [name]
-    
+
     for mol2_path in mol2_paths:
         name = mol2_path.split("/")[-1][:-5]
         mol = rdkit.Chem.MolFromMol2File(mol2_path)
@@ -73,46 +74,60 @@ def molecule_loader(subfolder):
         except:
             c += 1
             continue
-    print("Number of non-standardized molecules (skipped) {0}. File: {1}".format(c, subfolder))
+    print(
+        "Number of non-standardized molecules (skipped) {0}. File: {1}".format(
+            c, subfolder
+        )
+    )
     return mols_
+
 
 np_mols = molecule_loader(np_dir)
 sd_mols = molecule_loader(sd_dir)
 
+
 def mols_to_table(mols, category):
     mols_ = []
     for name, mol in mols:
-        mols_ += [(name, rdkit.Chem.MolToInchiKey(mol), rdkit.Chem.MolToSmiles(mol), category)]
-    df = pd.DataFrame(mols_, columns=['file_name', "inchikey", 'smiles', "category"])
+        smiles = rdkit.Chem.MolToSmiles(mol)
+        mols_ += [
+            (
+                name,
+                rdkit.Chem.MolToInchiKey(Chem.MolFromSmiles(smiles)),
+                smiles,
+                category,
+            )
+        ]
+    df = pd.DataFrame(mols_, columns=["file_name", "inchikey", "smiles", "category"])
     return df
+
 
 np_df = mols_to_table(np_mols, "natural")
 sd_df = mols_to_table(sd_mols, "synthetic")
-np_df_dup = np_df.drop_duplicates(keep = "first")
+np_df_dup = np_df.drop_duplicates(keep="first")
 print(len(np_df_dup))
-sd_df_dup = sd_df.drop_duplicates(keep = "first")
+sd_df_dup = sd_df.drop_duplicates(keep="first")
 print(len(sd_df_dup))
 
 df = pd.concat([np_df, sd_df]).drop_duplicates().reset_index(drop=True)
 
 print(len(np_df), len(sd_df), len(df))
 
-df.to_csv(os.path.join(data_dir, 'all_molecules.csv'), index=False)
+df.to_csv(os.path.join(data_dir, "all_molecules.csv"), index=False)
 
 # parse chemdiv
 
-chemdiv_sdf = os.path.join(data_dir, 'ChemDiv_SDF_CORONAVIRUS_Library_20750.sdf')
+chemdiv_sdf = os.path.join(data_dir, "ChemDiv_SDF_CORONAVIRUS_Library_20750.sdf")
 
 suppl = Chem.SDMolSupplier(chemdiv_sdf)
 mols = [mol for mol in suppl if mol is not None]
 
 
-with open(os.path.join(data_dir, 'chemdiv_molecules.csv'), 'w') as f:
+with open(os.path.join(data_dir, "chemdiv_molecules.csv"), "w") as f:
     writer = csv.writer(f)
-    writer.writerow(['name', 'inchikey', 'smiles'])
+    writer.writerow(["name", "inchikey", "smiles"])
     for mol in tqdm(mols):
         name = mol.GetProp("IDNUMBER")
         inchikey = rdkit.Chem.MolToInchiKey(mol)
         smiles = rdkit.Chem.MolToSmiles(mol)
         writer.writerow([name, inchikey, smiles])
-
