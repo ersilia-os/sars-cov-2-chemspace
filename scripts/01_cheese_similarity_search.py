@@ -108,7 +108,10 @@ def query_molecule_all_similarities(
 
 
 def query_and_write(smiles):
-    inchikey = Chem.MolToInchiKey(Chem.MolFromSmiles(smiles))
+    try:
+        inchikey = Chem.MolToInchiKey(Chem.MolFromSmiles(smiles))
+    except:
+        return
     if len(inchikey) != 27:
         print("Invalid inchikey for", smiles)
         return
@@ -126,10 +129,6 @@ smiles_list = pd.read_csv(os.path.join(root, "../data/all_molecules.csv"))[
 
 for smiles in smiles_list:
     query_and_write(smiles)
-
-import sys
-
-sys.exit(0)
 
 smiles_list_drugbank = pd.read_csv(os.path.join(root, "../data/drugbank_smiles.csv"))[
     "Smiles"
