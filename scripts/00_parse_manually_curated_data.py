@@ -117,7 +117,7 @@ df_ = df.drop_duplicates(subset=["inchikey"])
 print(len(np_df), len(sd_df), len(df), len(df_))
 print(df[df["inchikey"].isna()])
 
-#df.to_csv(os.path.join(data_dir, "all_molecules.csv"), index=False)
+df.to_csv(os.path.join(data_dir, "all_molecules.csv"), index=False)
 
 # parse chemdiv
 """
@@ -128,6 +128,7 @@ mols = [mol for mol in suppl if mol is not None]
 
 
 with open(os.path.join(data_dir, "chemdiv", "chemdiv_molecules.csv"), "w") as f:
+with open(os.path.join(data_dir, "chemdiv_molecules.csv"), "w") as f:
     writer = csv.writer(f)
     writer.writerow(["name", "inchikey", "smiles"])
     for mol in tqdm(mols):
@@ -136,3 +137,19 @@ with open(os.path.join(data_dir, "chemdiv", "chemdiv_molecules.csv"), "w") as f:
         smiles = rdkit.Chem.MolToSmiles(mol)
         writer.writerow([name, inchikey, smiles])
 """
+
+# parse chemdiv generalistic molecules
+
+chemdiv_sdf = os.path.join(data_dir, "Preplated-set-100K.sdf")
+
+suppl = Chem.SDMolSupplier(chemdiv_sdf)
+mols = [mol for mol in suppl if mol is not None]
+
+with open(os.path.join(data_dir, "chemdiv_100k_generalistic.csv"), "w") as f:
+    writer = csv.writer(f)
+    writer.writerow(["name", "inchikey", "smiles"])
+    for mol in tqdm(mols):
+        name = mol.GetProp("IDNUMBER")
+        inchikey = rdkit.Chem.MolToInchiKey(mol)
+        smiles = rdkit.Chem.MolToSmiles(mol)
+        writer.writerow([name, inchikey, smiles])

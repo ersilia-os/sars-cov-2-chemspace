@@ -4,6 +4,7 @@ import os
 from tqdm import tqdm
 from rdkit import Chem
 import csv
+import numpy as np
 
 root = os.path.dirname(os.path.abspath(__file__))
 
@@ -30,9 +31,9 @@ for r in pd.read_csv(smiles_and_ik_file).values:
     smi2ik[r[0]] = r[1]
 
 databases = {}
-consensus_scores = collections.defaultdict(float)
-consensus_syn_scores = collections.defaultdict(float)
-consensus_nat_scores = collections.defaultdict(float)
+consensus_scores = collections.defaultdict(list)
+consensus_syn_scores = collections.defaultdict(list)
+consensus_nat_scores = collections.defaultdict(list)
 consensus_hits = collections.defaultdict(int)
 consensus_syn_hits = collections.defaultdict(int)
 consensus_nat_hits = collections.defaultdict(int)
@@ -49,18 +50,28 @@ for r in tqdm(df.values):
     score = r[2]
     database = r[3]
     databases[ik] = database
-    consensus_scores[ik] += score
+    consensus_scores[ik] += [score]
     consensus_hits[ik] += 1
     if category == "synthetic":
-        consensus_syn_scores[ik] += score
+        consensus_syn_scores[ik] += [score]
         consensus_syn_hits[ik] += 1
     elif category == "natural":
-        consensus_nat_scores[ik] += score
+        consensus_nat_scores[ik] += [score]
         consensus_nat_hits[ik] += 1
     else:
         continue
 
 smiles = [r[0] for r in pd.read_csv(smiles_and_ik_file).values]
+
+def max_score(scores):
+    if len(scores) == 0:
+        return 0
+    return np.max(scores)
+
+def sum_score(scores):
+    if len(scores) == 0:
+        return 0
+    return np.sum(scores)
 
 R = []
 for smi in smiles:
@@ -74,9 +85,12 @@ for smi in smiles:
             consensus_hits[ik],
             consensus_syn_hits[ik],
             consensus_nat_hits[ik],
-            consensus_scores[ik],
-            consensus_syn_scores[ik],
-            consensus_nat_scores[ik],
+            sum_score(consensus_scores[ik]),
+            sum_score(consensus_syn_scores[ik]),
+            sum_score(consensus_nat_scores[ik]),
+            max_score(consensus_scores[ik]),
+            max_score(consensus_syn_scores[ik]),
+            max_score(consensus_nat_scores[ik]),
             databases[ik],
         ]
     )
@@ -92,6 +106,9 @@ df = pd.DataFrame(
         "consensus_score",
         "consensus_syn_score",
         "consensus_nat_score",
+        "consensus_max_score",
+        "consensus_syn_max_score",
+        "consensus_nat_max_score",
         "database",
     ],
 )

@@ -8,3 +8,6 @@ results/cheese_eos2gw4.csv filter=lfs diff=lfs merge=lfs -text
 results/cheese_eos7pw8.csv filter=lfs diff=lfs merge=lfs -text
 results/cheese_eos8fth.csv filter=lfs diff=lfs merge=lfs -text
 results/cheese_eos8ioa.csv filter=lfs diff=lfs merge=lfs -text
+data/Preplated-set-100K.sdf filter=lfs diff=lfs merge=lfs -text
+results/cheese_drugbank_search.csv filter=lfs diff=lfs merge=lfs -text
+results/internal_classifier_drugbank_cheese_search.csv filter=lfs diff=lfs merge=lfs -text

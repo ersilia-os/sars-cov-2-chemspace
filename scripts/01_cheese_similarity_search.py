@@ -73,7 +73,7 @@ def _query_molecule(smiles, search_type, search_quality, n_neighbors):
 def query_molecule(
     smiles, search_type="consensus", search_quality="very accurate", n_neighbors=100
 ):
-    for _ in range(10):
+    for _ in range(3):
         try:
             df = _query_molecule(
                 smiles,
@@ -86,6 +86,7 @@ def query_molecule(
         except:
             print("Error, retrying in 5 seconds")
             time.sleep(5)
+    return None
 
 
 def query_molecule_all_similarities(
@@ -103,6 +104,9 @@ def query_molecule_all_similarities(
                 n_neighbors=n_neighbors,
             )
         ]
+    dfs = [df for df in dfs if df is not None]
+    if len(dfs) == 0:
+        return None
     df = pd.concat(dfs).reset_index(drop=True)
     return df
 
@@ -120,7 +124,8 @@ def query_and_write(smiles):
         print("Already done for", inchikey)
         return
     df = query_molecule_all_similarities(smiles)
-    df.to_csv(file_name, index=False)
+    if df is not None:
+        df.to_csv(file_name, index=False)
 
 
 smiles_list = pd.read_csv(os.path.join(root, "../data/all_molecules.csv"))[
