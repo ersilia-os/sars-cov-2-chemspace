@@ -12,8 +12,8 @@ root = os.path.dirname(os.path.abspath(__file__))
 RDLogger.DisableLog("rdApp.*")
 
 data_dir = os.path.join(root, "..", "data")
-np_dir = os.path.join(data_dir, "all", "NP")
-sd_dir = os.path.join(data_dir, "all", "SD")
+np_dir = os.path.join(data_dir, "original", "NP")
+sd_dir = os.path.join(data_dir, "original", "SD")
 
 
 def molecule_loader(subfolder):
@@ -104,26 +104,30 @@ def mols_to_table(mols, category):
 
 np_df = mols_to_table(np_mols, "natural")
 sd_df = mols_to_table(sd_mols, "synthetic")
-np_df_dup = np_df.drop_duplicates(keep="first")
-print(len(np_df_dup))
-sd_df_dup = sd_df.drop_duplicates(keep="first")
-print(len(sd_df_dup))
+np_df_dup = np_df.drop_duplicates(subset=["inchikey"])
+print(len(np_df), len(np_df_dup))
+sd_df_dup = sd_df.drop_duplicates(subset=["inchikey"])
+print(len(sd_df), len(sd_df_dup))
 
-df = pd.concat([np_df, sd_df]).drop_duplicates().reset_index(drop=True)
+df = pd.concat([np_df_dup, sd_df_dup]).reset_index(drop=True)
+duplicated = df[df.duplicated(subset='inchikey', keep=False)]
+duplicated = duplicated.sort_values(by=["inchikey"])
+duplicated.to_csv("../data/duplicated_sdfs.csv", index=False)
+df_ = df.drop_duplicates(subset=["inchikey"])
+print(len(np_df), len(sd_df), len(df), len(df_))
+print(df[df["inchikey"].isna()])
 
-print(len(np_df), len(sd_df), len(df))
-
-df.to_csv(os.path.join(data_dir, "all_molecules.csv"), index=False)
+#df.to_csv(os.path.join(data_dir, "all_molecules.csv"), index=False)
 
 # parse chemdiv
-
-chemdiv_sdf = os.path.join(data_dir, "ChemDiv_SDF_CORONAVIRUS_Library_20750.sdf")
+"""
+chemdiv_sdf = os.path.join(data_dir, "chemdiv", "ChemDiv_SDF_CORONAVIRUS_Library_20750.sdf")
 
 suppl = Chem.SDMolSupplier(chemdiv_sdf)
 mols = [mol for mol in suppl if mol is not None]
 
 
-with open(os.path.join(data_dir, "chemdiv_molecules.csv"), "w") as f:
+with open(os.path.join(data_dir, "chemdiv", "chemdiv_molecules.csv"), "w") as f:
     writer = csv.writer(f)
     writer.writerow(["name", "inchikey", "smiles"])
     for mol in tqdm(mols):
@@ -131,3 +135,4 @@ with open(os.path.join(data_dir, "chemdiv_molecules.csv"), "w") as f:
         inchikey = rdkit.Chem.MolToInchiKey(mol)
         smiles = rdkit.Chem.MolToSmiles(mol)
         writer.writerow([name, inchikey, smiles])
+"""

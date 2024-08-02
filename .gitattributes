@@ -1,6 +1,6 @@
 results/cheese_search.csv filter=lfs diff=lfs merge=lfs -text
-data/chemdiv_eos2gw4.csv filter=lfs diff=lfs merge=lfs -text
-data/chemdiv_eos39co.csv filter=lfs diff=lfs merge=lfs -text
+data/chemdiv/chemdiv_eos2gw4.csv filter=lfs diff=lfs merge=lfs -text
+data/chemdiv/chemdiv_eos39co.csv filter=lfs diff=lfs merge=lfs -text
 results/cheese_eos4wt0.csv filter=lfs diff=lfs merge=lfs -text
 results/cheese_eos24ur.csv filter=lfs diff=lfs merge=lfs -text
 results/cheese_eos39co.csv filter=lfs diff=lfs merge=lfs -text
