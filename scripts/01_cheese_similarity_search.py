@@ -5,6 +5,7 @@ import time
 from rdkit import Chem
 import requests
 import urllib3
+import csv
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
@@ -112,6 +113,7 @@ def query_molecule_all_similarities(
 
 
 def query_and_write(smiles):
+    failed_iks_filename = os.path.join("..", "results", "cheese_failed_iks.csv")
     try:
         inchikey = Chem.MolToInchiKey(Chem.MolFromSmiles(smiles))
     except:
@@ -123,9 +125,26 @@ def query_and_write(smiles):
     if os.path.exists(file_name):
         print("Already done for", inchikey)
         return
+    else:
+        if os.path.exists(failed_iks_filename):
+            with open(failed_iks_filename, "r") as f:
+                reader = csv.reader(f)
+                failed_iks = [row[0] for row in reader]
+            if inchikey in failed_iks:
+                print("Failed before for", inchikey, ". Skipping")
+                return
     df = query_molecule_all_similarities(smiles)
     if df is not None:
         df.to_csv(file_name, index=False)
+    else:
+        if not os.path.exists(failed_iks_filename):
+            with open(failed_iks_filename, "w") as f:
+                writer = csv.writer(f)
+                writer.writerow([inchikey])
+        else:
+            with open(failed_iks_filename, "a") as f:
+                writer = csv.writer(f)
+                writer.writerow([inchikey])
 
 
 smiles_list = pd.read_csv(os.path.join(root, "../data/all_molecules.csv"))[
