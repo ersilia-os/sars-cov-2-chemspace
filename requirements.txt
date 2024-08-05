@@ -1,1 +1,9 @@
 requests
+rdkit
+standardiser
+tqdm
+dotenv
+pandas
+scikit-learn
+git+git://github.com/ersilia-os/lazy-qsar.git # to train ML classifiers
+git+git://github.com/ersilia-os/stylia.git # to generate figures
