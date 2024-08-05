@@ -17,6 +17,8 @@ The notebooks folder showcases the data analysis and figure generation for the p
 ## Citation
 Please cite this work as [TBC]
 
+## Usage
+You will need a .env file with the CHEESE_API_KEY **TO DO**
 
 ## License
 The code in this repository is available under a GPLv3 license and the data and figures under a CC-BY-4 License.
