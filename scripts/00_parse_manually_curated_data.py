@@ -120,15 +120,13 @@ print(df[df["inchikey"].isna()])
 df.to_csv(os.path.join(data_dir, "all_molecules.csv"), index=False)
 
 # parse chemdiv
-"""
+
 chemdiv_sdf = os.path.join(data_dir, "chemdiv", "ChemDiv_SDF_CORONAVIRUS_Library_20750.sdf")
 
 suppl = Chem.SDMolSupplier(chemdiv_sdf)
 mols = [mol for mol in suppl if mol is not None]
 
-
 with open(os.path.join(data_dir, "chemdiv", "chemdiv_molecules.csv"), "w") as f:
-with open(os.path.join(data_dir, "chemdiv_molecules.csv"), "w") as f:
     writer = csv.writer(f)
     writer.writerow(["name", "inchikey", "smiles"])
     for mol in tqdm(mols):
@@ -136,7 +134,6 @@ with open(os.path.join(data_dir, "chemdiv_molecules.csv"), "w") as f:
         inchikey = rdkit.Chem.MolToInchiKey(mol)
         smiles = rdkit.Chem.MolToSmiles(mol)
         writer.writerow([name, inchikey, smiles])
-"""
 
 # parse chemdiv generalistic molecules
 
@@ -153,3 +150,24 @@ with open(os.path.join(data_dir, "chemdiv_100k_generalistic.csv"), "w") as f:
         inchikey = rdkit.Chem.MolToInchiKey(mol)
         smiles = rdkit.Chem.MolToSmiles(mol)
         writer.writerow([name, inchikey, smiles])
+
+
+# parse reference library molecules from chembl
+
+reference_library = os.path.join(data_dir, "reference_library.txt") # this file was downloaded as specified in the ersilia-os/compound-embedding repository.
+
+if not os.path.exists(os.path.join(data_dir, "reference_library_inchikeys.csv")):
+
+    with open(reference_library, "r") as f:
+        reader = csv.reader(f, delimiter="\t")
+        smiles_list = [row[0] for row in reader]
+
+    with open(os.path.join(data_dir, "reference_library_inchikeys.csv"), "w") as f:
+        writer = csv.writer(f)
+        writer.writerow(["inchikey", "smiles"])
+        for smiles in tqdm(smiles_list):
+            mol = rdkit.Chem.MolFromSmiles(smiles)
+            if mol is None:
+                continue
+            inchikey = rdkit.Chem.MolToInchiKey(mol)
+            writer.writerow([inchikey, smiles])
