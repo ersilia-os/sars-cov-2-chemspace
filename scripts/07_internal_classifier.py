@@ -3,10 +3,8 @@ import pandas as pd
 import random
 import collections
 import lazyqsar as lq
-from lazyqsar.descriptors.descriptors import MorganDescriptor
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import roc_curve, auc
-from sklearn.ensemble import IsolationForest
 from tqdm import tqdm
 import json
 import numpy as np
@@ -127,53 +125,3 @@ smiles = [p[0] for p in pairs]
 inchikeys = [p[1] for p in pairs]
 df = get_prediction_dataframe(smiles, inchikeys)
 df.to_csv(os.path.join(root, "..", "results", "internal_classifier_drugbank_cheese_search.csv"), index=False)
-
-## One-class classifier
-
-print("Predicting the internal one-class classifier")
-descriptor = MorganDescriptor()
-
-root = os.path.dirname(os.path.abspath(__file__))
-
-df = pd.read_csv(os.path.join(root, "..", "data", "chemdiv_molecules.csv"))
-
-smiles_1 = df["smiles"].tolist()
-iks_1 = df["inchikey"].tolist()
-
-df = pd.read_csv(os.path.join(root, "..", "data", "all_molecules.csv"))
-smiles_1_ = df["smiles"].tolist()
-iks_1_ = df["inchikey"].tolist()
-for smi, ik in tqdm(zip(smiles_1_, iks_1_)):
-    if ik not in iks_1:
-        smiles_1 += [smi]
-        iks_1 += [ik]
-
-smiles_list = smiles_1
-inchikeys = iks_1
-
-X = np.array(descriptor.fit(smiles_list))
-
-clf = IsolationForest(n_estimators=1000)
-clf.fit(X)
-
-def load_data_and_predict(file_name):
-    df = pd.read_csv(file_name)[["inchikey", "smiles", "y_hat", "y_bin"]]
-    X = np.array(descriptor.transform(df["smiles"].tolist()))
-    df["oneclass_score"] = clf.decision_function(X)
-    df["oneclass_bin"] = clf.predict(X)
-    return df
-
-print("Predicting all molecules")
-file_name = os.path.join(root, "..", "results", "internal_classifier_all_molecules.csv")
-df = load_data_and_predict(file_name)
-df.to_csv(file_name, index=False)
-
-print("Predicting cheese molecules")
-file_name = os.path.join(root, "..", "results", "internal_classifier_cheese_search.csv")
-df = load_data_and_predict(file_name)
-df.to_csv(file_name, index=False)
-
-print("Predicting drugbank")
-file_name = os.path.join(root, "..", "results", "internal_classifier_drugbank.csv")
-df = load_data_and_predict(file_name)
-df.to_csv(file_name, index=False)
