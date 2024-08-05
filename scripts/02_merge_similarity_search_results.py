@@ -53,7 +53,18 @@ for r in tqdm(df.values):
                 inchikeys += [None]
         ds["inchikey"] = inchikeys
         ds = ds[ds["inchikey"].notnull()]
-        ds = ds[["query_smiles", "query_inchikey", "smiles", "inchikey", "identifier", "search_type", "score", "database"]]
+        ds = ds[
+            [
+                "query_smiles",
+                "query_inchikey",
+                "smiles",
+                "inchikey",
+                "identifier",
+                "search_type",
+                "score",
+                "database",
+            ]
+        ]
         for s in ds.values:
             R += [[name, cat] + catbin + list(s)]
     else:
@@ -128,7 +139,9 @@ dr.to_csv(
 
 # Drugbank results
 
-db_smiles = pd.read_csv(os.path.join(root, "..", "data", "drugbank_smiles.csv"))["Smiles"].tolist()
+db_smiles = pd.read_csv(os.path.join(root, "..", "data", "drugbank_smiles.csv"))[
+    "Smiles"
+].tolist()
 db_inchikeys = []
 for smiles in db_smiles:
     try:
@@ -175,7 +188,7 @@ for ik in tqdm(db["inchikey"].tolist()):
         else:
             raise ValueError(search_type)
     drugbank_counts += 1
-        
+
 keys = list(key2smi.keys())
 R = []
 for key in keys:
@@ -193,8 +206,41 @@ for key in keys:
             scores = key2esp_elec[key]
         if not scores:
             continue
-        r += [len(scores), len(scores) / drugbank_counts, np.sum(scores), np.sum(scores) / drugbank_counts, np.mean(scores), np.std(scores), np.median(scores), np.percentile(scores, 25), np.percentile(scores, 75), np.min(scores), np.max(scores)]
+        r += [
+            len(scores),
+            len(scores) / drugbank_counts,
+            np.sum(scores),
+            np.sum(scores) / drugbank_counts,
+            np.mean(scores),
+            np.std(scores),
+            np.median(scores),
+            np.percentile(scores, 25),
+            np.percentile(scores, 75),
+            np.min(scores),
+            np.max(scores),
+        ]
         R.append(r)
-ds = pd.DataFrame(R, columns=["inchikey", "smiles", "database", "search_type", "counts", "fraction", "sum", "sum_fraction", "mean", "std", "median", "perc_25", "perc_75", "min", "max"])
+ds = pd.DataFrame(
+    R,
+    columns=[
+        "inchikey",
+        "smiles",
+        "database",
+        "search_type",
+        "counts",
+        "fraction",
+        "sum",
+        "sum_fraction",
+        "mean",
+        "std",
+        "median",
+        "perc_25",
+        "perc_75",
+        "min",
+        "max",
+    ],
+)
 ds = ds.drop_duplicates(inplace=False).reset_index(drop=True)
-ds.to_csv(os.path.join(root, "..", "results", "cheese_drugbank_search.csv"), index=False)
+ds.to_csv(
+    os.path.join(root, "..", "results", "cheese_drugbank_search.csv"), index=False
+)

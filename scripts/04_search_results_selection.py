@@ -63,15 +63,18 @@ for r in tqdm(df.values):
 
 smiles = [r[0] for r in pd.read_csv(smiles_and_ik_file).values]
 
+
 def max_score(scores):
     if len(scores) == 0:
         return 0
     return np.max(scores)
 
+
 def sum_score(scores):
     if len(scores) == 0:
         return 0
     return np.sum(scores)
+
 
 R = []
 for smi in smiles:

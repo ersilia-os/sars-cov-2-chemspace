@@ -110,7 +110,7 @@ sd_df_dup = sd_df.drop_duplicates(subset=["inchikey"])
 print(len(sd_df), len(sd_df_dup))
 
 df = pd.concat([np_df_dup, sd_df_dup]).reset_index(drop=True)
-duplicated = df[df.duplicated(subset='inchikey', keep=False)]
+duplicated = df[df.duplicated(subset="inchikey", keep=False)]
 duplicated = duplicated.sort_values(by=["inchikey"])
 duplicated.to_csv("../data/duplicated_sdfs.csv", index=False)
 df_ = df.drop_duplicates(subset=["inchikey"])
@@ -121,7 +121,9 @@ df.to_csv(os.path.join(data_dir, "all_molecules.csv"), index=False)
 
 # parse chemdiv
 
-chemdiv_sdf = os.path.join(data_dir, "chemdiv", "ChemDiv_SDF_CORONAVIRUS_Library_20750.sdf")
+chemdiv_sdf = os.path.join(
+    data_dir, "chemdiv", "ChemDiv_SDF_CORONAVIRUS_Library_20750.sdf"
+)
 
 suppl = Chem.SDMolSupplier(chemdiv_sdf)
 mols = [mol for mol in suppl if mol is not None]
@@ -154,10 +156,11 @@ with open(os.path.join(data_dir, "chemdiv_100k_generalistic.csv"), "w") as f:
 
 # parse reference library molecules from chembl
 
-reference_library = os.path.join(data_dir, "reference_library.txt") # this file was downloaded as specified in the ersilia-os/compound-embedding repository.
+reference_library = os.path.join(
+    data_dir, "reference_library.txt"
+)  # this file was downloaded as specified in the ersilia-os/compound-embedding repository.
 
 if not os.path.exists(os.path.join(data_dir, "reference_library_inchikeys.csv")):
-
     with open(reference_library, "r") as f:
         reader = csv.reader(f, delimiter="\t")
         smiles_list = [row[0] for row in reader]
