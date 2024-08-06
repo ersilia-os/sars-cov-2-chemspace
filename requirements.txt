@@ -5,5 +5,6 @@ tqdm
 dotenv
 pandas
 scikit-learn
+opentsne
 git+git://github.com/ersilia-os/lazy-qsar.git # to train ML classifiers
 git+git://github.com/ersilia-os/stylia.git # to generate figures
