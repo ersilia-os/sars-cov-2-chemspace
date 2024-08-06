@@ -8,136 +8,120 @@ from sklearn.metrics import roc_curve, auc
 from tqdm import tqdm
 import json
 import numpy as np
+from rdkit import Chem
+import random
 
-TIME_BUDGET_SEC = 60
+TIME_BUDGET_SEC = 10
 ESTIMATOR_LIST = ["rf", "lgbm"]
 REDUCED = False
 N_FOLDS = 1
 
 root = os.path.dirname(os.path.abspath(__file__))
 
-df = pd.read_csv(os.path.join(root, "..", "data", "chemdiv_molecules.csv"))
-
-smiles_1 = df["smiles"].tolist()
-iks_1 = df["inchikey"].tolist()
-
-df = pd.read_csv(os.path.join(root, "..", "data", "all_molecules.csv"))
-smiles_1_ = df["smiles"].tolist()
-iks_1_ = df["inchikey"].tolist()
-for smi, ik in zip(smiles_1_, iks_1_):
-    if ik not in iks_1:
-        smiles_1 += [smi]
-        iks_1 += [ik]
-
-df = pd.read_csv(os.path.join(root, "..", "data", "chemdiv_100k_generalistic.csv"))
-df = df[~df["inchikey"].isin(iks_1)]
-
-smiles_0 = df["smiles"].tolist()
-
-smiles_list = smiles_0 + smiles_1
-y = [0] * len(smiles_0) + [1] * len(smiles_1)
-
-idxs = list(range(len(smiles_list)))
-random.shuffle(idxs)
-
-smiles_list = [smiles_list[i] for i in idxs]
-y = [y[i] for i in idxs]
-
-cross_validation_data = collections.defaultdict(list)
-
-for _ in tqdm(range(N_FOLDS)):
-    smiles_train, smiles_test, y_train, y_test = train_test_split(
-        smiles_list, y, test_size=0.2, random_state=42, stratify=y
-    )
-
-    model = lq.MorganBinaryClassifier(
-        reduced=REDUCED, time_budget_sec=TIME_BUDGET_SEC, estimator_list=ESTIMATOR_LIST
-    )
-    model.fit(smiles_train, y_train)
-
-    y_pred = model.predict_proba(smiles_test)[:, 1]
-
-    fpr, tpr, thr = roc_curve(y_test, y_pred)
-    roc_auc = auc(fpr, tpr)
-    J = tpr - fpr
-
-    best_thr_index = np.argmax(J)
-    best_thr = thr[best_thr_index]
-
-    cross_validation_data["roc_auc"] += [roc_auc]
-    cross_validation_data["thr"] += [best_thr]
-    cross_validation_data["y_hat"] += [list(y_pred)]
-    cross_validation_data["y"] += [list(y_test)]
+if not os.path.exists(os.path.join(root, "..", "results", "classifiers")):
+    os.makedirs(os.path.join(root, "..", "results", "classifiers"))
 
 
-with open(
-    os.path.join(root, "..", "results", "internal_classifier_cross_validation.json"),
-    "w",
-) as f:
-    json.dump(cross_validation_data, f, indent=4)
-
-print("Training a full model on the entire dataset")
-
-model = lq.MorganBinaryClassifier(
-    reduced=REDUCED, time_budget_sec=TIME_BUDGET_SEC, estimator_list=ESTIMATOR_LIST
-)
-
-model.fit(smiles_list, y)
-
-thr = np.mean(cross_validation_data["thr"])
+def smiles_to_inchikey(smiles_list, forbidden_inchikeys=[]):
+    smiles_list_ = []
+    inchikeys = []
+    for smi in tqdm(smiles_list):
+        ik = Chem.MolToInchiKey(Chem.MolFromSmiles(smi))
+        if ik is None:
+            continue
+        if ik in forbidden_inchikeys:
+            continue
+        inchikeys += [ik]
+        smiles_list_ += [smi]
+    return smiles_list_, inchikeys
 
 
-def get_prediction_dataframe(smiles, inchikeys):
-    y_pred = model.predict_proba(smiles)[:, 1]
-    y_bin = []
-    for yp in y_pred:
-        if yp > thr:
-            y_bin += [1]
+class ClassifierPipeline(object):
+    def __init__(self, name, dp, du, max_neg_to_pos=10):
+        self.name = name
+        smiles_p = dp["smiles"].tolist()
+        if "inchikey" not in list(dp.columns):
+            smiles_p, iks_p = smiles_to_inchikey(smiles_p)
         else:
-            y_bin += [0]
-    df = pd.DataFrame(
-        {"inchikey": inchikeys, "smiles": smiles, "y_hat": y_pred, "y_bin": y_bin}
-    )
-    return df
+            iks_p = dp["inchikey"].tolist()
+        smiles_u = du["smiles"].tolist()
+        if "inchikey" not in list(du.columns):
+            smiles_u, iks_u = smiles_to_inchikey(smiles_u)
+        else:
+            iks_u = du["inchikey"].tolist()
+        if len(smiles_u) > max_neg_to_pos * len(smiles_p):
+            idxs = list(range(len(smiles_u)))
+            idxs = random.sample(idxs, max_neg_to_pos * len(smiles_p))
+            smiles_u = [smiles_u[i] for i in idxs]
+            iks_u = [iks_u[i] for i in idxs]
+        self.smiles_1 = smiles_p
+        self.iks_1 = iks_p
+        self.smiles_0 = smiles_u
+        self.iks_0 = iks_u
+        smiles_list = self.smiles_0 + self.smiles_1
+        y = [0] * len(self.smiles_0) + [1] * len(self.smiles_1)
+        idxs = list(range(len(smiles_list)))
+        random.shuffle(idxs)
+        self.smiles_list = [smiles_list[i] for i in idxs]
+        self.y = [y[i] for i in idxs]
+        self.model = None
 
+    def cross_validate(self):
 
-print("Predicting on manually annotated molecules")
+        cross_validation_data = collections.defaultdict(list)
 
-df = pd.read_csv(os.path.join(root, "..", "data", "all_molecules.csv"))
-smiles = df["smiles"].tolist()
-inchikeys = df["inchikey"].tolist()
-df = get_prediction_dataframe(smiles, inchikeys)
-df.to_csv(
-    os.path.join(root, "..", "results", "internal_classifier_all_molecules.csv"),
-    index=False,
-)
+        for _ in tqdm(range(N_FOLDS)):
+            smiles_train, smiles_test, y_train, y_test = train_test_split(
+                self.smiles_list, self.y, test_size=0.2, random_state=42, stratify=self.y
+            )
 
-print("Predicting on CHEESE molecules")
+            model = lq.MorganBinaryClassifier(
+                reduced=REDUCED, time_budget_sec=TIME_BUDGET_SEC, estimator_list=ESTIMATOR_LIST
+            )
+            model.fit(smiles_train, y_train)
 
-df = pd.read_csv(
-    os.path.join(root, "..", "results", "cheese_search_smiles_and_inchikey.csv")
-)
-smiles = df["smiles"].tolist()
-inchikeys = df["inchikey"].tolist()
-df = get_prediction_dataframe(smiles, inchikeys)
-y_pred = model.predict_proba(smiles)[:, 1]
-df.to_csv(
-    os.path.join(root, "..", "results", "internal_classifier_cheese_search.csv"),
-    index=False,
-)
+            y_pred = model.predict_proba(smiles_test)[:, 1]
 
-print("Predicting on DrugBank molecules")
+            fpr, tpr, thr = roc_curve(y_test, y_pred)
+            roc_auc = auc(fpr, tpr)
+            J = tpr - fpr
 
-df = pd.read_csv(os.path.join(root, "..", "data", "drugbank_inchikeys.csv"))
-smiles = df["smiles"].tolist()
-inchikeys = df["inchikey"].tolist()
-df = get_prediction_dataframe(smiles, inchikeys)
-df.to_csv(
-    os.path.join(root, "..", "results", "internal_classifier_drugbank.csv"), index=False
-)
+            best_thr_index = np.argmax(J)
+            best_thr = thr[best_thr_index]
 
-print("Predicting on Drugbank CHEESE search molecules")
+            cross_validation_data["roc_auc"] += [roc_auc]
+            cross_validation_data["thr"] += [best_thr]
+            cross_validation_data["y_hat"] += [list(y_pred)]
+            cross_validation_data["y"] += [list(y_test)]
 
+        with open(
+            os.path.join(root, "..", "results", "classifiers", f"{self.name}.json"),
+            "w",
+        ) as f:
+            json.dump(cross_validation_data, f, indent=4)
+
+    def train(self):
+        self.model = lq.MorganBinaryClassifier(
+            reduced=REDUCED, time_budget_sec=TIME_BUDGET_SEC, estimator_list=ESTIMATOR_LIST
+        )
+        self.model.fit(self.smiles_list, self.y)
+
+    def predict(self, name, df):
+        smiles_list = df["smiles"].tolist()
+        inchikeys = df["inchikey"].tolist()
+        y_hat = self.model.predict_proba(smiles_list)[:, 1]
+        file_name = os.path.join(root, "..", "results", "classifiers", f"classifier_output_{name}.csv")
+        if os.path.exists(file_name):
+            df = pd.read_csv(file_name)
+        else:
+            df = pd.DataFrame({"inchikey": inchikeys, "smiles": smiles_list})
+        df[self.name] = y_hat
+        df.to_csv(file_name, index=False)
+
+print("Gathering prediction datasets")
+df_manually_annotated = pd.read_csv(os.path.join(root, "..", "data", "all_molecules.csv"))[['smiles', 'inchikey']]
+df_cheese_search = pd.read_csv(os.path.join(root, "..", "results", "cheese_search_smiles_and_inchikey.csv"))[['smiles', 'inchikey']]
+df_drugbank = pd.read_csv(os.path.join(root, "..", "data", "drugbank_inchikeys.csv"))[['smiles', 'inchikey']]
 df = pd.read_csv(os.path.join(root, "..", "results", "cheese_drugbank_search.csv"))
 smiles = df["smiles"].tolist()
 inchikeys = df["inchikey"].tolist()
@@ -145,10 +129,59 @@ pairs = [(smi, ik) for smi, ik in zip(smiles, inchikeys)]
 pairs = list(set(pairs))
 smiles = [p[0] for p in pairs]
 inchikeys = [p[1] for p in pairs]
-df = get_prediction_dataframe(smiles, inchikeys)
-df.to_csv(
-    os.path.join(
-        root, "..", "results", "internal_classifier_drugbank_cheese_search.csv"
-    ),
-    index=False,
-)
+df_drugbank_cheese_search = pd.DataFrame({'smiles': smiles, 'inchikey': inchikeys}).sample(n=df_cheese_search.shape[0])
+
+print("Manually annotated vs Drugbank")
+df_p = pd.read_csv(os.path.join(root, "..", "data", "all_molecules.csv"))
+df_u = pd.read_csv(os.path.join(root, "..", "data", "drugbank_inchikeys.csv"))
+classifier = ClassifierPipeline("ma_vs_db", df_p, df_u)
+classifier.cross_validate()
+classifier.train()
+classifier.predict("ma", df_manually_annotated)
+classifier.predict("macs", df_cheese_search)
+classifier.predict("db", df_drugbank)
+classifier.predict("dbcs", df_drugbank_cheese_search)
+
+print("Manually annotated vs ChEMBL (0)")
+df_p = pd.read_csv(os.path.join(root, "..", "data", "all_molecules.csv"))
+df_u = pd.read_csv(os.path.join(root, "..", "data", "reference_library_inchikeys.csv"))
+classifier = ClassifierPipeline("ma_vs_ch0", df_p, df_u)
+classifier.cross_validate()
+classifier.train()
+classifier.predict("ma", df_manually_annotated)
+classifier.predict("macs", df_cheese_search)
+classifier.predict("db", df_drugbank)
+classifier.predict("dbcs", df_drugbank_cheese_search)
+
+print("Manually annotated vs ChEMBL (1)")
+df_p = pd.read_csv(os.path.join(root, "..", "data", "all_molecules.csv"))
+df_u = pd.read_csv(os.path.join(root, "..", "data", "reference_library_inchikeys.csv"))
+classifier = ClassifierPipeline("ma_vs_ch1", df_p, df_u)
+classifier.cross_validate()
+classifier.train()
+classifier.predict("ma", df_manually_annotated)
+classifier.predict("macs", df_cheese_search)
+classifier.predict("db", df_drugbank)
+classifier.predict("dbcs", df_drugbank_cheese_search)
+
+print("Manually annotated vs ChEMBL (2)")
+df_p = pd.read_csv(os.path.join(root, "..", "data", "all_molecules.csv"))
+df_u = pd.read_csv(os.path.join(root, "..", "data", "reference_library_inchikeys.csv"))
+classifier = ClassifierPipeline("ma_vs_ch2", df_p, df_u)
+classifier.cross_validate()
+classifier.train()
+classifier.predict("ma", df_manually_annotated)
+classifier.predict("macs", df_cheese_search)
+classifier.predict("db", df_drugbank)
+classifier.predict("dbcs", df_drugbank_cheese_search)
+
+print("Chemdiv Covid vs Chemdiv")
+df_p = pd.read_csv(os.path.join(root, "..", "data", "chemdiv", "chemdiv_molecules.csv"))
+df_u = pd.read_csv(os.path.join(root, "..", "data", "chemdiv_100k_generalistic.csv"))
+classifier = ClassifierPipeline("cdc_vs_cdg", df_p, df_u)
+classifier.cross_validate()
+classifier.train()
+classifier.predict("ma", df_manually_annotated)
+classifier.predict("macs", df_cheese_search)
+classifier.predict("db", df_drugbank)
+classifier.predict("dbcs", df_drugbank_cheese_search)
