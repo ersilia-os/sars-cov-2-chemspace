@@ -121,6 +121,14 @@ df = df.sort_values(
 ).reset_index(drop=True)
 df.to_csv(os.path.join(root, "..", "results", "cheese_popular_hits.csv"), index=False)
 
+# flatten inchikeys
+
+iks_flat = [ik.split("-")[0] for ik in df["inchikey"].tolist()]
+df["inchikey_flat"] = iks_flat
+df = df.drop_duplicates(subset="inchikey_flat").reset_index(drop=True)
+df = df.drop(columns=["inchikey_flat"])
+df.to_csv(os.path.join(root, "..", "results", "cheese_popular_hits_flat.csv"), index=False)
+
 # analyze hits per query
 
 df = pd.read_csv(os.path.join(root, "..", "results", "cheese_search.csv"))
