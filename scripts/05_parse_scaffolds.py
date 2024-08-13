@@ -30,10 +30,10 @@ def sdf_to_smiles_table(sdf_path, df1):
     return df
 
 
-npsdf = os.path.join(DATAPATH, "np_scaffolds.sdf")
+npsdf = os.path.join(DATAPATH,"original", "scaffolds", "scaffolds_np.sdf")
 df = pd.read_csv(os.path.join(DATAPATH, "all_molecules.csv"))
 npdf = df[df["category"] == "natural"]
-sdsdf = os.path.join(DATAPATH, "sd_scaffolds.sdf")
+sdsdf = os.path.join(DATAPATH,"original", "scaffolds", "scaffolds_sd.sdf")
 sddf = df[df["category"] == "synthetic"]
 dbsdf = os.path.join(DATAPATH, "drugbank_scaffolds.sdf")
 dbdf = pd.read_csv(os.path.join(DATAPATH, "drugbank_smiles.csv"))
@@ -43,8 +43,8 @@ db = sdf_to_smiles_table(dbsdf, dbdf)
 
 print(np.shape, sd.shape, db.shape)
 np.to_csv(os.path.join(DATAPATH, "np_scaffolds.csv"), index=False)
-sd.to_csv(os.path.join(DATAPATH, "np_scaffolds.csv"), index=False)
-db.to_csv(os.path.join(DATAPATH, "np_scaffolds.csv"), index=False)
+sd.to_csv(os.path.join(DATAPATH, "sd_scaffolds.csv"), index=False)
+db.to_csv(os.path.join(DATAPATH, "db_scaffolds.csv"), index=False)
 
 np = np.rename(columns={"abs_freq": "np_abs_freq", "rel_freq": "np_rel_freq"})
 sd = sd.rename(columns={"abs_freq": "sd_abs_freq", "rel_freq": "sd_rel_freq"})

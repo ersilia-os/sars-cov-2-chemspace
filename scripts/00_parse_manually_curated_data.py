@@ -5,6 +5,7 @@ from standardiser import standardise
 from rdkit import RDLogger
 from rdkit import Chem
 import csv
+import shutil
 from tqdm import tqdm
 
 root = os.path.dirname(os.path.abspath(__file__))
@@ -12,8 +13,8 @@ root = os.path.dirname(os.path.abspath(__file__))
 RDLogger.DisableLog("rdApp.*")
 
 data_dir = os.path.join(root, "..", "data")
-np_dir = os.path.join(data_dir, "original", "NP")
-sd_dir = os.path.join(data_dir, "original", "SD")
+np_dir = os.path.join(data_dir, "original", "NP_curated")
+sd_dir = os.path.join(data_dir, "original", "SD_curated")
 
 
 def molecule_loader(subfolder):
@@ -109,12 +110,17 @@ print(len(np_df), len(np_df_dup))
 sd_df_dup = sd_df.drop_duplicates(subset=["inchikey"])
 print(len(sd_df), len(sd_df_dup))
 
+np_duplicates = np_df[np_df.duplicated(subset=["inchikey"], keep=False)]
+print("Duplicated rows in np_df:")
+print(np_duplicates)
+sd_duplicates = sd_df[sd_df.duplicated(subset=["inchikey"], keep=False)]
+print("Duplicated rows in sd_df:")
+print(sd_duplicates)
+
 df = pd.concat([np_df_dup, sd_df_dup]).reset_index(drop=True)
-duplicated = df[df.duplicated(subset="inchikey", keep=False)]
-duplicated = duplicated.sort_values(by=["inchikey"])
-duplicated.to_csv("../data/duplicated_sdfs.csv", index=False)
 df_ = df.drop_duplicates(subset=["inchikey"])
-print(len(np_df), len(sd_df), len(df), len(df_))
+assert len(df) == len(df_)
+print(len(np_df), len(sd_df), len(df))
 print(df[df["inchikey"].isna()])
 
 df.to_csv(os.path.join(data_dir, "all_molecules.csv"), index=False)
