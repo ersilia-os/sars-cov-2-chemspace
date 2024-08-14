@@ -21,6 +21,7 @@ def molecule_loader(subfolder):
     sdf_paths = []
     mol_paths = []
     mol2_paths = []
+    non_opened = []
 
     for fn in os.listdir(subfolder):
         if fn.endswith(".sdf"):
@@ -38,6 +39,7 @@ def molecule_loader(subfolder):
         suppl = rdkit.Chem.SDMolSupplier(sdf_path)
         mols_ = [mol for mol in suppl if mol is not None]
         if len(mols_) == 0:
+            non_opened += [name]
             continue
         if len(mols_) > 1:
             mols_ = [mols_[0]]
@@ -49,6 +51,7 @@ def molecule_loader(subfolder):
         name = mol_path.split("/")[-1][:-4]
         mol = rdkit.Chem.MolFromMolFile(mol_path)
         if mol is None:
+            non_opened += [name]
             continue
         mols += [mol]
         paths += [mol_path]
@@ -58,14 +61,17 @@ def molecule_loader(subfolder):
         name = mol2_path.split("/")[-1][:-5]
         mol = rdkit.Chem.MolFromMol2File(mol2_path)
         if mol is None:
+            non_opened += [name]
             continue
         mols += [mol]
         paths += [mol2_path]
         names += [name]
-
+    print(len(sdf_paths), len(mol_paths), len(mol2_paths))
+    print(non_opened)
     assert len(mols) == len(names)
-
+    print("TOTAL MOLS", len(mols))
     mols_ = []
+    non_parsed_mols = []
     c = 0
     for i, mol in enumerate(mols):
         try:
@@ -74,18 +80,22 @@ def molecule_loader(subfolder):
                 mols_ += [(names[i], mol)]
         except:
             c += 1
+            non_parsed_mols += [names[i]]
             continue
     print(
         "Number of non-standardized molecules (skipped) {0}. File: {1}".format(
             c, subfolder
         )
     )
-    return mols_
+    return mols_, non_parsed_mols
 
+np_mols, np_non_parsed_mols = molecule_loader(np_dir)
+sd_mols, sd_non_parsed_mols = molecule_loader(sd_dir)
 
-np_mols = molecule_loader(np_dir)
-sd_mols = molecule_loader(sd_dir)
-
+np_non_parsed = pd.DataFrame({"file_name": np_non_parsed_mols, "category": "natural"})
+sd_non_parsed = pd.DataFrame({"file_name": sd_non_parsed_mols, "category": "synthetic"})
+non_parsed = pd.concat([np_non_parsed, sd_non_parsed])
+non_parsed.to_csv(os.path.join(data_dir, "original", "non_parsed_mols.csv"), index=False)
 
 def mols_to_table(mols, category):
     mols_ = []
@@ -111,19 +121,18 @@ sd_df_dup = sd_df.drop_duplicates(subset=["inchikey"])
 print(len(sd_df), len(sd_df_dup))
 
 np_duplicates = np_df[np_df.duplicated(subset=["inchikey"], keep=False)]
-print("Duplicated rows in np_df:")
-print(np_duplicates)
 sd_duplicates = sd_df[sd_df.duplicated(subset=["inchikey"], keep=False)]
-print("Duplicated rows in sd_df:")
-print(sd_duplicates)
+duplicates = pd.concat([np_duplicates, sd_duplicates])
+duplicates.to_csv(os.path.join(data_dir, "original", "duplicated_mols.csv"), index=False)
 
 df = pd.concat([np_df_dup, sd_df_dup]).reset_index(drop=True)
 df_ = df.drop_duplicates(subset=["inchikey"])
 assert len(df) == len(df_)
-print(len(np_df), len(sd_df), len(df))
-print(df[df["inchikey"].isna()])
-
+print(len(np_df_dup), len(sd_df_dup), len(df))
+"""
 df.to_csv(os.path.join(data_dir, "all_molecules.csv"), index=False)
+
+
 
 # parse chemdiv
 
@@ -180,3 +189,5 @@ if not os.path.exists(os.path.join(data_dir, "reference_library_inchikeys.csv"))
                 continue
             inchikey = rdkit.Chem.MolToInchiKey(mol)
             writer.writerow([inchikey, smiles])
+
+"""
