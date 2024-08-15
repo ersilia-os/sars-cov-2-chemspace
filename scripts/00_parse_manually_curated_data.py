@@ -92,6 +92,7 @@ def molecule_loader(subfolder):
 np_mols, np_non_parsed_mols = molecule_loader(np_dir)
 sd_mols, sd_non_parsed_mols = molecule_loader(sd_dir)
 
+
 np_non_parsed = pd.DataFrame({"file_name": np_non_parsed_mols, "category": "natural"})
 sd_non_parsed = pd.DataFrame({"file_name": sd_non_parsed_mols, "category": "synthetic"})
 non_parsed = pd.concat([np_non_parsed, sd_non_parsed])
@@ -129,11 +130,11 @@ df = pd.concat([np_df_dup, sd_df_dup]).reset_index(drop=True)
 df_ = df.drop_duplicates(subset=["inchikey"])
 assert len(df) == len(df_)
 print(len(np_df_dup), len(sd_df_dup), len(df))
-"""
+
 df.to_csv(os.path.join(data_dir, "all_molecules.csv"), index=False)
 
 
-
+"""
 # parse chemdiv
 
 chemdiv_sdf = os.path.join(
