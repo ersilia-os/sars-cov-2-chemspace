@@ -1,9 +1,7 @@
 file_name,inchikey,smiles,category
 beta-phellandrene,OGLDWXZKYODSOB-JTQLQIEISA-N,CC1=CC[C@@H](C(C)C)C=C1,natural
 Isostrychnopentamine,PHLJPJICTIGOKC-XKYMZAEISA-N,C=C[C@H]1CN2CCc3c([nH]c4c([C@H]5CCCN5C)c(O)ccc34)[C@@H]2C[C@@H]1C[C@H]1c2[nH]c3ccccc3c2CCN1C,natural
-beta-pinene,WTARULDDTDQWMU-IUCAKERBSA-N,C=C1CC[C@H]2C[C@@H]1C2(C)C,natural
 alpha-phellandrene,OGLDWXZKYODSOB-JTQLQIEISA-N,CC1=CC[C@@H](C(C)C)C=C1,natural
-alpha-pinene,WTARULDDTDQWMU-IUCAKERBSA-N,C=C1CC[C@H]2C[C@@H]1C2(C)C,natural
 Strychnopentamine,PHLJPJICTIGOKC-XKYMZAEISA-N,C=C[C@H]1CN2CCc3c([nH]c4c([C@H]5CCCN5C)c(O)ccc34)[C@@H]2C[C@@H]1C[C@H]1c2[nH]c3ccccc3c2CCN1C,natural
 SV_J15_0001,QMPBBNUOBOFBFS-UHFFFAOYSA-N,Cn1cnc(Cn2c(=O)nc(Nc3cc4cn(C)nc4cc3Cl)n(Cc3cc(F)c(F)cc3F)c2=O)n1,synthetic
 SA18_0003,QMPBBNUOBOFBFS-UHFFFAOYSA-N,Cn1cnc(Cn2c(=O)[nH]/c(=N\c3cc4cn(C)nc4cc3Cl)n(Cc3cc(F)c(F)cc3F)c2=O)n1,synthetic
