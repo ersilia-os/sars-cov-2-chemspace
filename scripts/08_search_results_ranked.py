@@ -22,7 +22,7 @@ for k,v in ik2db_.items():
         ik2db[k] = "both"
 
 print("Loading manually annotated molecules inchikeys")
-ma_iks = set(pd.read_csv(os.path.join(root, "..", "data", "all_molecules.csv"))['inchikey'])
+ma_iks = set(pd.read_csv(os.path.join(root, "..", "data", "all_molecules_with_cheese_results.csv"))['inchikey'])
 
 print("Loading classifier data")
 

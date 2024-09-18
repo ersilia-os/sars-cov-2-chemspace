@@ -136,7 +136,7 @@ print(len(set(df["query_inchikey"])))
 print(df.shape)
 df = df[df["search_type"] == "consensus"].reset_index(drop=True)
 
-da = pd.read_csv(os.path.join(root, "..", "data", "all_molecules.csv"))
+da = pd.read_csv(os.path.join(root, "..", "data", "all_molecules_with_cheese_results.csv"))
 da = da[["inchikey", "smiles", "category"]]
 da = da[da["inchikey"].notnull()]
 print(da[da["inchikey"].isnull()].shape)

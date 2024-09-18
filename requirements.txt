@@ -2,7 +2,7 @@ requests
 rdkit
 standardiser
 tqdm
-dotenv
+python-dotenv
 pandas
 scikit-learn
 opentsne

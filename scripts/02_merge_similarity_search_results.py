@@ -14,6 +14,16 @@ df = df[df["inchikey"].notnull()]
 inchikeys = sorted(set(df["inchikey"].tolist()))
 print("Unique molecules in the dataset", len(inchikeys))
 
+inchikeys_in_cheese = []
+for ik in inchikeys:
+    fn = os.path.join(root, "..", "results", "cheese", f"{ik}.csv")
+    if os.path.exists(fn):
+        inchikeys_in_cheese += [ik]
+
+df = df[df["inchikey"].isin(inchikeys_in_cheese)]
+df.to_csv(os.path.join(root, "..", "data", "all_molecules_with_cheese_results.csv"), index=False)
+
+
 ik2names = collections.defaultdict(list)
 ik2cat = collections.defaultdict(list)
 
@@ -92,7 +102,7 @@ df.to_csv(os.path.join(root, "..", "results", "cheese_search.csv"), index=False)
 df = pd.read_csv(os.path.join(root, "..", "results", "cheese_search.csv"))
 
 databases = ["zinc15", "enamine-real"]
-categories = ["natural", "synthetic", "both"]
+categories = ["natural", "synthetic"]
 search_types = ["consensus", "morgan", "espsim_shape", "espsim_electrostatic"]
 
 R = []
@@ -156,6 +166,15 @@ for smiles in db_smiles:
 db = pd.DataFrame({"smiles": db_smiles, "inchikey": db_inchikeys})
 db = db[db["inchikey"].notnull()]
 db.to_csv(os.path.join(root, "..", "data", "drugbank_inchikeys.csv"), index=False)
+
+db_inchikeys = sorted(set(db["inchikey"].tolist()))
+db_inchikeys_in_cheese_results = []
+for ik in db_inchikeys:
+    fn = os.path.join(root, "..", "results", "cheese", f"{ik}.csv")
+    if os.path.exists(fn):
+        db_inchikeys_in_cheese_results += [ik]
+db = db[db["inchikey"].isin(db_inchikeys_in_cheese_results)]
+db.to_csv(os.path.join(root, "..", "data", "drugbank_inchikeys_with_cheese_results.csv"), index=False)
 
 key2smi = {}
 key2consenus = collections.defaultdict(list)

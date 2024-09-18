@@ -9,7 +9,7 @@ root = os.path.dirname(os.path.abspath(__file__))
 cheese_smiles = pd.read_csv(os.path.join(root, "../results/cheese_search.csv"))[
     "smiles"
 ].tolist()
-chemdiv_smiles = pd.read_csv(os.path.join(root, "../data/chemdiv_molecules.csv"))[
+chemdiv_smiles = pd.read_csv(os.path.join(root, "../data/chemdiv/chemdiv_molecules.csv"))[
     "smiles"
 ].tolist()
 
@@ -21,5 +21,5 @@ cheese = pd.DataFrame({"smiles": list(set(cheese_smiles))})
 print(cheese.shape)
 cheese.to_csv(os.path.join(root, "../results/cheese_search_smiles.csv"), index=False)
 chemdiv = pd.DataFrame({"smiles": list(set(chemdiv_smiles))})
-chemdiv.to_csv(os.path.join(root, "../data/chemdiv_smiles.csv"), index=False)
+chemdiv.to_csv(os.path.join(root, "../data/chemdiv/chemdiv_smiles.csv"), index=False)
 print(chemdiv.shape)

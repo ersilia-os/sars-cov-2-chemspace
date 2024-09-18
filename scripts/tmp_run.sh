@@ -1,0 +1,6 @@
+python 02_merge_similarity_search_results.py
+python 03_search_results_descriptors.py
+python 04_search_results_selection.py
+python 07_internal_classifier.py
+python 08_search_results_ranked.py
+python 09_chemical_space_projection.py

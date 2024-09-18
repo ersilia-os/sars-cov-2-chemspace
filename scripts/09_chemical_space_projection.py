@@ -5,8 +5,7 @@ from openTSNE import TSNE
 
 root = os.path.dirname(os.path.abspath(__file__))
 
-df_ma = pd.read_csv(os.path.join(root, "..", "data", "all_molecules.csv"))[["inchikey", "smiles"]]
-#df_db = pd.read_csv(os.path.join(root, "..", "data", "drugbank_inchikeys.csv"))[["inchikey", "smiles"]]
+df_ma = pd.read_csv(os.path.join(root, "..", "data", "all_molecules_with_cheese_results.csv"))[["inchikey", "smiles"]]
 df_cd = pd.read_csv(os.path.join(root, "..", "data", "chemdiv", "chemdiv_molecules.csv"))[["inchikey", "smiles"]]
 df_cs = pd.read_csv(os.path.join(root, "..", "results", "cheese_search_flat_ranked.csv"))[["inchikey", "smiles", "tot_rank"]]
 

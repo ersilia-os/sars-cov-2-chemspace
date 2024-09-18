@@ -11,10 +11,10 @@ import numpy as np
 from rdkit import Chem
 import random
 
-TIME_BUDGET_SEC = 10
+TIME_BUDGET_SEC = 60
 ESTIMATOR_LIST = ["rf", "lgbm"]
 REDUCED = False
-N_FOLDS = 1
+N_FOLDS = 5
 
 root = os.path.dirname(os.path.abspath(__file__))
 
@@ -107,6 +107,7 @@ class ClassifierPipeline(object):
         self.model.fit(self.smiles_list, self.y)
 
     def predict(self, name, df):
+        print(f"Predicting {name}", df.shape)
         smiles_list = df["smiles"].tolist()
         inchikeys = df["inchikey"].tolist()
         y_hat = self.model.predict_proba(smiles_list)[:, 1]
@@ -119,9 +120,12 @@ class ClassifierPipeline(object):
         df.to_csv(file_name, index=False)
 
 print("Gathering prediction datasets")
-df_manually_annotated = pd.read_csv(os.path.join(root, "..", "data", "all_molecules.csv"))[['smiles', 'inchikey']]
+df_manually_annotated = pd.read_csv(os.path.join(root, "..", "data", "all_molecules_with_cheese_results.csv"))[['smiles', 'inchikey']]
+print("... manually annotated", df_manually_annotated.shape)
 df_cheese_search = pd.read_csv(os.path.join(root, "..", "results", "cheese_search_smiles_and_inchikey.csv"))[['smiles', 'inchikey']]
-df_drugbank = pd.read_csv(os.path.join(root, "..", "data", "drugbank_inchikeys.csv"))[['smiles', 'inchikey']]
+print("... CHEESE search SMILES and InChIKeys", df_cheese_search.shape)
+df_drugbank = pd.read_csv(os.path.join(root, "..", "data", "drugbank_inchikeys_with_cheese_results.csv"))[['smiles', 'inchikey']]
+print("... Drugbank", df_drugbank.shape)
 df = pd.read_csv(os.path.join(root, "..", "results", "cheese_drugbank_search.csv"))
 smiles = df["smiles"].tolist()
 inchikeys = df["inchikey"].tolist()
@@ -130,10 +134,11 @@ pairs = list(set(pairs))
 smiles = [p[0] for p in pairs]
 inchikeys = [p[1] for p in pairs]
 df_drugbank_cheese_search = pd.DataFrame({'smiles': smiles, 'inchikey': inchikeys}).sample(n=df_cheese_search.shape[0])
+print("... Drugbank CHEESE search", len(inchikeys), "subsampled", df_drugbank_cheese_search.shape)
 
 print("Manually annotated vs Drugbank")
-df_p = pd.read_csv(os.path.join(root, "..", "data", "all_molecules.csv"))
-df_u = pd.read_csv(os.path.join(root, "..", "data", "drugbank_inchikeys.csv"))
+df_p = pd.read_csv(os.path.join(root, "..", "data", "all_molecules_with_cheese_results.csv"))
+df_u = pd.read_csv(os.path.join(root, "..", "data", "drugbank_inchikeys_with_cheese_results.csv"))
 classifier = ClassifierPipeline("ma_vs_db", df_p, df_u)
 classifier.cross_validate()
 classifier.train()
@@ -143,7 +148,7 @@ classifier.predict("db", df_drugbank)
 classifier.predict("dbcs", df_drugbank_cheese_search)
 
 print("Manually annotated vs ChEMBL (0)")
-df_p = pd.read_csv(os.path.join(root, "..", "data", "all_molecules.csv"))
+df_p = pd.read_csv(os.path.join(root, "..", "data", "all_molecules_with_cheese_results.csv"))
 df_u = pd.read_csv(os.path.join(root, "..", "data", "reference_library_inchikeys.csv"))
 classifier = ClassifierPipeline("ma_vs_ch0", df_p, df_u)
 classifier.cross_validate()
@@ -154,7 +159,7 @@ classifier.predict("db", df_drugbank)
 classifier.predict("dbcs", df_drugbank_cheese_search)
 
 print("Manually annotated vs ChEMBL (1)")
-df_p = pd.read_csv(os.path.join(root, "..", "data", "all_molecules.csv"))
+df_p = pd.read_csv(os.path.join(root, "..", "data", "all_molecules_with_cheese_results.csv"))
 df_u = pd.read_csv(os.path.join(root, "..", "data", "reference_library_inchikeys.csv"))
 classifier = ClassifierPipeline("ma_vs_ch1", df_p, df_u)
 classifier.cross_validate()
@@ -165,7 +170,7 @@ classifier.predict("db", df_drugbank)
 classifier.predict("dbcs", df_drugbank_cheese_search)
 
 print("Manually annotated vs ChEMBL (2)")
-df_p = pd.read_csv(os.path.join(root, "..", "data", "all_molecules.csv"))
+df_p = pd.read_csv(os.path.join(root, "..", "data", "all_molecules_with_cheese_results.csv"))
 df_u = pd.read_csv(os.path.join(root, "..", "data", "reference_library_inchikeys.csv"))
 classifier = ClassifierPipeline("ma_vs_ch2", df_p, df_u)
 classifier.cross_validate()
@@ -177,7 +182,7 @@ classifier.predict("dbcs", df_drugbank_cheese_search)
 
 print("Chemdiv Covid vs Chemdiv")
 df_p = pd.read_csv(os.path.join(root, "..", "data", "chemdiv", "chemdiv_molecules.csv"))
-df_u = pd.read_csv(os.path.join(root, "..", "data", "chemdiv_100k_generalistic.csv"))
+df_u = pd.read_csv(os.path.join(root, "..", "data", "chemdiv", "chemdiv_100k_generalistic.csv"))
 classifier = ClassifierPipeline("cdc_vs_cdg", df_p, df_u)
 classifier.cross_validate()
 classifier.train()
