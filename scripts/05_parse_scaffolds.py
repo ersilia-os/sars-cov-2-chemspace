@@ -30,10 +30,10 @@ def sdf_to_smiles_table(sdf_path, df1):
     return df
 
 
-npsdf = os.path.join(DATAPATH,"original", "scaffolds", "scaffolds_np.sdf")
+npsdf = os.path.join(DATAPATH,"original", "scaffolds", "scaffold_np_fin3_recap.sdf")
 df = pd.read_csv(os.path.join(DATAPATH, "all_molecules.csv"))
 npdf = df[df["category"] == "natural"]
-sdsdf = os.path.join(DATAPATH,"original", "scaffolds", "scaffolds_sd.sdf")
+sdsdf = os.path.join(DATAPATH,"original", "scaffolds", "scaffold_sd_fin3_recap.sdf")
 sddf = df[df["category"] == "synthetic"]
 dbsdf = os.path.join(DATAPATH, "drugbank_scaffolds.sdf")
 dbdf = pd.read_csv(os.path.join(DATAPATH, "drugbank_smiles.csv"))

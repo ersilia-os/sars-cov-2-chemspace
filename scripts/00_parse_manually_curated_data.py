@@ -134,7 +134,7 @@ print(len(np_df_dup), len(sd_df_dup), len(df))
 df.to_csv(os.path.join(data_dir, "all_molecules.csv"), index=False)
 
 
-"""
+
 # parse chemdiv
 
 chemdiv_sdf = os.path.join(
@@ -190,5 +190,3 @@ if not os.path.exists(os.path.join(data_dir, "reference_library_inchikeys.csv"))
                 continue
             inchikey = rdkit.Chem.MolToInchiKey(mol)
             writer.writerow([inchikey, smiles])
-
-"""

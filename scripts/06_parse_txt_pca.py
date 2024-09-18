@@ -50,7 +50,7 @@ def extract_pca_contributions(file_path):
     return df
 
 
-df_contributions = extract_pca_contributions("../data/original/PCA/pca_data2.txt")
+df_contributions = extract_pca_contributions("../data/original/PCA/PCA3.txt")
 df_contributions.to_csv(
     "../data/original/PCA/pca_contributions.csv", index=False, float_format="%.10g"
 )
