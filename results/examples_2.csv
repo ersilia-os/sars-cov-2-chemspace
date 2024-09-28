@@ -1,0 +1,6 @@
+example_index,smiles
+0,CCCCC[C@H](O)CC(=O)CCc1ccc(O)c(OC)c1
+0,CCCCCC(O)CNC(=O)CCC1=CC=C(O)C(OC)=C1
+0,CCCCC[C@@H](O)CC(=O)NCCC1=CC=C(O)C(OC)=C1
+4,O=C(/C=C/CCc1ccc(O)c(O)c1)CCc1ccc(O)c(O)c1
+4,O=C(C=CC1=CC=C(O)C=C1)NCCC1=CC=C(O)C(O)=C1
