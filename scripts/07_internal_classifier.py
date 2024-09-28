@@ -72,7 +72,7 @@ class ClassifierPipeline(object):
 
         for _ in tqdm(range(N_FOLDS)):
             smiles_train, smiles_test, y_train, y_test = train_test_split(
-                self.smiles_list, self.y, test_size=0.2, random_state=42, stratify=self.y
+                self.smiles_list, self.y, test_size=0.2, stratify=self.y
             )
 
             model = lq.MorganBinaryClassifier(
